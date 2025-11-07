@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+  padding: clamp(10px, 5vw, 20px);
+  background-color: #0a0a0a;
+  background-image: url("https://images5.alphacoders.com/140/1401751.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e0e0e0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(100, 181, 246, 0.5);
+}
+
+h1 {
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  line-height: 0.8;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(30, 30, 30, 0.8);
+  color: #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  border-color: #00ffff;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: rgba(30, 30, 30, 0.9);
+  overflow-x: auto;
+}
+
+table {
+  width: auto;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: clamp(8px, 2vw, 16px);
+  text-align: left;
+  border-bottom: 1px solid #333;
+  vertical-align: top;
+  white-space: nowrap;
+  border-right: 1px solid #333;
+}
+
+th {
+  background: linear-gradient(135deg, #212121, #3c3c3c);
+  font-weight: 500;
+  color: #bbb;
+  user-select: none;
+  text-shadow: 0 0 5px rgba(100, 181, 246, 0.2);
+}
+
+tr:hover {
+  background-color: rgba(44, 44, 44, 0.8);
+  transition: background-color 0.2s;
+}
+
+td div {
+  margin-bottom: 4px;
+}
+
+td div:last-child {
+  margin-bottom: 0;
+}
+
+.locale-selector {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.locale-selector select {
+  padding: 8px 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: rgba(30, 30, 30, 0.8);
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.locale-selector select:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.filter-options {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #e0e0e0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-options input[type="checkbox"] {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid #333;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 500;
+    color: #bbb;
+  }
+  td:nth-of-type(1):before {
+    content: "Item";
+  }
+  td:nth-of-type(2):before {
+    content: "Type";
+  }
+  td:nth-of-type(3):before {
+    content: "Rarity";
+  }
+  td:nth-of-type(4):before {
+    content: "Recycles Into";
+  }
+  td:nth-of-type(5):before {
+    content: "Quests";
+  }
+  td:nth-of-type(6):before {
+    content: "Hideout Upgrades";
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 100%;
+  }
+  .search-container {
+    max-width: 100%;
+  }
+  input {
+    font-size: 14px;
+  }
+}
