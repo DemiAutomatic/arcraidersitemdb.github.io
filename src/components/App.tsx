@@ -10,7 +10,7 @@ function App() {
   const [locale, setLocale] = useState("en");
   const [sortColumn, setSortColumn] = useState("name");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
-
+  
   // Create lookup maps for performance - computed once on load
   const { questRequirementsMap, hideoutRequirementsMap, projectRequirementsMap } = useMemo(() => {
     const questMap: Record<string, { questName: string; quantity: number }[]> = {};
@@ -133,7 +133,7 @@ function App() {
       default:
         return "";
     }
-  };
+  }; 
 
   // Simplified functions that use the pre-computed maps
   const getQuestRequirements = (itemId: string) => questRequirementsMap[itemId] || [];
@@ -223,7 +223,7 @@ function App() {
                 <tr key={item.id || index}>
                   <td>{(item.name as Record<string, string>)?.[locale] || item.id}</td>
                   <td>{item.type}</td>
-                  <td>{item.rarity}</td>
+                  <td className={item.rarity ? item.rarity.toLowerCase() : ""}>{item.rarity}</td>
                   <td>
                     {item.recyclesInto && Object.keys(item.recyclesInto).length > 0 ? (
                       Object.entries(item.recyclesInto as Record<string, number>).map(([recycleId, qty]) => {
@@ -285,7 +285,7 @@ function App() {
 
               <div className="card-row">
                 <span className="card-label">Rarity:</span>
-                <span className="card-value">{item.rarity}</span>
+                <span className={`card-value ${item.rarity ? item.rarity.toLowerCase() : ""}`}>{item.rarity}</span>
               </div>
 
               <div className="card-row">

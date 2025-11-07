@@ -16612,7 +16612,6 @@
     "weightKg": 0.0,
     "rarity": "Common",
     "recyclesInto": {
-      "explosives_station_iii": 9,
       "explosive_compound": 2,
       "sensors": 2
     },
