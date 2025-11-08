@@ -122,8 +122,10 @@ function App() {
         return item.item_type || "";
       case "rarity":
         return item.rarity || "";
-      case "recyclesInto":
+      case "recyclesTo":
         return (item.recycle_components ? item.recycle_components.length : 0).toString();
+      case "recycledFrom":
+        return (item.recycle_from ? item.recycle_from.length : 0).toString();
       case "recycleValue":
         return item.recycle_value || 0;
       case "Quests":
@@ -152,7 +154,7 @@ function App() {
     const bValue = getSortValue(b, sortColumn);
 
     // For numeric columns (counts), sort numerically
-    if (["value", "recyclesInto", "recycleValue", "Quests", "HideoutUpgrades", "Projects"].includes(sortColumn)) {
+    if (["value", "recyclesTo", "recycledFrom", "recycleValue", "Quests", "HideoutUpgrades", "Projects"].includes(sortColumn)) {
       const aNum = parseInt(aValue) || 0;
       const bNum = parseInt(bValue) || 0;
       return sortDirection === "asc" ? aNum - bNum : bNum - aNum;
@@ -189,8 +191,11 @@ function App() {
               <th onClick={() => handleSort("rarity")} style={{ cursor: "pointer" }}>
                 Rarity {sortColumn === "rarity" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
-              <th onClick={() => handleSort("recyclesInto")} style={{ cursor: "pointer" }}>
-                Recycle {sortColumn === "recyclesInto" && (sortDirection === "asc" ? "↑" : "↓")}
+              <th onClick={() => handleSort("recyclesTo")} style={{ cursor: "pointer" }}>
+                Recycles To {sortColumn === "recyclesTo" && (sortDirection === "asc" ? "↑" : "↓")}
+              </th>
+              <th onClick={() => handleSort("recycledFrom")} style={{ cursor: "pointer" }}>
+                Recycled From {sortColumn === "recycledFrom" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
               <th onClick={() => handleSort("Quests")} style={{ cursor: "pointer" }}>
                 Quests {sortColumn === "Quests" && (sortDirection === "asc" ? "↑" : "↓")}
@@ -240,6 +245,21 @@ function App() {
                     {item.recycle_components && item.recycle_components.length > 0 ? (
                       item.recycle_components.map((recycle: any, idx: number) => {
                         const recycleName = recycle.component?.name || recycle.component?.id || `Unknown (${recycle.component?.id})`;
+                        return (
+                          <div key={idx}>
+                            {recycleName} x{recycle.quantity}
+                          </div>
+                        );
+                      })
+                    ) : (
+                      <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                    )}
+                  </td>
+                  <td>
+                    {item.recycle_from && item.recycle_from.length > 0 ? (
+                      item.recycle_from.map((recycle: any, idx: number) => {
+                        const recycleItem = recycle.item;
+                        const recycleName = recycleItem?.name || recycleItem?.id || `Unknown (${recycleItem?.id})`;
                         return (
                           <div key={idx}>
                             {recycleName} x{recycle.quantity}
@@ -319,6 +339,43 @@ function App() {
                   >
                     {item.recycle_components && item.recycle_components.length > 0 ? item.recycle_value : 0}
                   </span>
+                </div>
+              </div>
+
+              <div className="card-row">
+                <span className="card-label">Recycle To:</span>
+                <div className="card-value">
+                  {item.recycle_components && item.recycle_components.length > 0 ? (
+                    item.recycle_components.map((recycle: any, idx: number) => {
+                      const recycleName = recycle.component?.name || recycle.component?.id || `Unknown (${recycle.component?.id})`;
+                      return (
+                        <div key={idx}>
+                          {recycleName} x{recycle.quantity}
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                  )}
+                </div>
+              </div>
+
+              <div className="card-row">
+                <span className="card-label">Recycle From:</span>
+                <div className="card-value">
+                  {item.recycle_from && item.recycle_from.length > 0 ? (
+                    item.recycle_from.map((recycle: any, idx: number) => {
+                      const recycleItem = recycle.item;
+                      const recycleName = recycleItem?.name || recycleItem?.id || `Unknown (${recycleItem?.id})`;
+                      return (
+                        <div key={idx}>
+                          {recycleName} x{recycle.quantity}
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                  )}
                 </div>
               </div>
 
