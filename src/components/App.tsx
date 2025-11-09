@@ -257,7 +257,7 @@ function App() {
                   </td>
                   <td>
                     {item.recycle_from && item.recycle_from.length > 0 ? (
-                      item.recycle_from.map((recycle: any, idx: number) => {
+                      item.recycle_from.sort((a: any, b: any) => a.item.name.localeCompare(b.item.name)).map((recycle: any, idx: number) => {
                         const recycleItem = recycle.item;
                         const recycleName = recycleItem?.name || recycleItem?.id || `Unknown (${recycleItem?.id})`;
                         return (
