@@ -66,7 +66,7 @@ function App() {
 
     // Build hideout requirements map
     Hideout.forEach((module) => {
-      const moduleName = module.name || module.id;
+      const moduleName = module.name.en || module.id;
 
       module.levels?.forEach((level) => {
         level.requirementItemIds?.forEach((req) => {
@@ -84,7 +84,7 @@ function App() {
 
     // Build project requirements map
     Projects.forEach((project) => {
-      const projectName = project.name || project.id;
+      const projectName = project.name.en || project.id;
 
       project.phases?.forEach((phase) => {
         phase.requirementItemIds?.forEach((req) => {
