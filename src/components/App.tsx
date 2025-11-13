@@ -125,7 +125,9 @@ function App() {
       case "recyclesTo":
         return (item.recycle_components ? item.recycle_components.length : 0).toString();
       case "recycledFrom":
-        return (item.recycle_from ? item.recycle_from.length : 0).toString();
+        return (item.recycle_components ? item.recycle_components.length : 0).toString();
+      case "droppedBy":
+        return (item.dropped_by ? item.dropped_by.length : 0).toString();
       case "recycleValue":
         return item.recycle_value || 0;
       case "Quests":
@@ -154,7 +156,7 @@ function App() {
     const bValue = getSortValue(b, sortColumn);
 
     // For numeric columns (counts), sort numerically
-    if (["value", "recyclesTo", "recycledFrom", "recycleValue", "Quests", "HideoutUpgrades", "Projects"].includes(sortColumn)) {
+    if (["value", "recyclesTo", "recycledFrom", "droppedBy", "recycleValue", "Quests", "HideoutUpgrades", "Projects"].includes(sortColumn)) {
       const aNum = parseInt(aValue) || 0;
       const bNum = parseInt(bValue) || 0;
       return sortDirection === "asc" ? aNum - bNum : bNum - aNum;
@@ -196,6 +198,9 @@ function App() {
               </th>
               <th onClick={() => handleSort("recycledFrom")} style={{ cursor: "pointer" }}>
                 Recycled From {sortColumn === "recycledFrom" && (sortDirection === "asc" ? "↑" : "↓")}
+              </th>
+              <th onClick={() => handleSort("droppedBy")} style={{ cursor: "pointer" }}>
+                Dropped By {sortColumn === "droppedBy" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
               <th onClick={() => handleSort("Quests")} style={{ cursor: "pointer" }}>
                 Quests {sortColumn === "Quests" && (sortDirection === "asc" ? "↑" : "↓")}
@@ -257,15 +262,35 @@ function App() {
                   </td>
                   <td>
                     {item.recycle_from && item.recycle_from.length > 0 ? (
-                      item.recycle_from.sort((a: any, b: any) => a.item.name.localeCompare(b.item.name)).map((recycle: any, idx: number) => {
-                        const recycleItem = recycle.item;
-                        const recycleName = recycleItem?.name || recycleItem?.id || `Unknown (${recycleItem?.id})`;
-                        return (
-                          <div key={idx}>
-                            {recycleName} x{recycle.quantity}
-                          </div>
-                        );
-                      })
+                      item.recycle_from
+                        .sort((a: any, b: any) => a.item.name.localeCompare(b.item.name))
+                        .map((recycle: any, idx: number) => {
+                          const recycleItem = recycle.item;
+                          const recycleName = recycleItem?.name || recycleItem?.id || `Unknown (${recycleItem?.id})`;
+                          return (
+                            <div key={idx}>
+                              {recycleName} x{recycle.quantity}
+                            </div>
+                          );
+                        })
+                    ) : (
+                      <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                    )}
+                  </td>
+                  <td>
+                    {item.dropped_by && item.dropped_by.length > 0 ? (
+                      item.dropped_by
+                        .sort((a: any, b: any) => a.arc.name.localeCompare(b.arc.name))
+                        .map((enemy: any, idx: number) => {
+                          const arc = enemy.arc;
+                          const enemyName = arc?.name || arc?.id || `Unknown (${arc?.id})`;
+                          return (
+                            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }} key={idx}>
+                              {enemyName}
+                              <div style={{ width: "30px", height: "30px", marginLeft: "4px", backgroundImage: `url(${arc.icon})`, backgroundSize: "contain", backgroundRepeat: "no-repeat" }} />
+                            </div>
+                          );
+                        })
                     ) : (
                       <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
                     )}
@@ -375,6 +400,28 @@ function App() {
                     })
                   ) : (
                     <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                  )}
+                </div>
+              </div>
+
+              <div className="card-row">
+                <span className="card-label">Dropped By:</span>
+                <div className="card-value">
+                  {item.dropped_by && item.dropped_by.length > 0 ? (
+                    item.dropped_by
+                      .sort((a: any, b: any) => a.arc.name.localeCompare(b.arc.name))
+                      .map((enemy: any, idx: number) => {
+                        const arc = enemy.arc;
+                        const enemyName = arc?.name || arc?.id || `Unknown (${arc?.id})`;
+                        return (
+                          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }} key={idx}>
+                            {enemyName}
+                            <div style={{ width: "30px", height: "30px", backgroundImage: `url(${arc.icon})`, backgroundSize: "contain", backgroundRepeat: "no-repeat" }} />
+                          </div>
+                        );
+                      })
+                  ) : (
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No dropped by data</span>
                   )}
                 </div>
               </div>
