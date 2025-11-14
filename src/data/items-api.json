@@ -498,23 +498,23 @@
       {
         "quantity": 1,
         "component": {
-          "id": "wires-recipe",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/wires-recipe.webp",
-          "name": "Wires",
-          "rarity": "Uncommon",
-          "item_type": "Topside Material",
-          "description": "A bundle of old wires. Used to craft a wide range of items. Can be recycled into scrap metal."
-        }
-      },
-      {
-        "quantity": 1,
-        "component": {
           "id": "electrical-components",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/electrical-components.webp",
           "name": "Electrical Components",
           "rarity": "Uncommon",
           "item_type": "Refined Material",
           "description": "Used to craft a wide range of items. Can be recycled into crafting materials."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "wires-recipe",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/wires-recipe.webp",
+          "name": "Wires",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "A bundle of old wires. Used to craft a wide range of items. Can be recycled into scrap metal."
         }
       }
     ],
@@ -549,6 +549,28 @@
           "rarity": "Epic",
           "item_type": "Advanced Material",
           "description": "Used to open the Locked room near the Loading Bay. Also Used to craft shields. Can be recycled into crafting materials."
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "frequency-modulation-box",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/frequency-modulation-box.webp",
+          "name": "Frequency Modulation Box",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "spectrometer",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/spectrometer.webp",
+          "name": "Spectrometer",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
         },
         "quantity": 1
       }
@@ -1133,23 +1155,23 @@
       {
         "quantity": 1,
         "component": {
-          "id": "spring",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/spring.webp",
-          "name": "Steel Spring",
-          "rarity": "Uncommon",
-          "item_type": "Topside Material",
-          "description": "A tightly wound coil of metal. Used to craft a wide range of items. Can be recycled into scrap metal."
-        }
-      },
-      {
-        "quantity": 1,
-        "component": {
           "id": "mechanical-components",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/mechanical-components.webp",
           "name": "Mechanical Components",
           "rarity": "Uncommon",
           "item_type": "Refined Material",
           "description": "Used to craft a wide range of items. Can be recycled into crafting materials."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "spring",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/spring.webp",
+          "name": "Steel Spring",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "A tightly wound coil of metal. Used to craft a wide range of items. Can be recycled into scrap metal."
         }
       }
     ],
@@ -1527,6 +1549,39 @@
           "description": "Fires explosive projectiles that only detonate when hitting ARC"
         },
         "quantity": 2
+      },
+      {
+        "item": {
+          "id": "mini-centrifuge",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/mini-centrifuge.webp",
+          "name": "Mini Centrifuge",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "flow-controller",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/flow-controller.webp",
+          "name": "Flow Controller",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "microscope",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/microscope.webp",
+          "name": "Microscope",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 1
       }
     ],
     "mods": [],
@@ -3608,13 +3663,24 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-13T10:37:20.642755+00:00",
-    "updated_at": "2025-11-13T10:37:20.642755+00:00",
+    "updated_at": "2025-11-13T22:46:27.352215+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
     "ammo_type": "",
     "locations": [],
-    "components": [],
+    "components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "matriarch-reactor",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/matriarch-reactor.webp",
+          "name": "Matriarch Reactor",
+          "rarity": "Legendary",
+          "item_type": "Recyclable"
+        }
+      }
+    ],
     "used_in": [],
     "recycle_components": [],
     "recycle_from": [],
@@ -4149,6 +4215,17 @@
           "description": "Can be recycled into crafting materials."
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "shredder-gyro",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/shredder-gyro.webp",
+          "name": "Shredder Gyro",
+          "rarity": "Uncommon",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 3
       }
     ],
     "mods": [],
@@ -6534,6 +6611,17 @@
           "description": "An improvised medical item that gradually restores health over time."
         },
         "quantity": 2
+      },
+      {
+        "item": {
+          "id": "sample-cleaner",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/sample-cleaner.webp",
+          "name": "Sample Cleaner",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 14
       }
     ],
     "mods": [],
@@ -7157,23 +7245,23 @@
       {
         "quantity": 2,
         "component": {
-          "id": "arc-alloy",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-alloy.webp",
-          "name": "ARC Alloy",
-          "rarity": "Uncommon",
-          "item_type": "Topside Material",
-          "description": "Obtained from ARC enemies or activities, or by recycling certain ARC parts. Used to craft components."
-        }
-      },
-      {
-        "quantity": 2,
-        "component": {
           "id": "advanced-mechanical-components",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-mechanical-components.webp",
           "name": "Advanced Mechanical Components",
           "rarity": "Rare",
           "item_type": "Advanced Material",
           "description": "Mostly used to craft advanced weapons. Can be recycled into crafting materials."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "arc-alloy",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-alloy.webp",
+          "name": "ARC Alloy",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "Obtained from ARC enemies or activities, or by recycling certain ARC parts. Used to craft components."
         }
       }
     ],
@@ -7368,6 +7456,17 @@
           "description": "Can be recycled into crafting materials."
         },
         "quantity": 2
+      },
+      {
+        "item": {
+          "id": "geiger-counter",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/geiger-counter.webp",
+          "name": "Geiger Counter",
+          "rarity": "Epic",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 3
       }
     ],
     "mods": [],
@@ -8214,23 +8313,23 @@
       {
         "quantity": 2,
         "component": {
-          "id": "arc-motion-core",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-motion-core.webp",
-          "name": "ARC Motion Core",
-          "rarity": "Rare",
-          "item_type": "Topside Material",
-          "description": "Obtained from ARC enemies or activities. Used to craft components. Can be recycled into ARC Alloy."
-        }
-      },
-      {
-        "quantity": 2,
-        "component": {
           "id": "arc-alloy",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-alloy.webp",
           "name": "ARC Alloy",
           "rarity": "Uncommon",
           "item_type": "Topside Material",
           "description": "Obtained from ARC enemies or activities, or by recycling certain ARC parts. Used to craft components."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "arc-motion-core",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-motion-core.webp",
+          "name": "ARC Motion Core",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Obtained from ARC enemies or activities. Used to craft components. Can be recycled into ARC Alloy."
         }
       }
     ],
@@ -8575,17 +8674,6 @@
     "used_in": [],
     "recycle_components": [
       {
-        "quantity": 2,
-        "component": {
-          "id": "oil",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/oil.webp",
-          "name": "Oil",
-          "rarity": "Uncommon",
-          "item_type": "Topside Material",
-          "description": "Used to craft weapons and explosives. Can be recycled into chemicals."
-        }
-      },
-      {
         "quantity": 4,
         "component": {
           "id": "metal-parts",
@@ -8594,6 +8682,17 @@
           "rarity": "Common",
           "item_type": "Basic Material",
           "description": "Used to craft a wide range of items."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "oil",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/oil.webp",
+          "name": "Oil",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "Used to craft weapons and explosives. Can be recycled into chemicals."
         }
       }
     ],
@@ -10867,17 +10966,6 @@
     "used_in": [],
     "recycle_components": [
       {
-        "quantity": 2,
-        "component": {
-          "id": "wires-recipe",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/wires-recipe.webp",
-          "name": "Wires",
-          "rarity": "Uncommon",
-          "item_type": "Topside Material",
-          "description": "A bundle of old wires. Used to craft a wide range of items. Can be recycled into scrap metal."
-        }
-      },
-      {
         "quantity": 3,
         "component": {
           "id": "sensors-recipe",
@@ -10886,6 +10974,17 @@
           "rarity": "Rare",
           "item_type": "Topside Material",
           "description": "Used to craft utility items and explosives. Can be recycled into scrap metal."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "wires-recipe",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/wires-recipe.webp",
+          "name": "Wires",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "A bundle of old wires. Used to craft a wide range of items. Can be recycled into scrap metal."
         }
       }
     ],
@@ -12868,6 +12967,17 @@
           "description": "Can be recycled into crafting materials."
         },
         "quantity": 3
+      },
+      {
+        "item": {
+          "id": "mini-centrifuge",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/mini-centrifuge.webp",
+          "name": "Mini Centrifuge",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 2
       }
     ],
     "mods": [],
@@ -15409,17 +15519,6 @@
     "used_in": [],
     "recycle_components": [
       {
-        "quantity": 4,
-        "component": {
-          "id": "wires-recipe",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/wires-recipe.webp",
-          "name": "Wires",
-          "rarity": "Uncommon",
-          "item_type": "Topside Material",
-          "description": "A bundle of old wires. Used to craft a wide range of items. Can be recycled into scrap metal."
-        }
-      },
-      {
         "quantity": 14,
         "component": {
           "id": "plastic-parts",
@@ -15428,6 +15527,17 @@
           "rarity": "Common",
           "item_type": "Basic Material",
           "description": "Used to craft a wide range of items."
+        }
+      },
+      {
+        "quantity": 4,
+        "component": {
+          "id": "wires-recipe",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/wires-recipe.webp",
+          "name": "Wires",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "A bundle of old wires. Used to craft a wide range of items. Can be recycled into scrap metal."
         }
       }
     ],
@@ -15514,23 +15624,23 @@
       {
         "quantity": 3,
         "component": {
-          "id": "rubber-parts-recipe",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/rubber-parts-recipe.webp",
-          "name": "Rubber Parts",
-          "rarity": "Common",
-          "item_type": "Basic Material",
-          "description": "Used to craft a wide range of items."
-        }
-      },
-      {
-        "quantity": 3,
-        "component": {
           "id": "battery",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/battery.webp",
           "name": "Battery",
           "rarity": "Uncommon",
           "item_type": "Topside Material",
           "description": "Used to craft medical supplies. Can be recycled into scrap metal."
+        }
+      },
+      {
+        "quantity": 3,
+        "component": {
+          "id": "rubber-parts-recipe",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/rubber-parts-recipe.webp",
+          "name": "Rubber Parts",
+          "rarity": "Common",
+          "item_type": "Basic Material",
+          "description": "Used to craft a wide range of items."
         }
       }
     ],
@@ -15815,6 +15925,17 @@
           "description": "A homing grenade that targets a single nearby ARC dealing explosive damage on impact"
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "trailblazer-grenade",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/trailblazer-grenade.webp",
+          "name": "Trailblazer Grenade",
+          "rarity": "Rare",
+          "item_type": "Quick Use",
+          "description": "A grenade that emits a trail of flammable gas along its path, causing an explosive chain reaction when it ignites."
+        },
+        "quantity": 2
       }
     ],
     "mods": [],
@@ -18235,11 +18356,11 @@
           "id": "padded-stock",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/padded-stock.webp",
           "name": "Padded Stock",
-          "rarity": "Rare",
+          "rarity": "Epic",
           "item_type": "Modification",
           "description": "Significantly improves stability."
         },
-        "quantity": 6
+        "quantity": 5
       },
       {
         "item": {
@@ -18726,6 +18847,17 @@
       },
       {
         "item": {
+          "id": "rotary-encoder",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/rotary-encoder.webp",
+          "name": "Rotary Encoder",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials. "
+        },
+        "quantity": 2
+      },
+      {
+        "item": {
           "id": "fried-motherboard",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/fried-motherboard.webp",
           "name": "Fried Motherboard",
@@ -18754,6 +18886,28 @@
           "rarity": "Uncommon",
           "item_type": "Recyclable",
           "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 2
+      },
+      {
+        "item": {
+          "id": "signal-amplifier",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/signal-amplifier.webp",
+          "name": "Signal Amplifier",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 2
+      },
+      {
+        "item": {
+          "id": "sample-cleaner",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/sample-cleaner.webp",
+          "name": "Sample Cleaner",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
         },
         "quantity": 2
       }
@@ -19441,7 +19595,41 @@
         }
       }
     ],
-    "recycle_from": [],
+    "recycle_from": [
+      {
+        "item": {
+          "id": "spectrum-analyzer",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/spectrum-analyzer.webp",
+          "name": "Spectrum Analyzer",
+          "rarity": "Epic",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "ion-sputter",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/ion-sputter.webp",
+          "name": "Ion Sputter",
+          "rarity": "Epic",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into Crafting Materials "
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "geiger-counter",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/geiger-counter.webp",
+          "name": "Geiger Counter",
+          "rarity": "Epic",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 1
+      }
+    ],
     "mods": [],
     "dropped_by": [],
     "sold_by": [
@@ -23609,6 +23797,109 @@
     "recycle_value": 0
   },
   {
+    "id": "flow-controller",
+    "name": "Flow Controller",
+    "description": "Can be recycled into crafting materials",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/flow-controller.webp",
+    "rarity": "Rare",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:30:03.812538+00:00",
+    "updated_at": "2025-11-14T13:30:03.812538+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "advanced-mechanical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-mechanical-components.webp",
+          "name": "Advanced Mechanical Components",
+          "rarity": "Rare",
+          "item_type": "Advanced Material",
+          "description": "Mostly used to craft advanced weapons. Can be recycled into crafting materials."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "sensors-recipe",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/sensors-recipe.webp",
+          "name": "Sensors",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used to craft utility items and explosives. Can be recycled into scrap metal."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 2250
+  },
+  {
     "id": "free-loadout-augment",
     "name": "Free Loadout Augment",
     "description": "Basic augment for rookie Raiders, offering slightly more backpack space and carry capacity.",
@@ -23676,6 +23967,109 @@
     "recycle_value": 0
   },
   {
+    "id": "frequency-modulation-box",
+    "name": "Frequency Modulation Box",
+    "description": "Can be recycled into crafting materials",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/frequency-modulation-box.webp",
+    "rarity": "Rare",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:08:57.524116+00:00",
+    "updated_at": "2025-11-14T15:06:58.151905+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "advanced-electrical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-electrical-components.webp",
+          "name": "Advanced Electrical Components",
+          "rarity": "Rare",
+          "item_type": "Refined Material",
+          "description": "Used to craft utility items and shield mods. Can be recycled into crafting materials. Used to craft: Raider Hatch Key, Photoelectric Cloak"
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "speaker-component",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/speaker-component.webp",
+          "name": "Speaker Component",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used in crafting."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 2250
+  },
+  {
     "id": "fried-motherboard",
     "name": "Fried Motherboard",
     "description": "Can be recycled into crafting materials.",
@@ -23740,17 +24134,6 @@
     "used_in": [],
     "recycle_components": [
       {
-        "quantity": 5,
-        "component": {
-          "id": "plastic-parts",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/plastic-parts.webp",
-          "name": "Plastic Parts",
-          "rarity": "Common",
-          "item_type": "Basic Material",
-          "description": "Used to craft a wide range of items."
-        }
-      },
-      {
         "quantity": 2,
         "component": {
           "id": "electrical-components",
@@ -23759,6 +24142,17 @@
           "rarity": "Uncommon",
           "item_type": "Refined Material",
           "description": "Used to craft a wide range of items. Can be recycled into crafting materials."
+        }
+      },
+      {
+        "quantity": 5,
+        "component": {
+          "id": "plastic-parts",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/plastic-parts.webp",
+          "name": "Plastic Parts",
+          "rarity": "Common",
+          "item_type": "Basic Material",
+          "description": "Used to craft a wide range of items."
         }
       }
     ],
@@ -24426,6 +24820,109 @@
     "dropped_by": [],
     "sold_by": [],
     "recycle_value": 0
+  },
+  {
+    "id": "geiger-counter",
+    "name": "Geiger Counter",
+    "description": "Can be recycled into crafting materials.",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/geiger-counter.webp",
+    "rarity": "Epic",
+    "value": 3500,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:27:28.602669+00:00",
+    "updated_at": "2025-11-14T15:34:16.465265+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 3,
+        "component": {
+          "id": "battery",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/battery.webp",
+          "name": "Battery",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "Used to craft medical supplies. Can be recycled into scrap metal."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "exodus-modules",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/exodus-modules.webp",
+          "name": "Exodus Modules",
+          "rarity": "Epic",
+          "item_type": "Topside Material",
+          "description": "Used to craft a wide range of items."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 3500
   },
   {
     "id": "goggles-radio-renegade-variant",
@@ -25492,17 +25989,6 @@
     "used_in": [],
     "recycle_components": [
       {
-        "quantity": 1,
-        "component": {
-          "id": "speaker-component",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/speaker-component.webp",
-          "name": "Speaker Component",
-          "rarity": "Rare",
-          "item_type": "Topside Material",
-          "description": "Used in crafting."
-        }
-      },
-      {
         "quantity": 7,
         "component": {
           "id": "rubber-parts-recipe",
@@ -25511,6 +25997,17 @@
           "rarity": "Common",
           "item_type": "Basic Material",
           "description": "Used to craft a wide range of items."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "speaker-component",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/speaker-component.webp",
+          "name": "Speaker Component",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used in crafting."
         }
       }
     ],
@@ -28625,17 +29122,6 @@
     "used_in": [],
     "recycle_components": [
       {
-        "quantity": 7,
-        "component": {
-          "id": "chemicals",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/chemicals.webp",
-          "name": "Chemicals",
-          "rarity": "Common",
-          "item_type": "Basic Material",
-          "description": "Used to craft medical supplies, explosives, and utility items."
-        }
-      },
-      {
         "quantity": 2,
         "component": {
           "id": "battery",
@@ -28644,6 +29130,17 @@
           "rarity": "Uncommon",
           "item_type": "Topside Material",
           "description": "Used to craft medical supplies. Can be recycled into scrap metal."
+        }
+      },
+      {
+        "quantity": 7,
+        "component": {
+          "id": "chemicals",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/chemicals.webp",
+          "name": "Chemicals",
+          "rarity": "Common",
+          "item_type": "Basic Material",
+          "description": "Used to craft medical supplies, explosives, and utility items."
         }
       }
     ],
@@ -28832,6 +29329,109 @@
     "dropped_by": [],
     "sold_by": [],
     "recycle_value": 900
+  },
+  {
+    "id": "ion-sputter",
+    "name": "Ion Sputter",
+    "description": "Can be recycled into Crafting Materials ",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/ion-sputter.webp",
+    "rarity": "Epic",
+    "value": 6000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 0,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:06:18.575582+00:00",
+    "updated_at": "2025-11-14T15:03:39.898642+00:00",
+    "shield_type": "",
+    "loot_area": "",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "exodus-modules",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/exodus-modules.webp",
+          "name": "Exodus Modules",
+          "rarity": "Epic",
+          "item_type": "Topside Material",
+          "description": "Used to craft a wide range of items."
+        }
+      },
+      {
+        "quantity": 4,
+        "component": {
+          "id": "voltage-converter",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/voltage-converter.webp",
+          "name": "Voltage Converter",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "A device that adjusts electrical voltage for various crafting purposes."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 4750
   },
   {
     "id": "jolt-mine",
@@ -29869,25 +30469,65 @@
     "item_type": "Modification",
     "loadout_slots": [],
     "icon": "https://cdn.metaforge.app/arc-raiders/icons/kinetic-converter.webp",
-    "rarity": "Epic",
-    "value": 0,
+    "rarity": "Legendary",
+    "value": 7000,
     "workbench": null,
     "stat_block": {
       "range": 0,
       "damage": 0,
-      "weight": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 0.75,
       "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
       "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
       "fireRate": 0,
       "stability": 0,
+      "stackSize": 0,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
       "increasedFireRate": 0,
       "reducedReloadTime": 0,
-      "reducedDurabilityBurnRate": 0
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
     },
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-10-11T17:00:09.89915+00:00",
-    "updated_at": "2025-10-28T12:58:32.940898+00:00",
+    "updated_at": "2025-11-13T22:38:58.400003+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
@@ -32732,6 +33372,17 @@
           "description": "A grenade that sticks to surfaces, dealing explosive damage after a short delay."
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "microscope",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/microscope.webp",
+          "name": "Microscope",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 3
       }
     ],
     "mods": [],
@@ -32905,6 +33556,28 @@
           "description": "Can be recycled into crafting materials. Used to craft: Equalizer, Jupiter"
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "matriarch-reactor",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/matriarch-reactor.webp",
+          "name": "Matriarch Reactor",
+          "rarity": "Legendary",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "magnetron",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/magnetron.webp",
+          "name": "Magnetron",
+          "rarity": "Epic",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
       }
     ],
     "mods": [],
@@ -32923,6 +33596,109 @@
     ],
     "sold_by": [],
     "recycle_value": 2750
+  },
+  {
+    "id": "magnetron",
+    "name": "Magnetron",
+    "description": "Can be recycled into crafting materials",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/magnetron.webp",
+    "rarity": "Epic",
+    "value": 6000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:18:29.015887+00:00",
+    "updated_at": "2025-11-14T13:18:29.015887+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "magnetic-accelerator",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/magnetic-accelerator.webp",
+          "name": "Magnetic Accelerator",
+          "rarity": "Epic",
+          "item_type": "Refined Material",
+          "description": "Used to craft advanced weapons."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "spring",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/spring.webp",
+          "name": "Steel Spring",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "A tightly wound coil of metal. Used to craft a wide range of items. Can be recycled into scrap metal."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 5800
   },
   {
     "id": "mastery-medal-backpack-charm",
@@ -33003,6 +33779,121 @@
     "dropped_by": [],
     "sold_by": [],
     "recycle_value": 0
+  },
+  {
+    "id": "matriarch-reactor",
+    "name": "Matriarch Reactor",
+    "description": "Can be recycled into crafting materials.",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/matriarch-reactor.webp",
+    "rarity": "Legendary",
+    "value": 13000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 10,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 0,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "Used to Craft: Aphelion",
+    "subcategory": "",
+    "created_at": "2025-11-13T22:05:15.800479+00:00",
+    "updated_at": "2025-11-13T22:05:15.800479+00:00",
+    "shield_type": "",
+    "loot_area": "ARC",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [
+      {
+        "item": {
+          "id": "aphelion-rifle",
+          "icon": "",
+          "name": "Aphelion Rifle",
+          "rarity": "Legendary",
+          "item_type": "Weapon",
+          "description": ""
+        },
+        "quantity": 1
+      }
+    ],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "magnetic-accelerator",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/magnetic-accelerator.webp",
+          "name": "Magnetic Accelerator",
+          "rarity": "Epic",
+          "item_type": "Refined Material",
+          "description": "Used to craft advanced weapons."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "power-rod",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/power-rod.webp",
+          "name": "Power Rod",
+          "rarity": "Epic",
+          "item_type": "Advanced Material",
+          "description": "Used to open the Locked room near the Loading Bay. Also Used to craft shields. Can be recycled into crafting materials."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 11000
   },
   {
     "id": "mechanical-components",
@@ -33751,6 +34642,17 @@
           "description": "Heavy break-action rifle. Packs a punch, but must be reloaded between every shot."
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "shredder-gyro",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/shredder-gyro.webp",
+          "name": "Shredder Gyro",
+          "rarity": "Uncommon",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 3
       },
       {
         "item": {
@@ -35689,6 +36591,212 @@
     "recycle_value": 0
   },
   {
+    "id": "microscope",
+    "name": "Microscope",
+    "description": "Can be recycled into crafting materials.",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/microscope.webp",
+    "rarity": "Rare",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:31:49.107962+00:00",
+    "updated_at": "2025-11-14T13:31:49.107962+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "advanced-mechanical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-mechanical-components.webp",
+          "name": "Advanced Mechanical Components",
+          "rarity": "Rare",
+          "item_type": "Advanced Material",
+          "description": "Mostly used to craft advanced weapons. Can be recycled into crafting materials."
+        }
+      },
+      {
+        "quantity": 3,
+        "component": {
+          "id": "magnet",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/magnet.webp",
+          "name": "Magnet",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "Fun thing to put on a fridgerator."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 2650
+  },
+  {
+    "id": "mini-centrifuge",
+    "name": "Mini Centrifuge",
+    "description": "Can be recycled into crafting materials",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/mini-centrifuge.webp",
+    "rarity": "Rare",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:16:17.446738+00:00",
+    "updated_at": "2025-11-14T13:16:17.446738+00:00",
+    "shield_type": "",
+    "loot_area": "",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "advanced-mechanical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-mechanical-components.webp",
+          "name": "Advanced Mechanical Components",
+          "rarity": "Rare",
+          "item_type": "Advanced Material",
+          "description": "Mostly used to craft advanced weapons. Can be recycled into crafting materials."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "canister",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/canister.webp",
+          "name": "Canister",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "Used to craft a wide range of items. Can be recycled into plastic."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 2350
+  },
+  {
     "id": "mod-components",
     "name": "Mod Components",
     "description": "Used to craft weapon mods. Can be recycled into crafting materials.",
@@ -35796,17 +36904,6 @@
       },
       {
         "item": {
-          "id": "padded-stock",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/padded-stock.webp",
-          "name": "Padded Stock",
-          "rarity": "Rare",
-          "item_type": "Modification",
-          "description": "Significantly improves stability."
-        },
-        "quantity": 1
-      },
-      {
-        "item": {
           "id": "lightweight-stock",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/lightweight-stock.webp",
           "name": "Lightweight Stock",
@@ -35826,6 +36923,17 @@
           "description": "Moderately extends the ammo capacity of compatible weapons that use medium ammo"
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "padded-stock",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/padded-stock.webp",
+          "name": "Padded Stock",
+          "rarity": "Epic",
+          "item_type": "Modification",
+          "description": "Significantly improves stability."
+        },
+        "quantity": 2
       },
       {
         "item": {
@@ -38353,25 +39461,65 @@
       "safePocket"
     ],
     "icon": "https://cdn.metaforge.app/arc-raiders/icons/padded-stock.webp",
-    "rarity": "Rare",
+    "rarity": "Epic",
     "value": 0,
     "workbench": null,
     "stat_block": {
       "range": 0,
       "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
       "weight": 0.5,
       "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
       "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
       "fireRate": 0,
       "stability": 0,
+      "stackSize": 0,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
       "increasedFireRate": 0,
       "reducedReloadTime": 0,
-      "reducedDurabilityBurnRate": 0
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
     },
     "flavor_text": null,
     "subcategory": null,
     "created_at": "2025-09-23T18:21:03.915759+00:00",
-    "updated_at": "2025-10-28T12:58:32.940898+00:00",
+    "updated_at": "2025-11-13T22:37:31.656973+00:00",
     "shield_type": null,
     "loot_area": null,
     "sources": null,
@@ -38379,7 +39527,7 @@
     "locations": [],
     "components": [
       {
-        "quantity": 1,
+        "quantity": 2,
         "component": {
           "id": "mod-components",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/mod-components.webp",
@@ -38389,7 +39537,7 @@
         }
       },
       {
-        "quantity": 6,
+        "quantity": 5,
         "component": {
           "id": "duct-tape-recipe",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/duct-tape-recipe.webp",
@@ -39714,23 +40862,23 @@
       {
         "quantity": 1,
         "component": {
-          "id": "crude-explosives",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/crude-explosives.webp",
-          "name": "Crude Explosives",
-          "rarity": "Uncommon",
-          "item_type": "Refined Material",
-          "description": "Used to craft explosives. Can be recycled into crafting materials."
-        }
-      },
-      {
-        "quantity": 1,
-        "component": {
           "id": "arc-alloy",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-alloy.webp",
           "name": "ARC Alloy",
           "rarity": "Uncommon",
           "item_type": "Topside Material",
           "description": "Obtained from ARC enemies or activities, or by recycling certain ARC parts. Used to craft components."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "crude-explosives",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/crude-explosives.webp",
+          "name": "Crude Explosives",
+          "rarity": "Uncommon",
+          "item_type": "Refined Material",
+          "description": "Used to craft explosives. Can be recycled into crafting materials."
         }
       }
     ],
@@ -40305,23 +41453,23 @@
       {
         "quantity": 1,
         "component": {
-          "id": "arc-circuitry",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-circuitry.webp",
-          "name": "ARC Circuitry",
-          "rarity": "Rare",
-          "item_type": "Topside Material",
-          "description": " Obtained from ARC enemies or activities. Used to craft components. Can be recycled into ARC Alloy."
-        }
-      },
-      {
-        "quantity": 1,
-        "component": {
           "id": "advanced-electrical-components",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-electrical-components.webp",
           "name": "Advanced Electrical Components",
           "rarity": "Rare",
           "item_type": "Refined Material",
           "description": "Used to craft utility items and shield mods. Can be recycled into crafting materials. Used to craft: Raider Hatch Key, Photoelectric Cloak"
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "arc-circuitry",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-circuitry.webp",
+          "name": "ARC Circuitry",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": " Obtained from ARC enemies or activities. Used to craft components. Can be recycled into ARC Alloy."
         }
       }
     ],
@@ -40334,6 +41482,17 @@
           "rarity": "Legendary",
           "item_type": "Recyclable",
           "description": "Can be recycled into crafting materials. Used to craft: Equalizer, Jupiter"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "matriarch-reactor",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/matriarch-reactor.webp",
+          "name": "Matriarch Reactor",
+          "rarity": "Legendary",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
         },
         "quantity": 1
       },
@@ -40729,6 +41888,17 @@
           "description": "Compatible with: Anvil  - Tech mod for the Anvil that replaces its bullets with ones that split into 4 weaker projectiles."
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "rotary-encoder",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/rotary-encoder.webp",
+          "name": "Rotary Encoder",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials. "
+        },
+        "quantity": 2
       }
     ],
     "mods": [],
@@ -41235,6 +42405,109 @@
     "dropped_by": [],
     "sold_by": [],
     "recycle_value": 1000
+  },
+  {
+    "id": "radio-relay",
+    "name": "Radio Relay",
+    "description": "Can be recycled into crafting materials.",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/radio-relay.webp",
+    "rarity": "Rare",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:33:35.646417+00:00",
+    "updated_at": "2025-11-14T13:33:35.646417+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 2,
+        "component": {
+          "id": "sensors-recipe",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/sensors-recipe.webp",
+          "name": "Sensors",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used to craft utility items and explosives. Can be recycled into scrap metal."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "speaker-component",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/speaker-component.webp",
+          "name": "Speaker Component",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used in crafting."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 2000
   },
   {
     "id": "radio-renegade-outfit",
@@ -43687,17 +44960,6 @@
     "used_in": [],
     "recycle_components": [
       {
-        "quantity": 2,
-        "component": {
-          "id": "synthesized-fuel",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/synthesized-fuel.webp",
-          "name": "Synthesized Fuel",
-          "rarity": "Rare",
-          "item_type": "Topside Material",
-          "description": "Used to craft utility items and explosives. Can be recycled into chemicals."
-        }
-      },
-      {
         "quantity": 6,
         "component": {
           "id": "metal-parts",
@@ -43706,6 +44968,17 @@
           "rarity": "Common",
           "item_type": "Basic Material",
           "description": "Used to craft a wide range of items."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "synthesized-fuel",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/synthesized-fuel.webp",
+          "name": "Synthesized Fuel",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used to craft utility items and explosives. Can be recycled into chemicals."
         }
       }
     ],
@@ -44068,6 +45341,109 @@
     "dropped_by": [],
     "sold_by": [],
     "recycle_value": 0
+  },
+  {
+    "id": "rotary-encoder",
+    "name": "Rotary Encoder",
+    "description": "Can be recycled into crafting materials. ",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/rotary-encoder.webp",
+    "rarity": "Rare",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 0,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:12:35.265897+00:00",
+    "updated_at": "2025-11-14T13:24:59.219296+00:00",
+    "shield_type": "",
+    "loot_area": "",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 2,
+        "component": {
+          "id": "electrical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/electrical-components.webp",
+          "name": "Electrical Components",
+          "rarity": "Uncommon",
+          "item_type": "Refined Material",
+          "description": "Used to craft a wide range of items. Can be recycled into crafting materials."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "processor",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/processor.webp",
+          "name": "Processor",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used in crafting."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 2280
   },
   {
     "id": "rubber-duck",
@@ -45852,6 +47228,109 @@
     "recycle_value": 0
   },
   {
+    "id": "sample-cleaner",
+    "name": "Sample Cleaner",
+    "description": "Can be recycled into crafting materials.",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/sample-cleaner.webp",
+    "rarity": "Rare",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:35:32.413899+00:00",
+    "updated_at": "2025-11-14T13:35:32.413899+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 14,
+        "component": {
+          "id": "assorted-seeds",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/assorted-seeds.webp",
+          "name": "Assorted Seeds",
+          "rarity": "Common",
+          "item_type": "Nature",
+          "description": "A handful of seeds. Celeste might be looking for these."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "electrical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/electrical-components.webp",
+          "name": "Electrical Components",
+          "rarity": "Uncommon",
+          "item_type": "Refined Material",
+          "description": "Used to craft a wide range of items. Can be recycled into crafting materials."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 2680
+  },
+  {
     "id": "seeker-grenade",
     "name": "Seeker Grenade",
     "description": "A homing grenade that targets a single nearby ARC dealing explosive damage on impact",
@@ -46199,6 +47678,50 @@
           "rarity": "Rare",
           "item_type": "Recyclable",
           "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "flow-controller",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/flow-controller.webp",
+          "name": "Flow Controller",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "radio-relay",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/radio-relay.webp",
+          "name": "Radio Relay",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 2
+      },
+      {
+        "item": {
+          "id": "spectrum-analyzer",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/spectrum-analyzer.webp",
+          "name": "Spectrum Analyzer",
+          "rarity": "Epic",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "spectrometer",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/spectrometer.webp",
+          "name": "Spectrometer",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
         },
         "quantity": 1
       }
@@ -46559,7 +48082,19 @@
     "recycle_components": [],
     "recycle_from": [],
     "mods": [],
-    "dropped_by": [],
+    "dropped_by": [
+      {
+        "id": "6441fd85-f007-43b8-bb4f-a83d869c8077",
+        "arc": {
+          "id": "shredder",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/shredder.webp",
+          "name": "Shredder",
+          "description": "When this relentless lump of menace was first encountered at the Stella Montis facility, it left behind a trail of downed Raiders. It was dubbed the \"Shredder\" by what few Raiders managed to get back to safety; a name that wasn't so much clever as it was painfully literal."
+        },
+        "arc_id": "shredder",
+        "created_at": "2025-11-14T16:35:12.865264+00:00"
+      }
+    ],
     "sold_by": [
       {
         "price": 900,
@@ -47887,6 +49422,224 @@
     "dropped_by": [],
     "sold_by": [],
     "recycle_value": 345
+  },
+  {
+    "id": "shredder-gyro",
+    "name": "Shredder Gyro",
+    "description": "Can be recycled into crafting materials.",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/shredder-gyro.webp",
+    "rarity": "Uncommon",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:22:01.22434+00:00",
+    "updated_at": "2025-11-14T13:22:01.22434+00:00",
+    "shield_type": "",
+    "loot_area": "ARC",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 3,
+        "component": {
+          "id": "arc-alloy",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-alloy.webp",
+          "name": "ARC Alloy",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material",
+          "description": "Obtained from ARC enemies or activities, or by recycling certain ARC parts. Used to craft components."
+        }
+      },
+      {
+        "quantity": 3,
+        "component": {
+          "id": "mechanical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/mechanical-components.webp",
+          "name": "Mechanical Components",
+          "rarity": "Uncommon",
+          "item_type": "Refined Material",
+          "description": "Used to craft a wide range of items. Can be recycled into crafting materials."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [
+      {
+        "id": "f853b871-222f-4579-96cf-735709608058",
+        "arc": {
+          "id": "shredder",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/shredder.webp",
+          "name": "Shredder",
+          "description": "When this relentless lump of menace was first encountered at the Stella Montis facility, it left behind a trail of downed Raiders. It was dubbed the \"Shredder\" by what few Raiders managed to get back to safety; a name that wasn't so much clever as it was painfully literal."
+        },
+        "arc_id": "shredder",
+        "created_at": "2025-11-14T16:35:12.865264+00:00"
+      }
+    ],
+    "sold_by": [],
+    "recycle_value": 2520
+  },
+  {
+    "id": "signal-amplifier",
+    "name": "Signal Amplifier",
+    "description": "Can be recycled into crafting materials.",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/signal-amplifier.webp",
+    "rarity": "Rare",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:23:49.444545+00:00",
+    "updated_at": "2025-11-14T13:23:49.444545+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 2,
+        "component": {
+          "id": "electrical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/electrical-components.webp",
+          "name": "Electrical Components",
+          "rarity": "Uncommon",
+          "item_type": "Refined Material",
+          "description": "Used to craft a wide range of items. Can be recycled into crafting materials."
+        }
+      },
+      {
+        "quantity": 2,
+        "component": {
+          "id": "voltage-converter",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/voltage-converter.webp",
+          "name": "Voltage Converter",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "A device that adjusts electrical voltage for various crafting purposes."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 2280
   },
   {
     "id": "silencer-i",
@@ -50801,6 +52554,28 @@
           "description": "A gadget that allows the user to conceal themselves from ARC."
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "radio-relay",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/radio-relay.webp",
+          "name": "Radio Relay",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 2
+      },
+      {
+        "item": {
+          "id": "frequency-modulation-box",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/frequency-modulation-box.webp",
+          "name": "Frequency Modulation Box",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
       }
     ],
     "mods": [],
@@ -50812,6 +52587,212 @@
       }
     ],
     "recycle_value": 270
+  },
+  {
+    "id": "spectrometer",
+    "name": "Spectrometer",
+    "description": "Can be recycled into crafting materials",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/spectrometer.webp",
+    "rarity": "Rare",
+    "value": 3000,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:11:11.421453+00:00",
+    "updated_at": "2025-11-14T15:11:52.007008+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "advanced-electrical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-electrical-components.webp",
+          "name": "Advanced Electrical Components",
+          "rarity": "Rare",
+          "item_type": "Refined Material",
+          "description": "Used to craft utility items and shield mods. Can be recycled into crafting materials. Used to craft: Raider Hatch Key, Photoelectric Cloak"
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "sensors-recipe",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/sensors-recipe.webp",
+          "name": "Sensors",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used to craft utility items and explosives. Can be recycled into scrap metal."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 2250
+  },
+  {
+    "id": "spectrum-analyzer",
+    "name": "Spectrum Analyzer",
+    "description": "Can be recycled into crafting materials",
+    "item_type": "Recyclable",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/spectrum-analyzer.webp",
+    "rarity": "Epic",
+    "value": 3500,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 1.5,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 3,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T13:14:12.611555+00:00",
+    "updated_at": "2025-11-14T15:01:03.628472+00:00",
+    "shield_type": "",
+    "loot_area": "Exodus",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "exodus-modules",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/exodus-modules.webp",
+          "name": "Exodus Modules",
+          "rarity": "Epic",
+          "item_type": "Topside Material",
+          "description": "Used to craft a wide range of items."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "sensors-recipe",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/sensors-recipe.webp",
+          "name": "Sensors",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used to craft utility items and explosives. Can be recycled into scrap metal."
+        }
+      }
+    ],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 3250
   },
   {
     "id": "spotter-relay",
@@ -51546,17 +53527,6 @@
     "used_in": [],
     "recycle_components": [
       {
-        "quantity": 1,
-        "component": {
-          "id": "mod-components",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/mod-components.webp",
-          "name": "Mod Components",
-          "rarity": "Rare",
-          "item_type": "Refined Material",
-          "description": "Used to craft weapon mods. Can be recycled into crafting materials."
-        }
-      },
-      {
         "quantity": 2,
         "component": {
           "id": "duct-tape-recipe",
@@ -51565,6 +53535,17 @@
           "rarity": "Uncommon",
           "item_type": "Topside Material",
           "description": "Used to craft a wide range of items. Can be recycled into crafting materials"
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "mod-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/mod-components.webp",
+          "name": "Mod Components",
+          "rarity": "Rare",
+          "item_type": "Refined Material",
+          "description": "Used to craft weapon mods. Can be recycled into crafting materials."
         }
       }
     ],
@@ -52022,6 +54003,17 @@
       },
       {
         "item": {
+          "id": "magnetron",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/magnetron.webp",
+          "name": "Magnetron",
+          "rarity": "Epic",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
           "id": "mod-components",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/mod-components.webp",
           "name": "Mod Components",
@@ -52041,6 +54033,91 @@
       }
     ],
     "recycle_value": 150
+  },
+  {
+    "id": "stella-montis-archives-key",
+    "name": "Stella Montis Archives Key",
+    "description": "Unlocks a door in the Archives in Stella Montis",
+    "item_type": "Key",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/stella-montis-archives-key.webp",
+    "rarity": "Epic",
+    "value": 100,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 0.25,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 1,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-13T19:57:12.596563+00:00",
+    "updated_at": "2025-11-14T14:17:37.4235+00:00",
+    "shield_type": "",
+    "loot_area": "",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [
+      {
+        "id": "49d3c2d8-759b-41ec-98af-65206785ef40",
+        "map": "dam"
+      }
+    ],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 0
   },
   {
     "id": "stella-montis-assembly-admin-key",
@@ -52108,6 +54185,166 @@
     "subcategory": "",
     "created_at": "2025-11-13T17:34:45.720356+00:00",
     "updated_at": "2025-11-13T17:45:03.814978+00:00",
+    "shield_type": "",
+    "loot_area": "",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 0
+  },
+  {
+    "id": "stella-montis-medical-storage-key",
+    "name": "Stella Montis Medical Storage Key",
+    "description": "Unlocks a door in Medical Research in Stella Montis",
+    "item_type": "Key",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/stella-montis-medical-storage-key.webp",
+    "rarity": "Uncommon",
+    "value": 100,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 0.25,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 1,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-13T18:50:20.332058+00:00",
+    "updated_at": "2025-11-13T18:50:20.332058+00:00",
+    "shield_type": "",
+    "loot_area": "",
+    "sources": null,
+    "ammo_type": "",
+    "locations": [],
+    "components": [],
+    "used_in": [],
+    "recycle_components": [],
+    "recycle_from": [],
+    "mods": [],
+    "dropped_by": [],
+    "sold_by": [],
+    "recycle_value": 0
+  },
+  {
+    "id": "stella-montis-security-checkpoint-key",
+    "name": "Stella Montis Security Checkpoint Key",
+    "description": "Unlocks a door in the Security Checkpoint in Stella Montis",
+    "item_type": "Key",
+    "loadout_slots": [],
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/stella-montis-security-checkpoint-key.webp",
+    "rarity": "Rare",
+    "value": 100,
+    "workbench": null,
+    "stat_block": {
+      "range": 0,
+      "damage": 0,
+      "health": 0,
+      "radius": 0,
+      "shield": 0,
+      "weight": 0.25,
+      "agility": 0,
+      "arcStun": 0,
+      "healing": 0,
+      "stamina": 0,
+      "stealth": 0,
+      "useTime": 0,
+      "duration": 0,
+      "fireRate": 0,
+      "stability": 0,
+      "stackSize": 1,
+      "damageMult": 0,
+      "raiderStun": 0,
+      "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
+      "shieldCharge": 0,
+      "backpackSlots": 0,
+      "quickUseSlots": 0,
+      "damagePerSecond": 0,
+      "movementPenalty": 0,
+      "safePocketSlots": 0,
+      "damageMitigation": 0,
+      "healingPerSecond": 0,
+      "reducedEquipTime": 0,
+      "staminaPerSecond": 0,
+      "increasedADSSpeed": 0,
+      "increasedFireRate": 0,
+      "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
+      "reducedUnequipTime": 0,
+      "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
+      "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
+      "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
+      "reducedDurabilityBurnRate": 0,
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
+    },
+    "flavor_text": "",
+    "subcategory": "",
+    "created_at": "2025-11-14T16:24:07.904894+00:00",
+    "updated_at": "2025-11-14T16:24:31.424787+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
@@ -56162,20 +58399,20 @@
   {
     "id": "trailblazer-grenade",
     "name": "Trailblazer Grenade",
-    "description": "",
+    "description": "A grenade that emits a trail of flammable gas along its path, causing an explosive chain reaction when it ignites.",
     "item_type": "Quick Use",
     "loadout_slots": [],
-    "icon": "",
+    "icon": "https://cdn.metaforge.app/arc-raiders/icons/trailblazer-grenade.webp",
     "rarity": "Rare",
-    "value": 0,
-    "workbench": null,
+    "value": 1600,
+    "workbench": "Explosives Bench II",
     "stat_block": {
       "range": 0,
       "damage": 0,
       "health": 0,
       "radius": 0,
       "shield": 0,
-      "weight": 0,
+      "weight": 1,
       "agility": 0,
       "arcStun": 0,
       "healing": 0,
@@ -56224,7 +58461,7 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-13T10:35:35.982783+00:00",
-    "updated_at": "2025-11-13T11:04:47.286346+00:00",
+    "updated_at": "2025-11-14T14:37:59.029389+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
@@ -56232,12 +58469,24 @@
     "locations": [],
     "components": [],
     "used_in": [],
-    "recycle_components": [],
+    "recycle_components": [
+      {
+        "quantity": 2,
+        "component": {
+          "id": "crude-explosives",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/crude-explosives.webp",
+          "name": "Crude Explosives",
+          "rarity": "Uncommon",
+          "item_type": "Refined Material",
+          "description": "Used to craft explosives. Can be recycled into crafting materials."
+        }
+      }
+    ],
     "recycle_from": [],
     "mods": [],
     "dropped_by": [],
     "sold_by": [],
-    "recycle_value": 0
+    "recycle_value": 540
   },
   {
     "id": "trailblazer-grenade-blueprint",
@@ -58691,6 +60940,28 @@
           "description": "Can be recycled into crafting materials."
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "signal-amplifier",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/signal-amplifier.webp",
+          "name": "Signal Amplifier",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials."
+        },
+        "quantity": 2
+      },
+      {
+        "item": {
+          "id": "ion-sputter",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/ion-sputter.webp",
+          "name": "Ion Sputter",
+          "rarity": "Epic",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into Crafting Materials "
+        },
+        "quantity": 4
       }
     ],
     "mods": [],
@@ -60181,23 +62452,23 @@
       {
         "quantity": 1,
         "component": {
-          "id": "explosive-compound",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/explosive-compound.webp",
-          "name": "Explosive Compound",
-          "rarity": "Rare",
-          "item_type": "Refined Material",
-          "description": "Used to craft explosives."
-        }
-      },
-      {
-        "quantity": 1,
-        "component": {
           "id": "arc-motion-core",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-motion-core.webp",
           "name": "ARC Motion Core",
           "rarity": "Rare",
           "item_type": "Topside Material",
           "description": "Obtained from ARC enemies or activities. Used to craft components. Can be recycled into ARC Alloy."
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "explosive-compound",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/explosive-compound.webp",
+          "name": "Explosive Compound",
+          "rarity": "Rare",
+          "item_type": "Refined Material",
+          "description": "Used to craft explosives."
         }
       }
     ],

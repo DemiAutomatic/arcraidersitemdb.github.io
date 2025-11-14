@@ -958,6 +958,47 @@
     ]
   },
   {
+    "id": "cold-storage",
+    "name": "Cold Storage",
+    "objectives": [
+      "In one round",
+      "Search any J Kozma Ventures Container"
+    ],
+    "xp": 0,
+    "granted_items": [],
+    "created_at": "2025-11-14T11:43:45.943896+00:00",
+    "updated_at": "2025-11-14T11:43:45.943896+00:00",
+    "locations": [],
+    "marker_category": null,
+    "required_items": [],
+    "rewards": [
+      {
+        "id": "5c52d95e-a610-4519-a4f4-ffa19b14d425",
+        "item": {
+          "id": "raider-hatch-key",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/raider-hatch-key.webp",
+          "name": "Raider Hatch Key",
+          "rarity": "Rare",
+          "item_type": "Key"
+        },
+        "item_id": "raider-hatch-key",
+        "quantity": "1"
+      },
+      {
+        "id": "f0ef6dc0-0d34-41ab-880c-dcc042d3b184",
+        "item": {
+          "id": "gas-mine",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/gas-mine.webp",
+          "name": "Gas Mine",
+          "rarity": "Common",
+          "item_type": "Quick Use"
+        },
+        "item_id": "gas-mine",
+        "quantity": "3"
+      }
+    ]
+  },
+  {
     "id": "communication-hideout",
     "name": "Communication Hideout",
     "objectives": [
@@ -1718,6 +1759,47 @@
         },
         "item_id": "simple-gun-parts",
         "quantity": "3"
+      }
+    ]
+  },
+  {
+    "id": "in-my-image",
+    "name": "In My Image",
+    "objectives": [
+      "Deploy into Stella Montis",
+      "Find and search 3 Androids"
+    ],
+    "xp": 0,
+    "granted_items": [],
+    "created_at": "2025-11-14T11:42:22.128425+00:00",
+    "updated_at": "2025-11-14T11:42:22.128425+00:00",
+    "locations": [],
+    "marker_category": null,
+    "required_items": [],
+    "rewards": [
+      {
+        "id": "594e3f22-b8e4-45d7-a1a3-c49763b50995",
+        "item": {
+          "id": "looting-mk-2",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/looting-mk-2.webp",
+          "name": "Looting Mk. 2",
+          "rarity": "Rare",
+          "item_type": "Augment"
+        },
+        "item_id": "looting-mk-2",
+        "quantity": "1"
+      },
+      {
+        "id": "f7342d08-9ee4-45bd-88c3-9bf743364a12",
+        "item": {
+          "id": "green-light-stick",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/green-light-stick.webp",
+          "name": "Green Light Stick",
+          "rarity": "Common",
+          "item_type": "Quick Use"
+        },
+        "item_id": "green-light-stick",
+        "quantity": "5"
       }
     ]
   },
@@ -2694,6 +2776,73 @@
     ]
   },
   {
+    "id": "snap-and-salvage",
+    "name": "Snap and Salvage",
+    "objectives": [
+      "Take a Photo of any of the Rovers in the Sandbox",
+      "Search the papers in the Security Checkpoint room by the Lobby",
+      "Deliver a Magnetron to Tian Wen",
+      "Deliver a Flow Controller to Tian Wen"
+    ],
+    "xp": 0,
+    "granted_items": [],
+    "created_at": "2025-11-14T12:10:30.271118+00:00",
+    "updated_at": "2025-11-14T12:10:30.271118+00:00",
+    "locations": [],
+    "marker_category": null,
+    "required_items": [],
+    "rewards": [
+      {
+        "id": "cfebbbde-b472-4aed-a1b4-df414536337f",
+        "item": {
+          "id": "burletta-iiii",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/burletta-iiii.webp",
+          "name": "Burletta III",
+          "rarity": "Uncommon",
+          "item_type": "Weapon"
+        },
+        "item_id": "burletta-iiii",
+        "quantity": "1"
+      },
+      {
+        "id": "cbaa3da5-b620-43c7-94c5-e3bd640fd994",
+        "item": {
+          "id": "silencer-ii",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/silencer-ii.webp",
+          "name": "Silencer II",
+          "rarity": "Rare",
+          "item_type": "Modification"
+        },
+        "item_id": "silencer-ii",
+        "quantity": "1"
+      },
+      {
+        "id": "36a35854-8d3b-4669-a2ff-916ac3318848",
+        "item": {
+          "id": "extended-light-mag-ii",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/extended-light-mag-ii.webp",
+          "name": "Extended Light Mag II",
+          "rarity": "Uncommon",
+          "item_type": "Modification"
+        },
+        "item_id": "extended-light-mag-ii",
+        "quantity": "1"
+      },
+      {
+        "id": "daf96e40-afac-4423-a04a-b0965097f714",
+        "item": {
+          "id": "light-ammo",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/light-ammo.webp",
+          "name": "Light Ammo",
+          "rarity": "Common",
+          "item_type": "Ammunition"
+        },
+        "item_id": "light-ammo",
+        "quantity": "100"
+      }
+    ]
+  },
+  {
     "id": "source-of-the-contamination",
     "name": "Source of the Contamination",
     "objectives": [
@@ -2973,7 +3122,7 @@
           "id": "padded-stock",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/padded-stock.webp",
           "name": "Padded Stock",
-          "rarity": "Rare",
+          "rarity": "Epic",
           "item_type": "Modification"
         },
         "item_id": "padded-stock",
