@@ -123,7 +123,7 @@
     "id": "advanced-arc-powercell",
     "name": "Advanced ARC Powercell",
     "description": "Very valuable resource that drops from certain ARC enemies",
-    "item_type": "Misc",
+    "item_type": "Topside Material",
     "loadout_slots": [],
     "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-arc-powercell.webp",
     "rarity": "Rare",
@@ -132,6 +132,7 @@
     "stat_block": {
       "range": 0,
       "damage": 0,
+      "health": 0,
       "radius": 0,
       "shield": 0,
       "weight": 0.5,
@@ -148,6 +149,10 @@
       "damageMult": 0,
       "raiderStun": 0,
       "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
       "shieldCharge": 0,
       "backpackSlots": 0,
       "quickUseSlots": 0,
@@ -161,17 +166,25 @@
       "increasedADSSpeed": 0,
       "increasedFireRate": 0,
       "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
       "reducedUnequipTime": 0,
       "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
       "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
       "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
       "reducedDurabilityBurnRate": 0,
-      "increasedRecoilRecoveryTime": 0
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
     },
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-10-17T23:09:59.354807+00:00",
-    "updated_at": "2025-10-28T12:58:32.940898+00:00",
+    "updated_at": "2025-11-16T18:24:23.79568+00:00",
     "shield_type": "",
     "loot_area": "ARC",
     "sources": null,
@@ -407,6 +420,17 @@
       },
       {
         "item": {
+          "id": "raider-hatch-key",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/raider-hatch-key.webp",
+          "name": "Raider Hatch Key",
+          "rarity": "Rare",
+          "item_type": "Key",
+          "description": "Unlocks a Raider Hatch."
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
           "id": "photoelectric-cloak",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/photoelectric-cloak.webp",
           "name": "Photoelectric Cloak",
@@ -426,17 +450,6 @@
           "description": "An improved version of the Combat II augment. Supports more shield types, and comes with extra space for grenades."
         },
         "quantity": 2
-      },
-      {
-        "item": {
-          "id": "raider-hatch-key",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/raider-hatch-key.webp",
-          "name": "Raider Hatch Key",
-          "rarity": "Rare",
-          "item_type": "Key",
-          "description": "Unlocks a Raider Hatch."
-        },
-        "quantity": 1
       },
       {
         "item": {
@@ -568,6 +581,17 @@
           "id": "spectrometer",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/spectrometer.webp",
           "name": "Spectrometer",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "telemetry-transceiver",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/telemetry-transceiver.webp",
+          "name": "Telemetry Transceiver",
           "rarity": "Rare",
           "item_type": "Recyclable",
           "description": "Can be recycled into crafting materials"
@@ -1541,23 +1565,23 @@
       },
       {
         "item": {
-          "id": "tempest-i",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/tempest-i.webp",
-          "name": "Tempest I",
-          "rarity": "Epic",
-          "item_type": "Weapon",
-          "description": "Fully automatic assault rifle with moderate fire rate and accuracy."
-        },
-        "quantity": 2
-      },
-      {
-        "item": {
           "id": "vulcano-i",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/vulcano-i.webp",
           "name": "Vulcano I",
           "rarity": "Epic",
           "item_type": "Weapon",
           "description": "Semi-automatic shotgun with good bullet spread but sharp falloff."
+        },
+        "quantity": 2
+      },
+      {
+        "item": {
+          "id": "tempest-i",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/tempest-i.webp",
+          "name": "Tempest I",
+          "rarity": "Epic",
+          "item_type": "Weapon",
+          "description": "Fully automatic assault rifle with moderate fire rate and accuracy."
         },
         "quantity": 2
       }
@@ -5306,7 +5330,7 @@
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-arc-powercell.webp",
           "name": "Advanced ARC Powercell",
           "rarity": "Rare",
-          "item_type": "Misc",
+          "item_type": "Topside Material",
           "description": "Very valuable resource that drops from certain ARC enemies"
         },
         "quantity": 2
@@ -13561,17 +13585,6 @@
       },
       {
         "item": {
-          "id": "pulse-mine",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/pulse-mine.webp",
-          "name": "Pulse Mine",
-          "rarity": "Uncommon",
-          "item_type": "Quick Use",
-          "description": "A proximity-triggered mine that pops up and knocks back anything within its radius"
-        },
-        "quantity": 6
-      },
-      {
-        "item": {
           "id": "arc-coolant",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/arc-coolant.webp",
           "name": "ARC Coolant",
@@ -13800,6 +13813,17 @@
           "description": "Obtained from ARC enemies or activities. Can be recycled into chemicals."
         },
         "quantity": 12
+      },
+      {
+        "item": {
+          "id": "pulse-mine",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/pulse-mine.webp",
+          "name": "Pulse Mine",
+          "rarity": "Uncommon",
+          "item_type": "Quick Use",
+          "description": "A proximity-triggered mine that pops up and knocks back anything within its radius"
+        },
+        "quantity": 6
       }
     ],
     "mods": [],
@@ -15902,6 +15926,17 @@
       }
     ],
     "used_in": [
+      {
+        "item": {
+          "id": "trigger-nade",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/trigger-nade.webp",
+          "name": "Trigger Nade",
+          "rarity": "Rare",
+          "item_type": "Quick Use",
+          "description": "A remote-detonated grenade that can stick to surfaces and ARC, dealing explosive damage when triggered."
+        },
+        "quantity": 2
+      },
       {
         "item": {
           "id": "explosive-compound",
@@ -19298,7 +19333,7 @@
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-arc-powercell.webp",
           "name": "Advanced ARC Powercell",
           "rarity": "Rare",
-          "item_type": "Misc"
+          "item_type": "Topside Material"
         }
       },
       {
@@ -19676,17 +19711,6 @@
     "used_in": [
       {
         "item": {
-          "id": "tempest-i",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/tempest-i.webp",
-          "name": "Tempest I",
-          "rarity": "Epic",
-          "item_type": "Weapon",
-          "description": "Fully automatic assault rifle with moderate fire rate and accuracy."
-        },
-        "quantity": 2
-      },
-      {
-        "item": {
           "id": "vulcano-i",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/vulcano-i.webp",
           "name": "Vulcano I",
@@ -19695,6 +19719,17 @@
           "description": "Semi-automatic shotgun with good bullet spread but sharp falloff."
         },
         "quantity": 1
+      },
+      {
+        "item": {
+          "id": "tempest-i",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/tempest-i.webp",
+          "name": "Tempest I",
+          "rarity": "Epic",
+          "item_type": "Weapon",
+          "description": "Fully automatic assault rifle with moderate fire rate and accuracy."
+        },
+        "quantity": 2
       },
       {
         "item": {
@@ -21453,11 +21488,12 @@
     ],
     "icon": "https://cdn.metaforge.app/arc-raiders/icons/extended-medium-mag-ii.webp",
     "rarity": "Uncommon",
-    "value": 0,
+    "value": 2000,
     "workbench": null,
     "stat_block": {
       "range": 0,
       "damage": 0,
+      "health": 0,
       "radius": 0,
       "shield": 0,
       "weight": 0.5,
@@ -21474,6 +21510,10 @@
       "damageMult": 0,
       "raiderStun": 0,
       "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
       "shieldCharge": 0,
       "backpackSlots": 0,
       "quickUseSlots": 0,
@@ -21487,23 +21527,52 @@
       "increasedADSSpeed": 0,
       "increasedFireRate": 0,
       "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
       "reducedUnequipTime": 0,
       "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
       "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
       "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
       "reducedDurabilityBurnRate": 0,
-      "increasedRecoilRecoveryTime": 0
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
     },
     "flavor_text": "+8 Magazine Size",
     "subcategory": null,
     "created_at": "2025-09-23T18:21:03.51415+00:00",
-    "updated_at": "2025-10-28T12:58:32.940898+00:00",
+    "updated_at": "2025-11-16T18:28:40.676798+00:00",
     "shield_type": null,
     "loot_area": null,
     "sources": null,
     "ammo_type": null,
     "locations": [],
-    "components": [],
+    "components": [
+      {
+        "quantity": 6,
+        "component": {
+          "id": "plastic-parts",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/plastic-parts.webp",
+          "name": "Plastic Parts",
+          "rarity": "Common",
+          "item_type": "Basic Material"
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "spring",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/spring.webp",
+          "name": "Steel Spring",
+          "rarity": "Uncommon",
+          "item_type": "Topside Material"
+        }
+      }
+    ],
     "used_in": [],
     "recycle_components": [],
     "recycle_from": [],
@@ -25081,7 +25150,7 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-14T13:27:28.602669+00:00",
-    "updated_at": "2025-11-14T19:33:59.018325+00:00",
+    "updated_at": "2025-11-16T13:33:37.388337+00:00",
     "shield_type": "",
     "loot_area": "Exodus",
     "sources": null,
@@ -33782,23 +33851,23 @@
       },
       {
         "item": {
-          "id": "tempest-i",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/tempest-i.webp",
-          "name": "Tempest I",
-          "rarity": "Epic",
-          "item_type": "Weapon",
-          "description": "Fully automatic assault rifle with moderate fire rate and accuracy."
-        },
-        "quantity": 1
-      },
-      {
-        "item": {
           "id": "vulcano-i",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/vulcano-i.webp",
           "name": "Vulcano I",
           "rarity": "Epic",
           "item_type": "Weapon",
           "description": "Semi-automatic shotgun with good bullet spread but sharp falloff."
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "id": "tempest-i",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/tempest-i.webp",
+          "name": "Tempest I",
+          "rarity": "Epic",
+          "item_type": "Weapon",
+          "description": "Fully automatic assault rifle with moderate fire rate and accuracy."
         },
         "quantity": 1
       },
@@ -34206,7 +34275,19 @@
     ],
     "recycle_from": [],
     "mods": [],
-    "dropped_by": [],
+    "dropped_by": [
+      {
+        "id": "c93e35ae-26d2-433b-a055-3b4a452a6b11",
+        "arc": {
+          "id": "matriarch",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/matriarch.webp",
+          "name": "Matriarch",
+          "description": "One of the latest Arcs to visit us Topside. This ARC shoots rockets, gas and a big shield which you need to be inside of to shoot it."
+        },
+        "arc_id": "matriarch",
+        "created_at": "2025-11-16T17:24:37.10499+00:00"
+      }
+    ],
     "sold_by": [],
     "recycle_value": 11000
   },
@@ -35336,17 +35417,6 @@
       },
       {
         "item": {
-          "id": "tempest-i",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/tempest-i.webp",
-          "name": "Tempest I",
-          "rarity": "Epic",
-          "item_type": "Weapon",
-          "description": "Fully automatic assault rifle with moderate fire rate and accuracy."
-        },
-        "quantity": 3
-      },
-      {
-        "item": {
           "id": "renegade-ii",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/renegade-ii.webp",
           "name": "Renegade II",
@@ -35355,6 +35425,17 @@
           "description": "Lever-action battle rifle with high damage output, accuracy, and headshot damage."
         },
         "quantity": 2
+      },
+      {
+        "item": {
+          "id": "tempest-i",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/tempest-i.webp",
+          "name": "Tempest I",
+          "rarity": "Epic",
+          "item_type": "Weapon",
+          "description": "Fully automatic assault rifle with moderate fire rate and accuracy."
+        },
+        "quantity": 3
       },
       {
         "item": {
@@ -40051,7 +40132,7 @@
   {
     "id": "patrol-car-key",
     "name": "Patrol Car Key",
-    "description": "Unlocks the rear door of a patrol car.",
+    "description": "Unlocks the rear door of a patrol car",
     "item_type": "Key",
     "loadout_slots": [],
     "icon": "https://cdn.metaforge.app/arc-raiders/icons/patrol-car-key.webp",
@@ -40064,7 +40145,7 @@
       "health": 0,
       "radius": 0,
       "shield": 0,
-      "weight": 0,
+      "weight": 0.25,
       "agility": 0,
       "arcStun": 0,
       "healing": 0,
@@ -40113,7 +40194,7 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-03T11:48:50.249657+00:00",
-    "updated_at": "2025-11-03T11:48:50.249657+00:00",
+    "updated_at": "2025-11-16T13:05:49.134516+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
@@ -40532,6 +40613,17 @@
           "rarity": "Common",
           "item_type": "Modification",
           "description": "Slightly extends the ammo capacity of compatible weapons that use medium ammo."
+        },
+        "quantity": 6
+      },
+      {
+        "item": {
+          "id": "extended-medium-mag-ii",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/extended-medium-mag-ii.webp",
+          "name": "Extended Medium Mag II",
+          "rarity": "Uncommon",
+          "item_type": "Modification",
+          "description": "Moderately extends the ammo capacity of compatible weapons that use medium ammo"
         },
         "quantity": 6
       },
@@ -42103,6 +42195,17 @@
       },
       {
         "item": {
+          "id": "trigger-nade",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/trigger-nade.webp",
+          "name": "Trigger Nade",
+          "rarity": "Rare",
+          "item_type": "Quick Use",
+          "description": "A remote-detonated grenade that can stick to surfaces and ARC, dealing explosive damage when triggered."
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
           "id": "combat-mk-3-aggressive",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/combat-mk-3-aggressive.webp",
           "name": "Combat Mk. 3 (Aggressive)",
@@ -42236,6 +42339,17 @@
           "description": "Can be recycled into crafting materials. "
         },
         "quantity": 2
+      },
+      {
+        "item": {
+          "id": "telemetry-transceiver",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/telemetry-transceiver.webp",
+          "name": "Telemetry Transceiver",
+          "rarity": "Rare",
+          "item_type": "Recyclable",
+          "description": "Can be recycled into crafting materials"
+        },
+        "quantity": 1
       }
     ],
     "mods": [],
@@ -42364,7 +42478,7 @@
       "duration": 0,
       "fireRate": 0,
       "stability": 0,
-      "stackSize": 0,
+      "stackSize": 3,
       "damageMult": 0,
       "raiderStun": 0,
       "weightLimit": 0,
@@ -42403,7 +42517,7 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-13T10:31:44.27174+00:00",
-    "updated_at": "2025-11-13T13:40:57.670807+00:00",
+    "updated_at": "2025-11-16T18:47:07.940184+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
@@ -42937,11 +43051,12 @@
     ],
     "icon": "https://cdn.metaforge.app/arc-raiders/icons/raider-hatch-key.webp",
     "rarity": "Rare",
-    "value": 1000,
+    "value": 2000,
     "workbench": null,
     "stat_block": {
       "range": 0,
       "damage": 0,
+      "health": 0,
       "radius": 0,
       "shield": 0,
       "weight": 0.01,
@@ -42958,6 +43073,10 @@
       "damageMult": 0,
       "raiderStun": 0,
       "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
+      "magazineSize": 0,
+      "reducedNoise": 0,
       "shieldCharge": 0,
       "backpackSlots": 0,
       "quickUseSlots": 0,
@@ -42971,17 +43090,25 @@
       "increasedADSSpeed": 0,
       "increasedFireRate": 0,
       "reducedReloadTime": 0,
+      "illuminationRadius": 0,
+      "increasedEquipTime": 0,
       "reducedUnequipTime": 0,
       "shieldCompatibility": "",
+      "increasedUnequipTime": 0,
       "reducedVerticalRecoil": 0,
+      "increasedBulletVelocity": 0,
       "increasedVerticalRecoil": 0,
+      "reducedMaxShotDispersion": 0,
+      "reducedPerShotDispersion": 0,
       "reducedDurabilityBurnRate": 0,
-      "increasedRecoilRecoveryTime": 0
+      "reducedRecoilRecoveryTime": 0,
+      "increasedRecoilRecoveryTime": 0,
+      "reducedDispersionRecoveryTime": 0
     },
     "flavor_text": null,
     "subcategory": null,
     "created_at": "2025-09-23T18:21:03.915759+00:00",
-    "updated_at": "2025-10-28T12:58:32.940898+00:00",
+    "updated_at": "2025-11-16T13:13:31.468413+00:00",
     "shield_type": null,
     "loot_area": null,
     "sources": null,
@@ -47941,17 +48068,6 @@
     "used_in": [
       {
         "item": {
-          "id": "explosive-mine",
-          "icon": "https://cdn.metaforge.app/arc-raiders/icons/jump-mine.webp",
-          "name": "Explosive Mine",
-          "rarity": "Rare",
-          "item_type": "Quick Use",
-          "description": "A proximity triggered mine that pops up and explodes, dealing damage to anything within its radius."
-        },
-        "quantity": 1
-      },
-      {
-        "item": {
           "id": "raider-hatch-key",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/raider-hatch-key.webp",
           "name": "Raider Hatch Key",
@@ -47960,6 +48076,17 @@
           "description": "Unlocks a Raider Hatch."
         },
         "quantity": 3
+      },
+      {
+        "item": {
+          "id": "explosive-mine",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/jump-mine.webp",
+          "name": "Explosive Mine",
+          "rarity": "Rare",
+          "item_type": "Quick Use",
+          "description": "A proximity triggered mine that pops up and explodes, dealing damage to anything within its radius."
+        },
+        "quantity": 1
       }
     ],
     "recycle_components": [
@@ -54272,6 +54399,17 @@
       },
       {
         "item": {
+          "id": "extended-medium-mag-ii",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/extended-medium-mag-ii.webp",
+          "name": "Extended Medium Mag II",
+          "rarity": "Uncommon",
+          "item_type": "Modification",
+          "description": "Moderately extends the ammo capacity of compatible weapons that use medium ammo"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
           "id": "extended-light-mag-ii",
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/extended-light-mag-ii.webp",
           "name": "Extended Light Mag II",
@@ -54471,7 +54609,7 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-13T19:57:12.596563+00:00",
-    "updated_at": "2025-11-14T14:17:37.4235+00:00",
+    "updated_at": "2025-11-16T14:19:28.995998+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
@@ -54556,7 +54694,7 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-13T17:34:45.720356+00:00",
-    "updated_at": "2025-11-13T17:45:03.814978+00:00",
+    "updated_at": "2025-11-16T14:19:58.287745+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
@@ -54636,7 +54774,7 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-13T18:50:20.332058+00:00",
-    "updated_at": "2025-11-13T18:50:20.332058+00:00",
+    "updated_at": "2025-11-16T14:20:20.076959+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
@@ -54716,7 +54854,7 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-14T16:24:07.904894+00:00",
-    "updated_at": "2025-11-14T16:24:31.424787+00:00",
+    "updated_at": "2025-11-16T14:20:40.695084+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
@@ -55656,7 +55794,7 @@
           "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-arc-powercell.webp",
           "name": "Advanced ARC Powercell",
           "rarity": "Rare",
-          "item_type": "Misc"
+          "item_type": "Topside Material"
         }
       }
     ],
@@ -57056,7 +57194,7 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-11-15T19:00:48.647001+00:00",
-    "updated_at": "2025-11-15T19:00:48.647001+00:00",
+    "updated_at": "2025-11-16T13:14:13.846401+00:00",
     "shield_type": "",
     "loot_area": "Exodus",
     "sources": null,
@@ -57064,12 +57202,35 @@
     "locations": [],
     "components": [],
     "used_in": [],
-    "recycle_components": [],
+    "recycle_components": [
+      {
+        "quantity": 1,
+        "component": {
+          "id": "advanced-electrical-components",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/advanced-electrical-components.webp",
+          "name": "Advanced Electrical Components",
+          "rarity": "Rare",
+          "item_type": "Refined Material",
+          "description": "Used to craft utility items and shield mods. Can be recycled into crafting materials. Used to craft: Raider Hatch Key, Photoelectric Cloak"
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "processor",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/processor.webp",
+          "name": "Processor",
+          "rarity": "Rare",
+          "item_type": "Topside Material",
+          "description": "Used in crafting."
+        }
+      }
+    ],
     "recycle_from": [],
     "mods": [],
     "dropped_by": [],
     "sold_by": [],
-    "recycle_value": 0
+    "recycle_value": 2250
   },
   {
     "id": "tempest-i",
@@ -57081,7 +57242,7 @@
     ],
     "icon": "https://cdn.metaforge.app/arc-raiders/icons/tempest-i.webp",
     "rarity": "Epic",
-    "value": 0,
+    "value": 13000,
     "workbench": "Weapon Bench 3",
     "stat_block": {
       "ammo": "medium",
@@ -57140,7 +57301,7 @@
     "flavor_text": "Somewhat effective against ARC armor plating",
     "subcategory": "Assault Rifle",
     "created_at": "2025-09-23T18:21:03.915759+00:00",
-    "updated_at": "2025-11-14T21:58:21.16007+00:00",
+    "updated_at": "2025-11-17T18:37:59.142262+00:00",
     "shield_type": null,
     "loot_area": null,
     "sources": null,
@@ -59081,6 +59242,8 @@
       "damageMult": 0,
       "raiderStun": 0,
       "weightLimit": 0,
+      "augmentSlots": 0,
+      "healingSlots": 0,
       "magazineSize": 0,
       "reducedNoise": 0,
       "shieldCharge": 0,
@@ -59114,13 +59277,34 @@
     "flavor_text": "",
     "subcategory": "",
     "created_at": "2025-10-08T13:27:36.918797+00:00",
-    "updated_at": "2025-10-28T12:58:32.940898+00:00",
+    "updated_at": "2025-11-17T04:50:03.16796+00:00",
     "shield_type": "",
     "loot_area": "",
     "sources": null,
     "ammo_type": "",
     "locations": [],
-    "components": [],
+    "components": [
+      {
+        "quantity": 2,
+        "component": {
+          "id": "crude-explosives",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/crude-explosives.webp",
+          "name": "Crude Explosives",
+          "rarity": "Uncommon",
+          "item_type": "Refined Material"
+        }
+      },
+      {
+        "quantity": 1,
+        "component": {
+          "id": "processor",
+          "icon": "https://cdn.metaforge.app/arc-raiders/icons/processor.webp",
+          "name": "Processor",
+          "rarity": "Rare",
+          "item_type": "Topside Material"
+        }
+      }
+    ],
     "used_in": [],
     "recycle_components": [],
     "recycle_from": [],
