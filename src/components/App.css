@@ -124,20 +124,20 @@ input:focus {
 }
 
 .common {
-  color: #6A6C6D;
+  color: #94999a;
   text-shadow: none;
 }
 .uncommon {
-  color: #26C057;
+  color: #26c057;
 }
 .rare {
-  color: #0AA7E6;
+  color: #0aa7e6;
 }
 .epic {
-  color: #D02E9B;
+  color: #d02e9b;
 }
 .legendary {
-  color: #FFC500;
+  color: #ffc500;
 }
 
 table {
@@ -155,8 +155,17 @@ td {
   vertical-align: top;
   white-space: nowrap;
   border-right: 1px solid #5f3125;
-  font-size: 17px;
+  font-size: 20px;
   font-family: "VT323", monospace;
+  position: relative;
+}
+
+@media (max-width: 1920px) {
+  th,
+  td {
+    font-size: 14px;
+    padding: clamp(6px, 2vw, 12px);
+  }
 }
 
 th {
@@ -166,6 +175,7 @@ th {
   user-select: none;
   text-shadow: 1px 1px 2px #000;
   border-top: 2px solid #6d3600;
+  text-align: center;
 }
 
 tr:hover {
@@ -305,4 +315,12 @@ td div:last-child {
   .search-icon {
     right: 12px;
   }
+}
+
+.clickable-item-search {
+  cursor: pointer;
+}
+
+.clickable-item-search:hover {
+  text-decoration: underline;
 }

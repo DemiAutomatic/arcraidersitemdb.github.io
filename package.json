@@ -8,9 +8,10 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prebuild": "node fetch-data.js"
+    "prebuild": "node prebuild.js"
   },
   "dependencies": {
+    "@types/react-window": "^2.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

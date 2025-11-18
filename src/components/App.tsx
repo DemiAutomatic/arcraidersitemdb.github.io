@@ -1,44 +1,56 @@
-import { useState, useMemo } from "react";
-import Items from "../data/items-api.json";
-import Quests from "../data/quests-api.json";
-import Hideout from "../data/workbenches.json";
+import { useState, useMemo, useRef } from "react";
+import Items from "../data/items.json";
+import Quests from "../data/quests.json";
+import Workbenches from "../data/workbenches.json";
 import Projects from "../data/projects.json";
 import "./App.css";
 
 function App() {
-  const [search, setSearch] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState("");
   const [sortColumn, setSortColumn] = useState("name");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
+  const debounceTimer = useRef<number | null>(null);
 
-  // Create lookup maps for performance - computed once on load
-  const { questRequirementsMap, hideoutRequirementsMap, projectRequirementsMap } = useMemo(() => {
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    debounceTimer.current && clearTimeout(debounceTimer.current);
+    debounceTimer.current = null;
+    debounceTimer.current = setTimeout(() => {
+      setDebouncedSearch(e.target.value);
+    }, 300);
+  };
+
+  const { questRequirementsMap, workbenchRequirementsMap, projectRequirementsMap, itemLookup } = useMemo(() => {
     const questMap: Record<string, { questName: string; quantity: number }[]> = {};
-    const hideoutMap: Record<string, { moduleName: string; level: number; quantity: number }[]> = {};
+    const workbenchMap: Record<string, { moduleName: string; level: number; quantity: number }[]> = {};
     const projectMap: Record<string, { projectName: string; phase: number; quantity: number }[]> = {};
+    const itemLookup: Record<string, any> = {};
 
-    // Build quest requirements map
+    Items.forEach((item) => {
+      itemLookup[item.id] = item;
+      (item as any).lowercaseName = item.name.en.toLowerCase();
+    });
+
     Quests.forEach((quest) => {
-      const questName = quest.name;
+      const questName = quest.name.en;
 
-      // Check required_items array
-      quest.required_items?.forEach((req: any) => {
-        if (!questMap[req.item_id]) {
-          questMap[req.item_id] = [];
+      quest.requiredItemIds?.forEach((req: any) => {
+        if (!questMap[req.itemId]) {
+          questMap[req.itemId] = [];
         }
-        questMap[req.item_id].push({
+        questMap[req.itemId].push({
           questName,
           quantity: req.quantity,
         });
       });
 
-      // Also check objectives text for additional patterns
       const itemNameMap: Record<string, string> = {};
       Items.forEach((item) => {
-        itemNameMap[item.id] = item.name;
+        itemNameMap[item.id] = item.name.en;
       });
 
-      quest.objectives?.forEach((objText: string) => {
+      quest.objectives?.forEach((locales: { [index: string]: string }) => {
         const patterns = [/^Obtain (\d+) (.+)$/i, /^Get (\d+) (.+) for/i, /^Collect (\d+) (.+)$/i, /^Gather (\d+) (.+)$/i, /^Find (\d+) (.+)$/i];
+        const objText = locales.en;
 
         for (const pattern of patterns) {
           const match = objText.match(pattern);
@@ -46,7 +58,6 @@ function App() {
             const quantity = parseInt(match[1]);
             const requiredItemName = match[2].trim();
 
-            // Find the item ID by name
             const itemId = Object.keys(itemNameMap).find((id) => itemNameMap[id].toLowerCase() === requiredItemName.toLowerCase());
 
             if (itemId && !questMap[itemId]?.some((req) => req.questName === questName)) {
@@ -64,16 +75,15 @@ function App() {
       });
     });
 
-    // Build hideout requirements map
-    Hideout.forEach((module) => {
+    Workbenches.forEach((module) => {
       const moduleName = module.name.en || module.id;
 
       module.levels?.forEach((level) => {
         level.requirementItemIds?.forEach((req) => {
-          if (!hideoutMap[req.itemId]) {
-            hideoutMap[req.itemId] = [];
+          if (!workbenchMap[req.itemId]) {
+            workbenchMap[req.itemId] = [];
           }
-          hideoutMap[req.itemId].push({
+          workbenchMap[req.itemId].push({
             moduleName,
             level: level.level,
             quantity: req.quantity,
@@ -82,7 +92,6 @@ function App() {
       });
     });
 
-    // Build project requirements map
     Projects.forEach((project) => {
       const projectName = project.name.en || project.id;
 
@@ -100,8 +109,8 @@ function App() {
       });
     });
 
-    return { questRequirementsMap: questMap, hideoutRequirementsMap: hideoutMap, projectRequirementsMap: projectMap };
-  }, []); // No dependencies since data is static
+    return { questRequirementsMap: questMap, workbenchRequirementsMap: workbenchMap, projectRequirementsMap: projectMap, itemLookup: itemLookup };
+  }, []);
 
   const handleSort = (column: string) => {
     if (sortColumn === column) {
@@ -115,25 +124,25 @@ function App() {
   const getSortValue = (item: any, column: string) => {
     switch (column) {
       case "name":
-        return item.name;
+        return item.name.en;
       case "value":
         return item.value || 0;
       case "type":
-        return item.item_type || "";
+        return item.type || "";
       case "rarity":
         return item.rarity || "";
       case "recyclesTo":
-        return (item.recycle_components ? item.recycle_components.length : 0).toString();
+        return (item.recyclesInto ? Object.keys(item.recyclesInto).length : 0).toString();
       case "recycledFrom":
-        return (item.recycle_components ? item.recycle_components.length : 0).toString();
+        return Object.keys(item.recycledFrom).length.toString();
       case "droppedBy":
-        return (item.dropped_by ? item.dropped_by.length : 0).toString();
+        return (item.droppedBy ? item.droppedBy.length : 0).toString();
       case "recycleValue":
-        return item.recycle_value || 0;
+        return item.recycleValue || 0;
       case "Quests":
         return (questRequirementsMap[item.id] || []).length.toString();
-      case "HideoutUpgrades":
-        return (hideoutRequirementsMap[item.id] || []).length.toString();
+      case "WorkbenchUpgrades":
+        return (workbenchRequirementsMap[item.id] || []).length.toString();
       case "Projects":
         return (projectRequirementsMap[item.id] || []).length.toString();
       default:
@@ -141,41 +150,37 @@ function App() {
     }
   };
 
-  // Simplified functions that use the pre-computed maps
   const getQuestRequirements = (itemId: string) => questRequirementsMap[itemId] || [];
-  const getHideoutRequirements = (itemId: string) => hideoutRequirementsMap[itemId] || [];
+  const getWorkbenchRequirements = (itemId: string) => workbenchRequirementsMap[itemId] || [];
   const getProjectRequirements = (itemId: string) => projectRequirementsMap[itemId] || [];
 
-  const filtered = Items.filter((item) => {
-    const name = item.name;
-    return name.toLowerCase().includes(search.toLowerCase());
-  });
+  const filtered = useMemo(() => Items.filter((item) => (item as any).lowercaseName.includes(debouncedSearch.toLowerCase())), [debouncedSearch]);
 
-  const filteredItems = filtered.sort((a, b) => {
-    const aValue = getSortValue(a, sortColumn);
-    const bValue = getSortValue(b, sortColumn);
+  const filteredItems = useMemo(() => {
+    return filtered.sort((a, b) => {
+      const aValue = getSortValue(a, sortColumn);
+      const bValue = getSortValue(b, sortColumn);
 
-    // For numeric columns (counts), sort numerically
-    if (["value", "recyclesTo", "recycledFrom", "droppedBy", "recycleValue", "Quests", "HideoutUpgrades", "Projects"].includes(sortColumn)) {
-      const aNum = parseInt(aValue) || 0;
-      const bNum = parseInt(bValue) || 0;
-      return sortDirection === "asc" ? aNum - bNum : bNum - aNum;
-    }
+      if (["value", "recyclesTo", "recycledFrom", "droppedBy", "recycleValue", "Quests", "WorkbenchUpgrades", "Projects"].includes(sortColumn)) {
+        const aNum = parseInt(aValue) || 0;
+        const bNum = parseInt(bValue) || 0;
+        return sortDirection === "asc" ? aNum - bNum : bNum - aNum;
+      }
 
-    // For text columns, sort alphabetically
-    if (sortDirection === "asc") {
-      return aValue.localeCompare(bValue);
-    } else {
-      return bValue.localeCompare(aValue);
-    }
-  });
+      if (sortDirection === "asc") {
+        return aValue.localeCompare(bValue);
+      } else {
+        return bValue.localeCompare(aValue);
+      }
+    });
+  }, [filtered, sortColumn, sortDirection]);
 
   return (
     <div>
       <img src="https://cdn1.epicgames.com/spt-assets/9e8b37541e614575b4de303d2c2e44cf/arc-raiders-weavs.jpg" alt="ARC Raiders Logo" className="logo" />
       <h1>Item Database</h1>
       <div className="search-container">
-        <input type="text" placeholder="Search for an item..." value={search} onChange={(e) => setSearch(e.target.value)} />
+        <input type="text" placeholder="Search for an item..." onChange={handleSearchChange} />
       </div>
       <div className="table-container">
         <table>
@@ -184,8 +189,8 @@ function App() {
               <th onClick={() => handleSort("name")} style={{ cursor: "pointer" }}>
                 Item {sortColumn === "name" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
-              <th onClick={() => handleSort("value")} style={{ cursor: "pointer" }}>
-                Value: Sell/Recycle {sortColumn === "value" && (sortDirection === "asc" ? "↑" : "↓")}
+              <th onClick={() => handleSort("value")} style={{ cursor: "pointer", textAlign: "center" }}>
+                Value: <br /> Sell/Recycle/Salvage {sortColumn === "value" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
               <th onClick={() => handleSort("type")} style={{ cursor: "pointer" }}>
                 Type {sortColumn === "type" && (sortDirection === "asc" ? "↑" : "↓")}
@@ -195,6 +200,9 @@ function App() {
               </th>
               <th onClick={() => handleSort("recyclesTo")} style={{ cursor: "pointer" }}>
                 Recycles To {sortColumn === "recyclesTo" && (sortDirection === "asc" ? "↑" : "↓")}
+              </th>
+              <th onClick={() => handleSort("salvagesTo")} style={{ cursor: "pointer" }}>
+                Salvages To {sortColumn === "salvagesTo" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
               <th onClick={() => handleSort("recycledFrom")} style={{ cursor: "pointer" }}>
                 Recycled From {sortColumn === "recycledFrom" && (sortDirection === "asc" ? "↑" : "↓")}
@@ -206,8 +214,8 @@ function App() {
                 Quests {sortColumn === "Quests" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
 
-              <th onClick={() => handleSort("HideoutUpgrades")} style={{ cursor: "pointer" }}>
-                Upgrades {sortColumn === "HideoutUpgrades" && (sortDirection === "asc" ? "↑" : "↓")}
+              <th onClick={() => handleSort("WorkbenchUpgrades")} style={{ cursor: "pointer" }}>
+                Upgrades {sortColumn === "WorkbenchUpgrades" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
               <th onClick={() => handleSort("Projects")} style={{ cursor: "pointer" }}>
                 Projects {sortColumn === "Projects" && (sortDirection === "asc" ? "↑" : "↓")}
@@ -215,20 +223,22 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            {filteredItems.map((item, index) => {
+            {filteredItems.slice(0, 50).map((item, index) => {
               const questReqs = getQuestRequirements(item.id);
-              const hideoutReqs = getHideoutRequirements(item.id);
+              const workbenchReqs = getWorkbenchRequirements(item.id);
               const projectReqs = getProjectRequirements(item.id);
+
+              const highestValue = Math.max(item.value || 0, item.recycleValue || 0, item.salvageValue || 0);
 
               return (
                 <tr key={item.id || index}>
-                  <td style={{ whiteSpace: "wrap" }}>{item.name}</td>
+                  <td style={{ whiteSpace: "wrap" }}>{item.name.en}</td>
                   <td>
                     <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
                       <span
                         style={{
-                          color: (item.value || 0) > (item.recycle_value || 0) ? "#4CAF50" : "#666",
-                          fontWeight: (item.value || 0) > (item.recycle_value || 0) ? "bold" : "normal",
+                          color: highestValue > 0 && item.value == highestValue ? "#4CAF50" : "#666",
+                          fontWeight: highestValue > 0 && item.value == highestValue ? "bold" : "normal",
                         }}
                       >
                         {item.value !== undefined ? item.value : "-"}
@@ -236,53 +246,83 @@ function App() {
                       <span style={{ color: "#999" }}>/</span>
                       <span
                         style={{
-                          color: (item.recycle_value || 0) > (item.value || 0) ? "#4CAF50" : "#666",
-                          fontWeight: (item.recycle_value || 0) > (item.value || 0) ? "bold" : "normal",
+                          color: highestValue > 0 && item.recycleValue == highestValue ? "#4CAF50" : "#666",
+                          fontWeight: highestValue > 0 && item.recycleValue == highestValue ? "bold" : "normal",
                         }}
                       >
-                        {item.recycle_components && item.recycle_components.length > 0 ? item.recycle_value : 0}
+                        {item.recycleValue}
                       </span>
+                      <span style={{ color: "#999" }}>/</span>
+                      <span style={{ color: highestValue > 0 && item.salvageValue == highestValue ? "#4CAF50" : "#666", fontWeight: highestValue > 0 && item.salvageValue == highestValue ? "bold" : "normal" }}>{item.salvageValue !== undefined ? item.salvageValue : "-"}</span>
                     </div>
                   </td>
-                  <td>{item.item_type}</td>
+                  <td>{item.type}</td>
                   <td className={item.rarity ? item.rarity.toLowerCase() : ""}>{item.rarity}</td>
                   <td>
-                    {item.recycle_components && item.recycle_components.length > 0 ? (
-                      item.recycle_components.map((recycle: any, idx: number) => {
-                        const recycleName = recycle.component?.name || recycle.component?.id || `Unknown (${recycle.component?.id})`;
+                    {item.recyclesInto ? (
+                      Object.keys(item.recyclesInto).map((recycle: string, idx: number) => {
+                        const recycleItem = itemLookup[recycle];
+                        const recycleName = recycleItem?.name.en || `Unknown (${recycleItem?.id})`;
                         return (
-                          <div key={idx}>
-                            {recycleName} x{recycle.quantity}
+                          <div key={idx} style={{ cursor: "pointer" }} onClick={() => setDebouncedSearch(recycleName)}>
+                            {/* @ts-ignore */}
+                            {recycleName} x{item.recyclesInto[recycle]}
                           </div>
                         );
                       })
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                   <td>
-                    {item.recycle_from && item.recycle_from.length > 0 ? (
-                      item.recycle_from
-                        .sort((a: any, b: any) => a.item.name.localeCompare(b.item.name))
-                        .map((recycle: any, idx: number) => {
-                          const recycleItem = recycle.item;
-                          const recycleName = recycleItem?.name || recycleItem?.id || `Unknown (${recycleItem?.id})`;
+                    {item.salvagesInto ? (
+                      Object.keys(item.salvagesInto).map((salvage: string, idx: number) => {
+                        const salvageItem = itemLookup[salvage];
+                        const salvageName = salvageItem?.name.en || `Unknown (${salvageItem?.id})`;
+                        return (
+                          <div key={idx} style={{ cursor: "pointer" }} onClick={() => setDebouncedSearch(salvageName)}>
+                            {/* @ts-ignore */}
+                            {salvageName} x{item.salvagesInto[salvage]}
+                          </div>
+                        );
+                      })
+                    ) : item.recyclesInto ? (
+                      Object.keys(item.recyclesInto).map((recycle: string, idx: number) => {
+                        const recycleItem = itemLookup[recycle];
+                        const recycleName = recycleItem?.name.en || `Unknown (${recycleItem?.id})`;
+                        return (
+                          <div key={idx} style={{ cursor: "pointer" }} onClick={() => setDebouncedSearch(recycleName)}>
+                            {/* @ts-ignore */}
+                            {recycleName} x{item.recyclesInto[recycle]}
+                          </div>
+                        );
+                      })
+                    ) : (
+                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    )}
+                  </td>
+                  <td>
+                    {Object.keys(item.recycledFrom).length > 0 ? (
+                      Object.entries(item.recycledFrom)
+                        .sort(([aId], [bId]) => (itemLookup[aId]?.name?.en || "").localeCompare(itemLookup[bId]?.name?.en || ""))
+                        .map(([itemId, qty], idx) => {
+                          const recycleItem = itemLookup[itemId];
+                          const recycleName = recycleItem?.name?.en || `Unknown (${itemId})`;
                           return (
-                            <div key={idx}>
-                              {recycleName} x{recycle.quantity}
+                            <div key={idx} style={{ cursor: "pointer" }} onClick={() => setDebouncedSearch(recycleName)}>
+                              {recycleName} x{qty}
                             </div>
                           );
                         })
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                   <td>
-                    {item.dropped_by && item.dropped_by.length > 0 ? (
-                      item.dropped_by
-                        .sort((a: any, b: any) => a.arc.name.localeCompare(b.arc.name))
-                        .map((enemy: any, idx: number) => {
-                          const arc = enemy.arc;
+                    {item.droppedBy && item.droppedBy.length > 0 ? (
+                      item.droppedBy
+                        .sort((a: any, b: any) => a.name.localeCompare(b.name))
+                        .map((arc: any, idx: number) => {
                           const enemyName = arc?.name || arc?.id || `Unknown (${arc?.id})`;
                           return (
                             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }} key={idx}>
@@ -292,29 +332,41 @@ function App() {
                           );
                         })
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                   <td>
-                    {questReqs.map((req, idx) => (
-                      <div key={idx}>
-                        {req.questName} x{req.quantity}
-                      </div>
-                    ))}
+                    {questReqs.length > 0 ? (
+                      questReqs.map((req, idx) => (
+                        <div key={idx}>
+                          {req.questName} x{req.quantity}
+                        </div>
+                      ))
+                    ) : (
+                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    )}
                   </td>
                   <td>
-                    {hideoutReqs.map((req, idx) => (
-                      <div key={idx}>
-                        {req.moduleName} Lv.{req.level} x{req.quantity}
-                      </div>
-                    ))}
+                    {workbenchReqs.length > 0 ? (
+                      workbenchReqs.map((req, idx) => (
+                        <div key={idx}>
+                          {req.moduleName} Lv.{req.level} x{req.quantity}
+                        </div>
+                      ))
+                    ) : (
+                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    )}
                   </td>
                   <td>
-                    {projectReqs.map((req, idx) => (
-                      <div key={idx}>
-                        {req.projectName} Ph.{req.phase} x{req.quantity}
-                      </div>
-                    ))}
+                    {projectReqs.length > 0 ? (
+                      projectReqs.map((req, idx) => (
+                        <div key={idx}>
+                          {req.projectName} Ph.{req.phase} x{req.quantity}
+                        </div>
+                      ))
+                    ) : (
+                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    )}
                   </td>
                 </tr>
               );
@@ -327,16 +379,17 @@ function App() {
       <div className="mobile-cards">
         {filteredItems.map((item, index) => {
           const questReqs = getQuestRequirements(item.id);
-          const hideoutReqs = getHideoutRequirements(item.id);
+          const workbenchReqs = getWorkbenchRequirements(item.id);
           const projectReqs = getProjectRequirements(item.id);
+          const highestValue = Math.max(item.value || 0, item.recycleValue || 0, item.salvageValue || 0);
 
           return (
             <div key={item.id || index} className="mobile-card">
-              <div className="card-title">{item.name}</div>
+              <div className="card-title">{item.name.en}</div>
 
               <div className="card-row">
                 <span className="card-label">Type:</span>
-                <span className="card-value">{item.item_type}</span>
+                <span className="card-value">{item.type}</span>
               </div>
 
               <div className="card-row">
@@ -345,12 +398,12 @@ function App() {
               </div>
 
               <div className="card-row">
-                <span className="card-label">Value/Recycle:</span>
-                <div className="card-value" style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                <span className="card-label">Sell/Recycle/Salvage:</span>
+                <div className="card-value" style={{ display: "flex", gap: "8px", alignItems: "center", justifyContent: "flex-end" }}>
                   <span
                     style={{
-                      color: (item.value || 0) > (item.recycle_value || 0) ? "#4CAF50" : "#666",
-                      fontWeight: (item.value || 0) > (item.recycle_value || 0) ? "bold" : "normal",
+                      color: highestValue > 0 && item.value == highestValue ? "#4CAF50" : "#666",
+                      fontWeight: highestValue > 0 && item.value == highestValue ? "bold" : "normal",
                     }}
                   >
                     {item.value !== undefined ? item.value : "-"}
@@ -358,29 +411,51 @@ function App() {
                   <span style={{ color: "#999" }}>/</span>
                   <span
                     style={{
-                      color: (item.recycle_value || 0) > (item.value || 0) ? "#4CAF50" : "#666",
-                      fontWeight: (item.recycle_value || 0) > (item.value || 0) ? "bold" : "normal",
+                      color: highestValue > 0 && item.recycleValue == highestValue ? "#4CAF50" : "#666",
+                      fontWeight: highestValue > 0 && item.recycleValue == highestValue ? "bold" : "normal",
                     }}
                   >
-                    {item.recycle_components && item.recycle_components.length > 0 ? item.recycle_value : 0}
+                    {item.recycleValue}
                   </span>
+                  <span style={{ color: "#999" }}>/</span>
+                  <span style={{ color: highestValue > 0 && item.salvageValue == highestValue ? "#4CAF50" : "#666", fontWeight: highestValue > 0 && item.salvageValue == highestValue ? "bold" : "normal" }}>{item.salvageValue !== undefined ? item.salvageValue : "-"}</span>
                 </div>
               </div>
 
               <div className="card-row">
                 <span className="card-label">Recycle To:</span>
                 <div className="card-value">
-                  {item.recycle_components && item.recycle_components.length > 0 ? (
-                    item.recycle_components.map((recycle: any, idx: number) => {
-                      const recycleName = recycle.component?.name || recycle.component?.id || `Unknown (${recycle.component?.id})`;
+                  {item.recyclesInto ? (
+                    Object.keys(item.recyclesInto).map((recycle: string, idx: number) => {
+                      const recycleItem = itemLookup[recycle];
+                      const recycleName = recycleItem?.name.en || `Unknown (${recycleItem?.id})`;
                       return (
                         <div key={idx}>
-                          {recycleName} x{recycle.quantity}
+                          {recycleName} x{item.recyclesInto[recycle as keyof typeof item.recyclesInto]}
                         </div>
                       );
                     })
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                  )}
+                </div>
+              </div>
+
+              <div className="card-row">
+                <span className="card-label">Salvage To:</span>
+                <div className="card-value">
+                  {item.salvagesInto ? (
+                    Object.keys(item.salvagesInto).map((salvage: string, idx: number) => {
+                      const salvageItem = itemLookup[salvage];
+                      const salvageName = salvageItem?.name.en || `Unknown (${salvageItem?.id})`;
+                      return (
+                        <div key={idx}>
+                          {salvageName} x{item.salvagesInto[salvage as keyof typeof item.salvagesInto]}
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
@@ -388,18 +463,18 @@ function App() {
               <div className="card-row">
                 <span className="card-label">Recycle From:</span>
                 <div className="card-value">
-                  {item.recycle_from && item.recycle_from.length > 0 ? (
-                    item.recycle_from.map((recycle: any, idx: number) => {
-                      const recycleItem = recycle.item;
-                      const recycleName = recycleItem?.name || recycleItem?.id || `Unknown (${recycleItem?.id})`;
+                  {Object.keys(item.recycledFrom).length > 0 ? (
+                    Object.keys(item.recycledFrom).map((recycle: any, idx: number) => {
+                      const recycleItem = itemLookup[recycle];
+                      const recycleName = recycleItem?.name.en || `Unknown (${recycleItem?.id})`;
                       return (
                         <div key={idx}>
-                          {recycleName} x{recycle.quantity}
+                          {recycleName} x{item.recycledFrom[recycle as keyof typeof item.recycledFrom]}
                         </div>
                       );
                     })
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No recycling data</span>
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
@@ -407,21 +482,20 @@ function App() {
               <div className="card-row">
                 <span className="card-label">Dropped By:</span>
                 <div className="card-value">
-                  {item.dropped_by && item.dropped_by.length > 0 ? (
-                    item.dropped_by
-                      .sort((a: any, b: any) => a.arc.name.localeCompare(b.arc.name))
-                      .map((enemy: any, idx: number) => {
-                        const arc = enemy.arc;
+                  {item.droppedBy && item.droppedBy.length > 0 ? (
+                    item.droppedBy
+                      .sort((a: any, b: any) => a.name.localeCompare(b.arc))
+                      .map((arc: any, idx: number) => {
                         const enemyName = arc?.name || arc?.id || `Unknown (${arc?.id})`;
                         return (
-                          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }} key={idx}>
+                          <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: '10px' }} key={idx}>
                             {enemyName}
                             <div style={{ width: "30px", height: "30px", backgroundImage: `url(${arc.icon})`, backgroundSize: "contain", backgroundRepeat: "no-repeat" }} />
                           </div>
                         );
                       })
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No dropped by data</span>
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
@@ -429,33 +503,45 @@ function App() {
               <div className="card-row">
                 <span className="card-label">Quests:</span>
                 <div className="card-value">
-                  {questReqs.map((req, idx) => (
-                    <div key={idx}>
-                      {req.questName} x{req.quantity}
-                    </div>
-                  ))}
+                  {questReqs.length > 0 ? (
+                    questReqs.map((req, idx) => (
+                      <div key={idx}>
+                        {req.questName} x{req.quantity}
+                      </div>
+                    ))
+                  ) : (
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                  )}
                 </div>
               </div>
 
               <div className="card-row">
-                <span className="card-label">Hideout Upgrades:</span>
+                <span className="card-label">Workbench Upgrades:</span>
                 <div className="card-value">
-                  {hideoutReqs.map((req, idx) => (
-                    <div key={idx}>
-                      {req.moduleName} Lv.{req.level} x{req.quantity}
-                    </div>
-                  ))}
+                  {workbenchReqs.length > 0 ? (
+                    workbenchReqs.map((req, idx) => (
+                      <div key={idx}>
+                        {req.moduleName} Lv.{req.level} x{req.quantity}
+                      </div>
+                    ))
+                  ) : (
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                  )}
                 </div>
               </div>
 
               <div className="card-row" style={{ borderBottom: "none" }}>
                 <span className="card-label">Projects:</span>
                 <div className="card-value">
-                  {projectReqs.map((req, idx) => (
-                    <div key={idx}>
-                      {req.projectName} Ph.{req.phase} x{req.quantity}
-                    </div>
-                  ))}
+                  {projectReqs.length > 0 ? (
+                    projectReqs.map((req, idx) => (
+                      <div key={idx}>
+                        {req.projectName} Ph.{req.phase} x{req.quantity}
+                      </div>
+                    ))
+                  ) : (
+                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                  )}
                 </div>
               </div>
             </div>
