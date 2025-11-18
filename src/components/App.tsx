@@ -5,6 +5,8 @@ import Workbenches from "../data/workbenches.json";
 import Projects from "../data/projects.json";
 import "./App.css";
 
+import { Github, Kofi, Currency } from "../icons";
+
 function App() {
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [sortColumn, setSortColumn] = useState("name");
@@ -186,8 +188,21 @@ function App() {
 
   return (
     <div>
-      <img src="https://cdn1.epicgames.com/spt-assets/9e8b37541e614575b4de303d2c2e44cf/arc-raiders-weavs.jpg" alt="ARC Raiders Logo" className="logo" />
-      <h1>Item Database</h1>
+      <div className="logo"></div>
+      <div className="links">
+        <div className="link gitHub">
+          <a href="https://github.com/DemiAutomatic/arcraidersitemdb" target="_blank" rel="noopener noreferrer">
+            <Github />
+          </a>
+          <p>GitHub</p>
+        </div>
+        <div className="link kofi">
+          <a href="https://ko-fi.com/demiautomatic" target="_blank" rel="noopener noreferrer">
+            <Kofi />
+          </a>
+          <p>Support</p>
+        </div>
+      </div>
       <div className="search-container">
         <input ref={searchInputRef} type="text" placeholder="Search for an item..." onChange={handleSearchChange} />
       </div>
@@ -199,7 +214,7 @@ function App() {
                 Item {sortColumn === "name" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
               <th onClick={() => handleSort("value")} style={{ cursor: "pointer", textAlign: "center" }}>
-                Value: <br /> Sell/Recycle/Salvage {sortColumn === "value" && (sortDirection === "asc" ? "↑" : "↓")}
+                Sell/Recycle/Salvage {sortColumn === "value" && (sortDirection === "asc" ? "↑" : "↓")}
               </th>
               <th onClick={() => handleSort("type")} style={{ cursor: "pointer" }}>
                 Type {sortColumn === "type" && (sortDirection === "asc" ? "↑" : "↓")}
@@ -244,9 +259,10 @@ function App() {
                   <td style={{ whiteSpace: "wrap" }}>{item.name.en}</td>
                   <td>
                     <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                      <Currency style={{ width: "1em" }} />
                       <span
                         style={{
-                          color: highestValue > 0 && item.value == highestValue ? "#4CAF50" : "#666",
+                          color: highestValue > 0 && item.value == highestValue ? "#4CAF50" : "var(--text-muted)",
                           fontWeight: highestValue > 0 && item.value == highestValue ? "bold" : "normal",
                         }}
                       >
@@ -255,14 +271,14 @@ function App() {
                       <span style={{ color: "#999" }}>/</span>
                       <span
                         style={{
-                          color: highestValue > 0 && item.recycleValue == highestValue ? "#4CAF50" : "#666",
+                          color: highestValue > 0 && item.recycleValue == highestValue ? "#4CAF50" : "var(--text-muted)",
                           fontWeight: highestValue > 0 && item.recycleValue == highestValue ? "bold" : "normal",
                         }}
                       >
                         {item.recycleValue}
                       </span>
                       <span style={{ color: "#999" }}>/</span>
-                      <span style={{ color: highestValue > 0 && item.salvageValue == highestValue ? "#4CAF50" : "#666", fontWeight: highestValue > 0 && item.salvageValue == highestValue ? "bold" : "normal" }}>{item.salvageValue !== undefined ? item.salvageValue : "-"}</span>
+                      <span style={{ color: highestValue > 0 && item.salvageValue == highestValue ? "#4CAF50" : "var(--text-muted)", fontWeight: highestValue > 0 && item.salvageValue == highestValue ? "bold" : "normal" }}>{item.salvageValue !== undefined ? item.salvageValue : "-"}</span>
                     </div>
                   </td>
                   <td>{item.type}</td>
@@ -280,7 +296,7 @@ function App() {
                         );
                       })
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                      <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                   <td>
@@ -307,7 +323,7 @@ function App() {
                         );
                       })
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                      <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                   <td>
@@ -324,7 +340,7 @@ function App() {
                           );
                         })
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                      <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                   <td>
@@ -341,7 +357,7 @@ function App() {
                           );
                         })
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                      <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                   <td>
@@ -352,7 +368,7 @@ function App() {
                         </div>
                       ))
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                      <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                   <td>
@@ -363,7 +379,7 @@ function App() {
                         </div>
                       ))
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                      <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                   <td>
@@ -374,7 +390,7 @@ function App() {
                         </div>
                       ))
                     ) : (
-                      <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                      <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                     )}
                   </td>
                 </tr>
@@ -411,7 +427,7 @@ function App() {
                 <div className="card-value" style={{ display: "flex", gap: "8px", alignItems: "center", justifyContent: "flex-end" }}>
                   <span
                     style={{
-                      color: highestValue > 0 && item.value == highestValue ? "#4CAF50" : "#666",
+                      color: highestValue > 0 && item.value == highestValue ? "#4CAF50" : "var(--text-muted)",
                       fontWeight: highestValue > 0 && item.value == highestValue ? "bold" : "normal",
                     }}
                   >
@@ -420,14 +436,14 @@ function App() {
                   <span style={{ color: "#999" }}>/</span>
                   <span
                     style={{
-                      color: highestValue > 0 && item.recycleValue == highestValue ? "#4CAF50" : "#666",
+                      color: highestValue > 0 && item.recycleValue == highestValue ? "#4CAF50" : "var(--text-muted)",
                       fontWeight: highestValue > 0 && item.recycleValue == highestValue ? "bold" : "normal",
                     }}
                   >
                     {item.recycleValue}
                   </span>
                   <span style={{ color: "#999" }}>/</span>
-                  <span style={{ color: highestValue > 0 && item.salvageValue == highestValue ? "#4CAF50" : "#666", fontWeight: highestValue > 0 && item.salvageValue == highestValue ? "bold" : "normal" }}>{item.salvageValue !== undefined ? item.salvageValue : "-"}</span>
+                  <span style={{ color: highestValue > 0 && item.salvageValue == highestValue ? "#4CAF50" : "var(--text-muted)", fontWeight: highestValue > 0 && item.salvageValue == highestValue ? "bold" : "normal" }}>{item.salvageValue !== undefined ? item.salvageValue : "-"}</span>
                 </div>
               </div>
 
@@ -445,7 +461,7 @@ function App() {
                       );
                     })
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
@@ -464,7 +480,7 @@ function App() {
                       );
                     })
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
@@ -483,7 +499,7 @@ function App() {
                       );
                     })
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
@@ -504,7 +520,7 @@ function App() {
                         );
                       })
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
@@ -519,7 +535,7 @@ function App() {
                       </div>
                     ))
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
@@ -534,7 +550,7 @@ function App() {
                       </div>
                     ))
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
@@ -549,7 +565,7 @@ function App() {
                       </div>
                     ))
                   ) : (
-                    <span style={{ color: "#666", fontStyle: "italic" }}>No Data</span>
+                    <span style={{ color: "var(--text-muted)", fontStyle: "italic" }}>No Data</span>
                   )}
                 </div>
               </div>
