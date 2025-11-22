@@ -273,9 +273,9 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "A Bad Feeling",
-            "de": "Ein schlechtes Gefühl",
+            "de": "Ein ungutes Gefühl",
             "fr": "Un mauvais pressentiment",
-            "es": "Una mala sensación",
+            "es": "Un mal presentimiento",
             "pt": "Um mau pressentimento",
             "pl": "Złe przeczucie",
             "no": "En dårlig følelse",
@@ -292,10 +292,13 @@
             "hr": "Loš Predosjećaj"
         },
         "trader": "Celeste",
+        "description": {
+            "de": "Schon die kleinste Änderung am Verhalten der ARC könnte eine Katastrophe bedeuten. Und das Signal, das du gehört hast? Sowas haven wir noch nie aufgefangen. Wenn die irgendwas vorhaben, müssen wir das unbedint herausfinden."
+        },
         "objectives": [
             {
                 "en": "Find and search any ARC Probe or ARC Courier",
-                "de": "Finde und durchsuche eine beliebige ARC-Sonde oder einen ARC-Kurier",
+                "de": "Eine ARC-Sonde oder einen ARC-Kurier finden und durchsuchen",
                 "fr": "Trouver et fouiller une Sonde ARC ou un Convoyeur ARC",
                 "es": "Encuentra y registra cualquier sonda ARC o mensajero ARC",
                 "pt": "Encontre e reviste qualquer sonda ARC ou mensageiro ARC",
@@ -494,7 +497,7 @@
         "trader": "Tian Wen",
         "description": {
             "en": "We're short on everything but mouths to feed, yet Celeste's launching precious supplies into the air for Raiders to claw over. I'm done letting the good stuff go to waste.",
-            "de": "Uns fehlt es an allem außer an Mäulern, die gestopft werden müssen, und trotzdem schießt Celeste wertvolle Vorräte in die Luft, um die sich die Raider streiten können. Ich lasse nicht länger zu, dass die guten Sachen verschwendet werden.",
+            "de": "Wir haben von allem zu wenig, außer von hungrigen Mäulern, und trotzdem schießt Celeste unsere kostbaren Vorräte in die Luft, damit Raider sich drum streiten können. Ich hab es satt, gutes Zeug so zu verschwenden.",
             "fr": "On manque de tout sauf de bouches à nourrir, et pourtant Celeste s'amuse à balancer de précieuses provisions dans les airs pour les Raiders. J'en ai assez de gaspiller de la belle marchandise",
             "es": "Nos falta de todo excepto bocas que alimentar, y aun así Celeste lanza suministros preciosos al aire para que los Raiders se peleen por ellos. Ya no voy a dejar que las cosas buenas se desperdicien.",
             "pt": "Estamos com falta de tudo, menos bocas para alimentar, mas a Celeste está lançando suprimentos preciosos no ar para os Raiders brigarem por eles. Cansei de deixar as coisas boas irem para o lixo.",
@@ -515,7 +518,7 @@
         "objectives": [
             {
                 "en": "Request in a Supply Drop from a Call Station",
-                "de": "Fordere einen Versorgungsabwurf von einer Rufstation an",
+                "de": "Bei einer Anforderungsstation einen Vorratsabwurf anfordern",
                 "fr": "Demander un largage d'approvisionnement depuis une station d'approvisionnement",
                 "es": "Solicita un lanzamiento de suministros desde una estación de llamada",
                 "pt": "Solicite um lançamento de suprimentos de uma estação de chamada",
@@ -535,7 +538,7 @@
             },
             {
                 "en": "Loot a Supply Drop",
-                "de": "Plündere einen Versorgungsabwurf",
+                "de": "Einen Vorratsabwurf plündern",
                 "fr": "Piller un largage d'approvisionnement",
                 "es": "Saquea un lanzamiento de suministros",
                 "pt": "Saqueia um lançamento de suprimentos",
@@ -581,7 +584,7 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "A First Foothold",
-            "de": "Ein erster Brückenkopf",
+            "de": "Der erste Schritt",
             "fr": "Premier point d'appui",
             "es": "Un primer punto de apoyo",
             "pt": "Um primeiro ponto de apoio",
@@ -602,7 +605,7 @@
         "trader": "Shani",
         "description": {
             "en": "We've only just finished expanding the Tube network towards the Blue Gate, and we're still laboring away at the rest. My crew's been building new infrastructure around the valley to safeguard our Raiders, but the constant ARC threat has made it difficult to get anything done.",
-            "de": "Wir haben gerade erst die Erweiterung des Röhrennetzwerks zum Blauen Tor abgeschlossen, und wir arbeiten noch am Rest. Meine Crew hat neue Infrastruktur rund um das Tal gebaut, um unsere Raiders zu schützen, aber die ständige ARC-Bedrohung hat es schwierig gemacht, etwas zu erledigen.",
+            "de": "Wir haben gerade erst die U-Bahn-Linie bsi zum Blauen Tor verlängert und arbeiten immer noch am Rest. Meine Leute haben rund um das Tal neue Infrastruktur gebaut, um unsere Raider zu schützen, aber die ständige Bedrohung durch die ARC macht es echt schwer, was zu erledigen.",
             "fr": "On vient de terminer l'extension du réseau de Tunnels jusqu'au Portail bleu, et on travaille encore sur le reste. Mon équipe construit de nouvelles infrastructures autour de la vallée pour protéger nos Raiders, mais la menace constante de l'ARC rend tout travail difficile.",
             "es": "Acabamos de terminar de expandir la red de tubos hacia la Puerta Azul, y todavía estamos trabajando en el resto. Mi equipo ha estado construyendo nueva infraestructura alrededor del valle para proteger a nuestros Raiders, pero la constante amenaza de ARC ha dificultado hacer cualquier cosa.",
             "pt": "Acabamos de terminar de expandir a rede de Tubos em direção ao Portão Azul, e ainda estamos trabalhando no resto. Minha equipe tem construído nova infraestrutura ao redor do vale para proteger nossos Raiders, mas a constante ameaça da ARC tem dificultado fazer qualquer coisa.",
@@ -623,7 +626,7 @@
         "objectives": [
             {
                 "en": "Stabilize the observation deck near the Ridgeline",
-                "de": "Stabilisiere die Aussichtsplattform in der Nähe des Bergrückens",
+                "de": "Stabilisiere die Aussichtsplattform in der Nähe des Bergkamms",
                 "fr": "Stabiliser la plateforme d'observation près de la Crête",
                 "es": "Estabiliza la plataforma de observación cerca de la cresta",
                 "pt": "Estabilize o deck de observação perto da cordilheira",
@@ -663,7 +666,7 @@
             },
             {
                 "en": "Rotate the satellite dishes on the church roof, north of the Data Vault",
-                "de": "Drehe die Satellitenschüsseln auf dem Kirchendach, nördlich des Datentresors",
+                "de": "Dreh die Satellitenschüsseln auf dem Dach der Kirche, nördlich vom Datentresor",
                 "fr": "Faire pivoter les antennes paraboliques sur le toit de l'église, au nord de la Salle de données",
                 "es": "Gira las antenas parabólicas en el techo de la iglesia, al norte de la bóveda de datos",
                 "pt": "Gire as antenas parabólicas no telhado da igreja, ao norte do cofre de dados",
@@ -683,7 +686,7 @@
             },
             {
                 "en": "Nail down the roof plates on the Raider structure near Trapper's Glade",
-                "de": "Nagele die Dachplatten an der Raider-Struktur in der Nähe von Trapper's Glade fest",
+                "de": "Nagele die Dachplatten an der Raider-Konstruktion in der Nähe von der Trapper-Waldwiese fest",
                 "fr": "Fixer les plaques de toit sur la structure de Raider près de la Clairière du trappeur",
                 "es": "Clava las placas del techo en la estructura Raider cerca del claro del trampero",
                 "pt": "Pregue as placas do telhado na estrutura Raider perto da clareira do caçador",
@@ -1010,7 +1013,7 @@
         "trader": "Lance",
         "description": {
             "en": "I got my hands on a fancy new ESR analyzer; had a whole big reveal planned. One minute it's here, next minute—poof. Please help?",
-            "de": "Ich habe einen schicken neuen ESR-Analysator in die Hände bekommen; hatte eine große Enthüllung geplant. In der einen Minute ist er hier, in der nächsten – puff. Bitte hilf mir?",
+            "de": "Ich hab einen neuen ESR-Analysator in die Finger gekriegt, wollte da ganz groß mit rauskommen. Und dann 0 sack! 0 ist das Teil plötzlich verschwunden. Hilfst du mir?",
             "fr": "J'ai mis la main sur un nouvel analyseur de VS tout neuf. J'avais prévu de le présenter en grande pompe, mais il a disparu. Vous pouvez m'aider ?",
             "es": "Conseguí un nuevo y elegante analizador ESR; tenía planeada toda una gran revelación. Un minuto está aquí, al siguiente—puf. ¿Me ayudas?",
             "pt": "Consegui um novo e sofisticado analisador ESR; tinha toda uma grande revelação planejada. Num minuto está aqui, no próximo—puf. Pode ajudar?",
@@ -1031,7 +1034,7 @@
         "objectives": [
             {
                 "en": "Search for an ESR Analyzer inside any pharmacy in Buried City",
-                "de": "Suche nach einem ESR-Analysator in einer beliebigen Apotheke in der Begrabenen Stadt",
+                "de": "In einer Apotheke in der Begrabenen Stadt nach einem ESR-Analysator suchen",
                 "fr": "Trouver un analyseur VS dans une pharmacie de la ville enfouie",
                 "es": "Busca un analizador ESR dentro de cualquier farmacia en la ciudad enterrada",
                 "pt": "Procure por um analisador ESR dentro de qualquer farmácia na cidade enterrada",
@@ -1051,7 +1054,7 @@
             },
             {
                 "en": "Deliver the ESR Analyzer to Lance",
-                "de": "Liefere den ESR-Analysator an Lance",
+                "de": "Bring den ESR-Analysator zu Lance",
                 "fr": "Livrer l'analyser de VS à Lance",
                 "es": "Entrega el analizador ESR a Lance",
                 "pt": "Entregue o analisador ESR para Lance",
@@ -1634,7 +1637,7 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Broken Monument",
-            "de": "Zerbrochenes Monument",
+            "de": "Zerstörtes Monument",
             "fr": "Monument brisé",
             "es": "Monumento roto",
             "pt": "Monumento quebrado",
@@ -1655,7 +1658,7 @@
         "trader": "Tian Wen",
         "description": {
             "en": "I have another special site I need you to search for me. An old battlegrounds, from the First Wave. Raiders nowadays usually pick places like that clean, despite the significance they once held. People forget quickly. Quicker than they should.",
-            "de": "Ich habe einen weiteren besonderen Ort, den du für mich durchsuchen sollst. Ein altes Schlachtfeld aus der Ersten Welle. Räuber plündern heutzutage normalerweise solche Orte leer, trotz der Bedeutung, die sie einst hatten. Die Leute vergessen schnell. Schneller als sie sollten.",
+            "de": "Es gibt da noch eine andere besondere Stelle, ader du für mich nachsehen sollst. Ein altes Schlachtfeld aus der Ersten Welle. Heutzutage grasen Raider solche Orte ab, trotz der besonderen Bedeutung. Die Leute vergessen schnell. Schneller, als sie sollten.",
             "fr": "J'ai un autre site spécial que j'ai besoin que vous fouilliiez pour moi. Un ancien champ de bataille, de la Première Vague. Les Raiders de nos jours nettoient généralement des endroits comme ça, malgré l'importance qu'ils avaient autrefois. Les gens oublient vite. Plus vite qu'ils ne le devraient.",
             "es": "Tengo otro sitio especial que necesito que registres para mí. Un antiguo campo de batalla, de la Primera Ola. Los Raiders hoy en día suelen saquear lugares como ese, a pesar de la importancia que alguna vez tuvieron. La gente olvida rápido. Más rápido de lo que debería.",
             "pt": "Tenho outro local especial que preciso que você procure para mim. Um antigo campo de batalha, da Primeira Onda. Raiders hoje em dia geralmente limpam lugares como esse, apesar da importância que já tiveram. As pessoas esquecem rápido. Mais rápido do que deveriam.",
@@ -1676,7 +1679,7 @@
         "objectives": [
             {
                 "en": "Reach the hallowed grounds by the Scrap Yard",
-                "de": "Erreiche den heiligen Boden beim Schrottplatz",
+                "de": "Erreiche die heiligen Stätten beim Schrottplatz",
                 "fr": "Atteignez le terrain sacré près de la casse",
                 "es": "Alcanza el terreno sagrado junto al depósito de chatarra",
                 "pt": "Alcance o terreno sagrado perto do ferro-velho",
@@ -1696,7 +1699,7 @@
             },
             {
                 "en": "Search for a compass near the broken-down vehicles",
-                "de": "Suche nach einem Kompass in der Nähe der kaputten Fahrzeuge",
+                "de": "Suche nach einem Kompass in der Nähe der liegen gebliebenen Fahrzeuge",
                 "fr": "Cherchez une boussole près des véhicules en panne",
                 "es": "Busca una brújula cerca de los vehículos averiados",
                 "pt": "Procure por uma bússola perto dos veículos quebrados",
@@ -1716,7 +1719,7 @@
             },
             {
                 "en": "Search for the video tape near the cylindrical containers",
-                "de": "Suche nach dem Videoband in der Nähe der zylindrischen Container",
+                "de": "Suche das Videoband in der Nähe der zylindrischen Container",
                 "fr": "Cherchez la cassette vidéo près des conteneurs cylindriques",
                 "es": "Busca la cinta de vídeo cerca de los contenedores cilíndricos",
                 "pt": "Procure pela fita de vídeo perto dos contêineres cilíndricos",
@@ -1736,7 +1739,7 @@
             },
             {
                 "en": "Search for the old field rations in the Raider camp",
-                "de": "Suche nach den alten Feldrationen im Räuberlager",
+                "de": "Suche nach den alten Feldrationen im Raider-Lager",
                 "fr": "Cherchez les anciennes rations de campagne dans le camp de Raiders",
                 "es": "Busca las raciones de campo antiguas en el campamento Raider",
                 "pt": "Procure pelas rações de campo antigas no acampamento Raider",
@@ -1756,7 +1759,7 @@
             },
             {
                 "en": "Deliver the First Wave Tape to Tian Wen",
-                "de": "Liefere das Band der Ersten Welle an Tian Wen",
+                "de": "Übergib Tian Wen die Aufnahme der Ersten Welle",
                 "fr": "Livrez la cassette de la Première Vague à Tian Wen",
                 "es": "Entrega la cinta de la Primera Ola a Tian Wen",
                 "pt": "Entregue a fita da Primeira Onda para Tian Wen",
@@ -1776,7 +1779,7 @@
             },
             {
                 "en": "Deliver First Wave Compass to Tian Wen",
-                "de": "Liefere den Kompass der Ersten Welle an Tian Wen",
+                "de": "Übergib Tian Wen den Erste-Welle-Kompass",
                 "fr": "Livrez la boussole de la Première Vague à Tian Wen",
                 "es": "Entrega la brújula de la Primera Ola a Tian Wen",
                 "pt": "Entregue a bússola da Primeira Onda para Tian Wen",
@@ -1796,7 +1799,7 @@
             },
             {
                 "en": "Deliver First Wave Rations to Tian Wen",
-                "de": "Liefere die Rationen der Ersten Welle an Tian Wen",
+                "de": "Übergib Tian Wen die Erste-Welle-Rationen",
                 "fr": "Livrez les rations de la Première Vague à Tian Wen",
                 "es": "Entrega las raciones de la Primera Ola a Tian Wen",
                 "pt": "Entregue as rações da Primeira Onda para Tian Wen",
@@ -2159,9 +2162,9 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Clearer Skies",
-            "de": "Klarere Himmel",
+            "de": "Klarer Himmel",
             "fr": "Cieux plus clairs",
-            "es": "Cielos más despejados",
+            "es": "Cielos despejados",
             "pt": "Céus mais claros",
             "pl": "Jaśniejsze niebo",
             "no": "Klarere himmel",
@@ -2178,10 +2181,13 @@
             "hr": "Vedro Nebo"
         },
         "trader": "Shani",
+        "description": {
+            "de": "Ein Schwarm orientierungsloser Wespen ist in der Nähe eines unserer Oberlichter abgestürzt. Du musst die Reihen der ARC lichten, bevor noch mehr Unfälle passieren. Und kannst du ein paar besonders robuste Materialien sammeln, um den Schaden zu beheben?"
+        },
         "objectives": [
             {
                 "en": "Destroy 3 ARC enemies",
-                "de": "Zerstöre 3 ARC-Gegner",
+                "de": "3 ARC-Gegner zerstören",
                 "fr": "Détruisez 3 ennemis ARC",
                 "es": "Destruye 3 enemigos ARC",
                 "pt": "Destrua 3 inimigos ARC",
@@ -2201,7 +2207,7 @@
             },
             {
                 "en": "Get 3 ARC Alloy for Shani",
-                "de": "Besorge 3 ARC-Legierungen für Shani",
+                "de": "3 ARC-Legierungen für Shani besorgen",
                 "fr": "Obtenez 3 alliages ARC pour Shani",
                 "es": "Consigue 3 aleaciones ARC para Shani",
                 "pt": "Consiga 3 ligas ARC para Shani",
@@ -2253,7 +2259,7 @@
         "updatedAt": "11/14/2025",
         "name": {
             "en": "Cold Storage",
-            "de": "Kühlhaus",
+            "de": "Tiefkühllagerung",
             "fr": "Chambre froide",
             "es": "Almacén frigorífico",
             "pt": "Armazém Frigorífico",
@@ -2635,7 +2641,7 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Doctor's Orders",
-            "de": "Anweisungen des Doktors",
+            "de": "Ärztliche Anweisung",
             "fr": "Consignes du docteur",
             "es": "Órdenes del doctor",
             "pt": "Ordens do doutor",
@@ -2656,7 +2662,7 @@
         "trader": "Celeste",
         "description": {
             "en": "Say, newbie: if you want me to treat you, you better prove that those precious limbs of yours are worth bandaging.",
-            "de": "Hör zu, Neuling: Wenn du willst, dass ich dich behandle, solltest du besser beweisen, dass diese kostbaren Gliedmaßen von dir es wert sind, verbunden zu werden.",
+            "de": "Also, Neuankömmling: Wenn ich dich behandeln soll, beweist du mir besser erst mal, dass du meine Verbände wert bist.",
             "fr": "Si vous voulez que je vous soigne, vous feriez bien de prouver que vos chers membres valent la peine d'être bandés.",
             "es": "Oye, novato: si quieres que te trate, será mejor que demuestres que esas preciosas extremidades tuyas valen la pena vendarlas.",
             "pt": "Olha, novato: se você quer que eu te trate, é melhor provar que esses membros preciosos seus valem a pena serem enfaixados.",
@@ -2677,7 +2683,7 @@
         "objectives": [
             {
                 "en": "Obtain 2 Antiseptic",
-                "de": "Erhalte 2 Antiseptikum",
+                "de": "Beschaffe 2 Desinfektionsmittel",
                 "fr": "Obtenir 2 antiseptiques",
                 "es": "Obtén 2 antisépticos",
                 "pt": "Obtenha 2 antissépticos",
@@ -2697,7 +2703,7 @@
             },
             {
                 "en": "Obtain 1 Syringe",
-                "de": "Erhalte 1 Spritze",
+                "de": "Beschaffe 1 Spritze",
                 "fr": "Obtenir 1 seringue",
                 "es": "Obtén 1 jeringa",
                 "pt": "Obtenha 1 seringa",
@@ -2717,7 +2723,7 @@
             },
             {
                 "en": "Obtain 1 Durable Cloth",
-                "de": "Erhalte 1 strapazierfähiges Tuch",
+                "de": "Beschaffe 1 strapazierfähiges Stoffstück",
                 "fr": "Obtenir 1 tissu résistant",
                 "es": "Obtén 1 Tela resistente",
                 "pt": "Obtenha 1 tecido durável",
@@ -2737,7 +2743,7 @@
             },
             {
                 "en": "Obtain 1 Great Mullein",
-                "de": "Erhalte 1 Königskerze",
+                "de": "Beschaffe 1 Kleinblütige Königskerze",
                 "fr": "Obtenir 1 grande molène",
                 "es": "Obtén 1 gran verbasco",
                 "pt": "Obtenha 1 verbasco",
@@ -2801,7 +2807,7 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Dormant Barons",
-            "de": "Ruhende Barone",
+            "de": "Schlafende Barone",
             "fr": "Barons dormants",
             "es": "Barones inactivos",
             "pt": "Barões adormecidos",
@@ -2822,7 +2828,7 @@
         "trader": "Shani",
         "description": {
             "en": "During the First Wave, the Barons did more damage than all the other machines combined. Now they're mere husks; fixed in place where they once fell... Still, their internals might hold the answer to keeping ARC at bay. So open one up, and bring me whatever is inside.",
-            "de": "Während der ersten Welle richteten die Barone mehr Schaden an als alle anderen Maschinen zusammen. Jetzt sind sie nur noch Hüllen; fixiert an dem Ort, wo sie einst fielen... Dennoch könnten ihre Innereien die Antwort darauf enthalten, wie man ARC in Schach hält. Also öffne einen und bring mir, was auch immer darin ist.",
+            "de": "Während der Ersten Welle haben die Barone mehr Schaden angerichtet als alle anderen Maschinen zusammen. Jetzt sind nur noch Hüllen von ihnen übrig, da wo sie einst gefallen sind... Aber in denen versteckt sich vielleicht die Antwort darauf, wie wir die ARC abwehren können. Mach eine auf und bring mir, was immer du findest.",
             "fr": "Pendant la première vague, les Barons ont fait plus de dégâts que toutes les autres machines réunies. Maintenant, ce ne sont que des carcasses ; fixées à l'endroit où elles sont tombées... Pourtant, leurs composants internes pourraient détenir la réponse pour tenir ARC à distance. Alors ouvrez-en un et apportez-moi ce qu'il y a à l'intérieur.",
             "es": "Durante la Primera Ola, los Barones causaron más daño que todas las otras máquinas juntas. Ahora son meros cascarones; fijos en el lugar donde cayeron... Aun así, sus componentes internos podrían contener la respuesta para mantener a ARC a raya. Así que abre uno y tráeme lo que haya dentro.",
             "pt": "Durante a Primeira Onda, os Barões causaram mais danos do que todas as outras máquinas juntas. Agora são meras cascas; fixos no lugar onde caíram... Ainda assim, seus componentes internos podem conter a resposta para manter a ARC afastada. Então abra um e me traga o que estiver dentro.",
@@ -2843,7 +2849,7 @@
         "objectives": [
             {
                 "en": "Loot a Baron husk",
-                "de": "Plündere eine Baron-Hülle",
+                "de": "Plündere eine Baronhülle",
                 "fr": "Pillez une carcasse de Baron",
                 "es": "Saquea un cascarón de Barón",
                 "pt": "Saqueia uma casca de Barão",
@@ -2887,9 +2893,9 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Down To Earth",
-            "de": "Zurück auf dem Boden",
+            "de": "Bodenständig",
             "fr": "Les pieds sur terre",
-            "es": "De vuelta a la tierra",
+            "es": "Pies en la tierra",
             "pt": "De volta à terra",
             "pl": "Z powrotem na ziemię",
             "no": "Ned på jorden",
@@ -2906,10 +2912,13 @@
             "hr": "Spuštanje na Zemlju"
         },
         "trader": "Shani",
+        "description": {
+            "de": "Raider berichten schon lange von seltsam aussehenden Kisten, die aus defekten ARC-Sondern fallen. Wenn wir die irgendwie öffnen könnten, verstehen wir vielleicht, wonach sie suchen."
+        },
         "objectives": [
             {
                 "en": "Visit a Field Depot",
-                "de": "Besuche ein Felddepot",
+                "de": "Ein Felddepot besuchen",
                 "fr": "Visitez un dépôt de terrain",
                 "es": "Visita un depósito de campo",
                 "pt": "Visite um depósito de campo",
@@ -2929,7 +2938,7 @@
             },
             {
                 "en": "Deliver a Field Crate to Supply Station",
-                "de": "Liefere eine Feldkiste zur Versorgungsstation",
+                "de": "Feldkiste an ein Felddepot liefern",
                 "fr": "Livrez une caisse de terrain à la station de ravitaillement",
                 "es": "Entrega una caja de campo a la estación de suministros",
                 "pt": "Entregue uma caixa de campo à estação de suprimentos",
@@ -2949,7 +2958,7 @@
             },
             {
                 "en": "Collect the reward",
-                "de": "Sammle die Belohnung ein",
+                "de": "Belohnung einsammeln",
                 "fr": "Récupérez la récompense",
                 "es": "Recoge la recompensa",
                 "pt": "Colete a recompensa",
@@ -3622,9 +3631,9 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Greasing Her Palms",
-            "de": "Ihr die Hände schmieren",
+            "de": "Hände gerieben",
             "fr": "Graisser la patte",
-            "es": "Engrasando sus palmas",
+            "es": "Untando la mano",
             "pt": "Untando as mãos dela",
             "pl": "Posmarowanie jej łapek",
             "no": "Smøre håndflaten hennes",
@@ -3643,7 +3652,7 @@
         "trader": "Celeste",
         "description": {
             "en": "Recently, I've been trying and failing to get Tian Wen to join our community projects. I may have to sweeten the deal. She's been complaining about the quality of salvage found on the market; think we could do her a solid?",
-            "de": "In letzter Zeit habe ich versucht und es nicht geschafft, Tian Wen dazu zu bringen, sich unseren Gemeinschaftsprojekten anzuschließen. Ich muss das Angebot vielleicht versüßen. Sie hat sich über die Qualität des Bergungsguts auf dem Markt beschwert; glaubst du, wir könnten ihr einen Gefallen tun?",
+            "de": "Ich hab in letzter Zeit erfolglos versucht, Tian Wen für unsere Gemeinschaftsprojekte zu erwärmen. Vielleicht muss ich ihr das Gane schmackhafter machen. Sie hat sich über die Qualitẗ des Schrotts beschwert, a den sie kommt - können wir ihr da wohl eine kleine Freude bereiten?",
             "fr": "Dernièrement, j'ai essayé, sans succès, de convaincre Tian Wen de rejoindre nos projets communautaires. Peut-être que si l'offre était plus attrayante... Elle se plaint de la qualité des pièces de récupération disponibles sur le marché. On devrait bien pouvoir lui rendre un service, non ?",
             "es": "Recientemente, he estado intentando sin éxito que Tian Wen se una a nuestros proyectos comunitarios. Puede que tenga que endulzar el trato. Ha estado quejándose de la calidad del salvamento que se encuentra en el mercado; ¿crees que podríamos hacerle un favor?",
             "pt": "Recentemente, tenho tentado e falhado em fazer a Tian Wen se juntar aos nossos projetos comunitários. Talvez eu tenha que adoçar o negócio. Ela tem reclamado sobre a qualidade da sucata encontrada no mercado; acha que poderíamos fazer um favor a ela?",
@@ -3664,7 +3673,7 @@
         "objectives": [
             {
                 "en": "On Dam Battlegrounds, visit the Locked Room in the Water Treatment Control building",
-                "de": "Besuche auf Dam Battlegrounds den verschlossenen Raum im Wasseraufbereitungs-Kontrollgebäude",
+                "de": "Besuche auf den Damm-Schalftfeldern den verschlossenen Raum im Kontrollgebäude der Wasseraufbereitung",
                 "fr": "Au champ de bataille du Barrage, visiter la salle verrouillée du bâtiment du Contrôle du traitement de l'eau",
                 "es": "En Dam Battlegrounds, visita la sala cerrada en el edificio de control de tratamiento de agua",
                 "pt": "Em Dam Battlegrounds, visite a sala trancada no prédio de controle de tratamento de água",
@@ -3684,7 +3693,7 @@
             },
             {
                 "en": "On Spaceport, scope out the rocket thrusters outside the Rocket Assembly",
-                "de": "Erkunde auf Spaceport die Raketentriebwerke außerhalb der Raketenmontage",
+                "de": "Schau dir im Raumhafen die Schubdüsen außerhalb der Raktenmontage an",
                 "fr": "Au Port spatial, inspecter les propulseurs de la fusée à l'extérieur du Site d'assemblage des fusées",
                 "es": "En Spaceport, inspecciona los propulsores de cohetero fuera del ensamblaje de cohetes",
                 "pt": "Em Spaceport, examine os propulsores de foguete fora da montagem de foguetes",
@@ -3704,7 +3713,7 @@
             },
             {
                 "en": "On Buried City, visit the barricaded area on floor 6 of the Space Travel Building",
-                "de": "Besuche auf der Begrabenen Stadt den verbarrikadierten Bereich im 6. Stock des Raumfahrtgebäudes",
+                "de": "Besuche in der Begrabenen Stadt den abgesperrten Bereich im 6. Stock des Raumfahrtbüros",
                 "fr": "Dans la Ville enfouie, visiter la zone barricadée au 6e niveau du Bureau des voyages spatiaux",
                 "es": "En Buried City, visita el área barricada en el piso 6 del edificio de viajes espaciales",
                 "pt": "Em Buried City, visite a área barricada no andar 6 do prédio de viagens espaciais",
@@ -3757,9 +3766,9 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Hatch Repairs",
-            "de": "Lukenreparaturen",
+            "de": "Lukenreparatur",
             "fr": "Réparations de trappes",
-            "es": "Reparaciones de escotillas",
+            "es": "Reparaciones de trampilla",
             "pt": "Reparos de escotilhas",
             "pl": "Naprawy włazów",
             "no": "Lukereparasjoner",
@@ -3778,7 +3787,7 @@
         "trader": "Shani",
         "description": {
             "en": "Our scouts have reported several Raider Hatches with leaking hydraulic pipes. They still work, but not for long. Mind patching one up, next time you're out there?",
-            "de": "Unsere Späher haben mehrere Raider-Luken mit undichten Hydraulikleitungen gemeldet. Sie funktionieren noch, aber nicht mehr lange. Würdest du eine reparieren, wenn du das nächste Mal dort draußen bist?",
+            "de": "Unsere Späher haben mehrere Raider-Luken gemeldet, bei denen die Hydraulikrohre Lecks haben. Sie funktionieren noch, aber es ist nur eine Frage der Zeit. Würdest du eines reparieren, wenn du das nächste Mal da draußen bist?",
             "fr": "Nos éclaireurs ont signalé plusieurs trappes de Raiders avec des tuyaux hydrauliques qui fuient. Elles fonctionnent encore, mais plus pour longtemps. Ça te dérangerait d'en réparer une la prochaine fois que tu seras là-bas ?",
             "es": "Nuestros exploradores han reportado varias escotillas de Saqueadores con tuberías hidráulicas con fugas. Todavía funcionan, pero no por mucho tiempo. ¿Te importaría reparar una la próxima vez que estés por allí?",
             "pt": "Nossos batedores relataram várias escotilhas de Saqueadores com tubos hidráulicos vazando. Elas ainda funcionam, mas não por muito tempo. Você se importaria de consertar uma na próxima vez que estiver lá fora?",
@@ -3799,7 +3808,7 @@
         "objectives": [
             {
                 "en": "Repair the leaking hydraulic pipes near a Raider Hatch",
-                "de": "Repariere die undichten Hydraulikleitungen in der Nähe einer Raider-Luke",
+                "de": "Die undichten Hydraulikrohre nahe einer Raider-Luke reparieren",
                 "fr": "Réparez les tuyaux hydrauliques qui fuient près d'une trappe de Raiders",
                 "es": "Repara las tuberías hidráulicas con fugas cerca de una escotilla de Saqueadores",
                 "pt": "Conserte os tubos hidráulicos vazando perto de uma escotilha de Saqueadores",
@@ -4088,7 +4097,7 @@
         "updatedAt": "11/14/2025",
         "name": {
             "en": "In My Image",
-            "de": "Nach meinem Ebenbild",
+            "de": "Mein Ebenbild",
             "fr": "À mon image",
             "es": "A mi imagen",
             "pt": "À Minha Imagem",
@@ -4106,10 +4115,10 @@
             "sr": "Po Mom Liku",
             "hr": "Po Mom Liku"
         },
-        "trader": "Celeste",
+        "trader": "Lance",
         "description": {
             "en": "I just treated one of the first Raiders who visited Stella Montis, and she said that she saw... others. Androids, very much like me.",
-            "de": "Ich habe gerade einen der ersten Raiders behandelt, der Stella Montis besucht hat, und sie sagte, sie habe ... andere gesehen. Androiden, die mir sehr ähnlich sind.",
+            "de": "Ich habe gerade einen der Raider behandelt, die als Erste in Stella Montis waren. Sie hat mir erzählt, sie hätte... andere gesehen - andere Androiden, die mir sehr ähnlich waren.",
             "fr": "Je viens de soigner l'un des premiers Raiders à avoir visité Stella Montis, et elle m'a dit en avoir vu... d'autres. D'autres androïdes, qui me ressemblaient beaucoup.",
             "es": "Acabo de tratar a una de las primeras saqueadoras que visitó Stella Montis, y dijo que vio... a otros. Androides, muy parecidos a mí.",
             "pt": "Acabei de tratar uma das primeiras Saqueadoras que visitou Stella Montis, e ela disse que viu... outros. Androides, muito parecidos comigo.",
@@ -4130,7 +4139,7 @@
         "objectives": [
             {
                 "en": "Deploy into Stella Montis",
-                "de": "Setze nach Stella Montis ein",
+                "de": "In Stella Montis eindringen",
                 "fr": "Déployer à Stella Montis",
                 "es": "Despliega en Stella Montis",
                 "pt": "Desembarque em Stella Montis",
@@ -4848,7 +4857,7 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Medical Merchandise",
-            "de": "Medizinische Waren",
+            "de": "Medizinisches Merchandise",
             "fr": "Marchandises médicales",
             "es": "Mercancía médica",
             "pt": "Mercadorias médicas",
@@ -4869,7 +4878,7 @@
         "trader": "Lance",
         "description": {
             "en": "I've become quite crafty at weaving bandages from Fabric, but to my shame, I haven't quite mastered weaving an x-ray machine or a pulse oximiter.",
-            "de": "Ich bin ziemlich geschickt darin geworden, Bandagen aus Stoff zu weben, aber zu meiner Schande habe ich es noch nicht geschafft, eine Röntgenmaschine oder ein Pulsoximeter zu weben.",
+            "de": "Ich bin inzwischen ganz gut darin, Verbände aus Stoff herzustellen, aber zu meiner Schande muss ich gestehen, dass ich noch kein Röntgengerät oder Pulsoxymeter weben kann.",
             "fr": "Je suis devenu assez habile pour tresser des bandages à partir de tissu, mais j'ai honte d'avouer que je n'ai pas encore vraiment maîtrisé l'art d'utiliser un appareil de radiographie ou un oxymètre de pouls.",
             "es": "Me he vuelto bastante hábil tejiendo vendas con tela, pero para mi vergüenza, aún no he dominado el arte de tejer una máquina de rayos X o un oxímetro de pulso.",
             "pt": "Tornei-me bastante habilidoso em tecer bandagens a partir de tecido, mas para minha vergonha, ainda não dominei a arte de tecer uma máquina de raios-X ou um oxímetro de pulso.",
@@ -4890,7 +4899,7 @@
         "objectives": [
             {
                 "en": "On Spaceport, search 2 containers in the Departure Building's exam rooms",
-                "de": "Durchsuche im Raumhafen 2 Behälter in den Untersuchungsräumen des Abfluggebäudes",
+                "de": "Durchsuche 2 Container im Untersuchungsraum des Abfluggebäudes im Raumhafen",
                 "fr": "Dans Port spatial, fouillez 2 conteneurs dans les salles d'examen du Bâtiment des départs",
                 "es": "En el espaciopuerto, registra 2 contenedores en las salas de examen del edificio de salidas",
                 "pt": "No espaçoporto, procure em 2 contêineres nas salas de exame do edifício de partidas",
@@ -4910,7 +4919,7 @@
             },
             {
                 "en": "Search 3 containers in the Hospital in Buried City",
-                "de": "Durchsuche 3 Behälter im Krankenhaus in der Begrabenen Stadt",
+                "de": "Durchsuche 3 Container im Krankenhaus in der Begrabenen Stadt",
                 "fr": "Fouillez 3 conteneurs dans l'hôpital de la Ville enfouie",
                 "es": "Registra 3 contenedores en el hospital de la ciudad enterrada",
                 "pt": "Procure em 3 contêineres no hospital da cidade enterrada",
@@ -4930,7 +4939,7 @@
             },
             {
                 "en": "On Dam Battlegrounds, search 2 containers in the Research & Administration building's medical room",
-                "de": "Durchsuche auf dem Damm-Schlachtfeld 2 Behälter im medizinischen Raum des Forschungs- und Verwaltungsgebäudes",
+                "de": "Durchsuche 2 Container im medizinischen Raum des Forschungs- und Verwaltungsgebäudes auf den Damm-Schlachtfeldern",
                 "fr": "Au Champ de bataille du Barrage, fouiller 2 conteneurs de la salle médicale du bâtiment de recherche et administration",
                 "es": "En el campo de batalla de la presa, registra 2 contenedores en la sala médica del edificio de investigación y administración",
                 "pt": "No campo de batalha da barragem, procure em 2 contêineres na sala médica do edifício de pesquisa e administração",
@@ -5113,10 +5122,13 @@
             "hr": "Izvan Radara"
         },
         "trader": "Shani",
+        "description": {
+            "de": "Der Schaden hier unten war ziemlich übel, aber die Infrastruktur oben hat es noch schlimmer erwischt. Ich hab noch einige Antennen, die seit dem Sturm nicht mehr funktionieren."
+        },
         "objectives": [
             {
                 "en": "Visit a Field Depot",
-                "de": "Besuche ein Felddepot",
+                "de": "Ein Felddepot besuchen",
                 "fr": "Visitez un dépôt de terrain",
                 "es": "Visita un depósito de campo",
                 "pt": "Visite um depósito de campo",
@@ -5136,7 +5148,7 @@
             },
             {
                 "en": "Repair the antenna on the roof of the Field Depot",
-                "de": "Repariere die Antenne auf dem Dach des Felddepots",
+                "de": "Die Antenne auf dem Dach des Felddepots reparieren",
                 "fr": "Réparez l'antenne sur le toit du dépôt de terrain",
                 "es": "Repara la antena en el techo del depósito de campo",
                 "pt": "Repare a antena no telhado do depósito de campo",
@@ -5428,7 +5440,7 @@
             "en": "Picking Up The Pieces",
             "de": "Die Scherben aufsammeln",
             "fr": "Ramasser les morceaux",
-            "es": "Recogiendo los pedazos",
+            "es": "Reconstrucción",
             "pt": "Juntando os pedaços",
             "pl": "Zbieranie kawałków",
             "no": "Plukke opp bitene",
@@ -5447,7 +5459,7 @@
         "trader": "Shani",
         "description": {
             "en": "The storm has mostly settled, but much of our infrastructure has taken a proper beating. If you're hoping to stay with us, I'll need you to pull your weight in the repair efforts.",
-            "de": "Der Sturm hat sich größtenteils gelegt, aber ein Großteil unserer Infrastruktur hat ordentlich einstecken müssen. Wenn du bei uns bleiben willst, musst du bei den Reparaturarbeiten mit anpacken.",
+            "de": "Der Sturm hat sich gelegt, aber große Teile unserer Infrastruktur haben ordentlich was abgekriegt. Wenn du bei uns bleiben willst, musst du deinen Beitrag zu den Reperaturarbeiten leisten.",
             "fr": "La tempête s'est calmée pour la plupart, mais une grande partie de notre infrastructure a été sérieusement endommagée. Si vous espérez rester avec nous, j'aurai besoin que vous participiez aux efforts de réparation.",
             "es": "La tormenta se ha calmado en su mayoría, pero gran parte de nuestra infraestructura ha recibido una buena paliza. Si esperas quedarte con nosotros, necesitaré que aportes tu parte en los esfuerzos de reparación.",
             "pt": "A tempestade já passou em grande parte, mas boa parte da nossa infraestrutura levou uma surra considerável. Se você espera ficar conosco, vou precisar que faça sua parte nos esforços de reparo.",
@@ -5468,7 +5480,7 @@
         "objectives": [
             {
                 "en": "Visit any area on your map with a loot category icon",
-                "de": "Besuche einen beliebigen Bereich auf deiner Karte mit einem Beutekategorie-Symbol",
+                "de": "Ein beliebiges Gebiet auf deiner Karte besuchen, das mit einem Beutekategorie-Symbol markiert ist",
                 "fr": "Visitez n'importe quelle zone sur votre carte avec une icône de catégorie de butin",
                 "es": "Visita cualquier área en tu mapa con un icono de categoría de botín",
                 "pt": "Visite qualquer área no seu mapa com um ícone de categoria de saque",
@@ -5488,7 +5500,7 @@
             },
             {
                 "en": "Loot 3 containers",
-                "de": "Plündere 3 Behälter",
+                "de": "3 Container plündern",
                 "fr": "Pillez 3 conteneurs",
                 "es": "Saquea 3 contenedores",
                 "pt": "Saqueia 3 contêineres",
@@ -5805,7 +5817,7 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Reduced to Rubble",
-            "de": "Zu Schutt reduziert",
+            "de": "Schutt und Asche",
             "fr": "Réduit en décombres",
             "es": "Reducido a escombros",
             "pt": "Reduzido a escombros",
@@ -5826,7 +5838,7 @@
         "trader": "Shani",
         "description": {
             "en": "That collapsed highway worries me; it looks to be recent. Much of Topside may be in ruins, but most of it is from ages ago.",
-            "de": "Diese eingestürzte Autobahn beunruhigt mich; sie scheint kürzlich eingestürzt zu sein. Ein Großteil von Topside mag in Trümmern liegen, aber das meiste davon ist uralt.",
+            "de": "Die eingestürzte Schnellstraße macht mir Sorgen; das schein erst kürzlich passiert zu sein. An der Oberfläche ist ja fast alles kaputt, aber das meiste schon seit Ewigkeiten.",
             "fr": "Cette autoroute effondrée m'inquiète ; elle semble récente. Une grande partie de Topside est peut-être en ruines, mais la plupart datent d'il y a longtemps.",
             "es": "Esa autopista colapsada me preocupa; parece ser reciente. Gran parte de Topside puede estar en ruinas, pero la mayoría es de hace mucho tiempo.",
             "pt": "Aquela rodovia colapsada me preocupa; parece ser recente. Muito de Topside pode estar em ruínas, mas a maior parte é de muito tempo atrás.",
@@ -5847,7 +5859,7 @@
         "objectives": [
             {
                 "en": "Take a photo of the Collapsed Highway",
-                "de": "Mache ein Foto von der eingestürzten Autobahn",
+                "de": "Fotografiere die eingestürzte Schnellstraße",
                 "fr": "Prendre une photo de l'autoroute effondrée",
                 "es": "Toma una foto de la autopista colapsada",
                 "pt": "Tire uma foto da rodovia colapsada",
@@ -5867,7 +5879,7 @@
             },
             {
                 "en": "Go to the Broken Earth",
-                "de": "Gehe zur zerbrochenen Erde",
+                "de": "Gehe zur aufgebrochenen Erde",
                 "fr": "Aller à la Terre brisée",
                 "es": "Ve a la Tierra rota",
                 "pt": "Vá para a Terra quebrada",
@@ -5887,7 +5899,7 @@
             },
             {
                 "en": "Follow the trail of destruction through the Broken Earth",
-                "de": "Folge der Spur der Zerstörung durch die zerbrochene Erde",
+                "de": "Folge den Spuren der Zerstörung durch die aufgebrochene Erde",
                 "fr": "Suivre la piste de destruction à travers la Terre brisée",
                 "es": "Sigue el rastro de destrucción a través de la Tierra rota",
                 "pt": "Siga o rastro de destruição através da Terra quebrada",
@@ -5907,7 +5919,7 @@
             },
             {
                 "en": "Investigate the unknown ARC machines",
-                "de": "Untersuche die unbekannten ARC-Maschinen",
+                "de": "Untersuche die geheimnisvollen ARC-Maschinen",
                 "fr": "Enquêter sur les machines ARC inconnues",
                 "es": "Investiga las máquinas ARC desconocidas",
                 "pt": "Investigue as máquinas ARC desconhecidas",
@@ -5959,9 +5971,9 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Safe Passage",
-            "de": "Sichere Passage",
+            "de": "Sicherer Durchgang",
             "fr": "Passage sûr",
-            "es": "Paso seguro",
+            "es": "Salvoconducto",
             "pt": "Passagem segura",
             "pl": "Bezpieczne przejście",
             "no": "Trygg passasje",
@@ -5978,10 +5990,13 @@
             "hr": "Siguran Prolaz"
         },
         "trader": "Apollo",
+        "description": {
+            "de": "Ich hab Gerüchte über ein Singal gehört, das Shani aufgefangen hat. Die ARC passen sich ständig an, und ich bin mir sicher, dass das nicht ihr letztes Warnsignal sein wird. Na ja, wenn sie ein Wettrüsten wollen, dann kriegen sie eins."
+        },
         "objectives": [
             {
                 "en": "Destroy 2 ARC enemies using any explosive grenade",
-                "de": "Zerstöre 2 ARC-Gegner mit einer beliebigen Explosivgranate",
+                "de": "Zerstöre 2 ARC-Gegner mit einer Explosionsgranate",
                 "fr": "Détruisez 2 ennemis ARC avec n'importe quelle grenade explosive",
                 "es": "Destruye 2 enemigos ARC usando cualquier granada explosiva",
                 "pt": "Destrua 2 inimigos ARC usando qualquer granada explosiva",
@@ -6326,7 +6341,7 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Sparks Fly",
-            "de": "Funkenflug",
+            "de": "Fliegende Funken",
             "fr": "Pluie d'étincelles",
             "es": "Chispas",
             "pt": "Faíscas",
@@ -6347,7 +6362,7 @@
         "trader": "Apollo",
         "description": {
             "en": "Those Hornet stings can really mess you up, if you're unlucky. And even if you destroy one, you're still wasting a ton of ammo. I've been working on a more elegant way to bring them down. Care to make some sparks fly?",
-            "de": "Diese Hornet-Stiche können dich wirklich übel zurichten, wenn du Pech hast. Und selbst wenn du eine zerstörst, verschwendest du immer noch eine Menge Munition. Ich habe an einer eleganteren Methode gearbeitet, sie herunterzuholen. Lust, ein paar Funken fliegen zu lassen?",
+            "de": "Stiche von diesen Hornissen können einem echt übel mitspielen, wenn man Pech hat. Und selbst wenn man eine erledigt, bergeudet man dabei eine Menge Munition. Ich arbeite an einer eleganteren Lösung, um sie vom Himmel zu holen. Willst du Funken fliegen lassen?",
             "fr": "Ces piqûres de Frelons peuvent vraiment vous gâcher la vie. Et même si vous en détruisez un, vous gaspillerez une tonne de munitions. J'ai réfléchi à une façon plus élégante de les éliminer. Ça vous dit de faire des étincelles ?",
             "es": "Esos aguijones de Avispón pueden hacerte mucho daño si no tienes suerte. E incluso si destruyes uno, sigues desperdiciando un montón de munición. He estado trabajando en una forma más elegante de derribarlos. ¿Te apetece hacer saltar algunas chispas?",
             "pt": "Essas picadas de Hornet podem te estragar muito, se você tiver azar. E mesmo se você destruir um, ainda está desperdiçando um monte de munição. Tenho trabalhado numa forma mais elegante de derrubá-los. Quer fazer algumas faíscas voarem?",
@@ -6368,7 +6383,7 @@
         "objectives": [
             {
                 "en": "Destroy a Hornet with a Trigger 'Nade or Snap Blast",
-                "de": "Zerstöre eine Hornet mit einer Trigger-Granate oder Snap Blast",
+                "de": "Eine Hornisse mit einer Abzuggranate vernichten",
                 "fr": "Détruisez un Frelon à l'aide d'une grenade télécommandée ou d'une grenad adhésive",
                 "es": "Destruye un Avispón con una granada de gatillo o de ráfaga",
                 "pt": "Destrua um Hornet com uma Trigger 'Nade ou Snap Blast",
@@ -6422,7 +6437,7 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Straight Record",
-            "de": "Klare Verhältnisse",
+            "de": "Gute Aufnahme",
             "fr": "Remettre les pendules à l'heure",
             "es": "Registro limpio",
             "pt": "Registro limpo",
@@ -6443,7 +6458,7 @@
         "trader": "Celeste",
         "description": {
             "en": "Back during the First Wave, my squad and I built a trap out by the Dam. Overloaded a generator, turned it into a makeshift ARC trap. Now I hear Raiders are using it to cut comms and spring ambushes on each other. I need you to end it.",
-            "de": "Während der First Wave haben mein Squad und ich eine Falle beim Damm gebaut. Haben einen Generator überlastet und ihn in eine provisorische ARC-Falle verwandelt. Jetzt höre ich, dass Raiders sie benutzen, um Kommunikation zu unterbrechen und sich gegenseitig in Hinterhalte zu locken. Du musst dem ein Ende setzen.",
+            "de": "In der Ersten Welle haben wir eine Falle am Damm gebaut: einen Generator überlastet und in eine provisorische ARC-Falle verwandelt. Jetzt hab ich gehört, dass Raider sie nutzen, um die Kommunikation zu unterbrechen und sich gegenseitig in Hinterhalte zu locken. Das muss ein Ende haben.",
             "fr": "Pendant la First Wave, mon équipe et moi avons construit un piège près du barrage. On a surchargé un générateur et on l'a transformé en piège ARC de fortune. Maintenant j'entends dire que les Raiders l'utilisent pour couper les communications et tendre des embuscades. Je veux que tu y mettes fin.",
             "es": "Durante la First Wave, mi escuadrón y yo construimos una trampa junto a la presa. Sobrecargamos un generador y lo convertimos en una trampa ARC improvisada. Ahora oigo que los Raiders la están usando para cortar comunicaciones y tender emboscadas entre ellos. Necesito que le pongas fin.",
             "pt": "Durante a First Wave, a minha equipa e eu construímos uma armadilha perto da barragem. Sobrecarregámos um gerador e transformámo-lo numa armadilha ARC improvisada. Agora ouço dizer que os Raiders a estão a usar para cortar comunicações e preparar emboscadas uns aos outros. Preciso que acabes com isso.",
@@ -6564,7 +6579,7 @@
             },
             {
                 "en": "Shut down the EMP trap",
-                "de": "Schalte die EMP-Falle ab",
+                "de": "Schalte die EMP-Falle aus",
                 "fr": "Désactive le piège EMP",
                 "es": "Apaga la trampa EMP",
                 "pt": "Desligue a armadilha EMP",
@@ -6847,10 +6862,13 @@
             "hr": "Pravi Alat"
         },
         "trader": "Tian Wen",
+        "description": {
+            "de": "Du gehörst zu den Neuankömmlingen, oder? Ich brauche einen Freiwilligen, der dieses verbesserte Ferro ausprobiert - es sollte ARC-Panzerungen durchschneiden wie Butter. Baller Löcher in ein paar Maschinen und erstatte mir dann Bericht."
+        },
         "objectives": [
             {
                 "en": "Destroy a Fireball",
-                "de": "Zerstöre einen Feuerball",
+                "de": "Einen Feuerball zerstören",
                 "fr": "Détruisez un Fireball",
                 "es": "Destruye un Fireball",
                 "pt": "Destrua um Fireball",
@@ -6870,7 +6888,7 @@
             },
             {
                 "en": "Destroy a Hornet",
-                "de": "Zerstöre eine Hornisse",
+                "de": "Eine Hornisse zerstören",
                 "fr": "Détruisez un Hornet",
                 "es": "Destruye un Avispón",
                 "pt": "Destrua um Hornet",
@@ -6890,7 +6908,7 @@
             },
             {
                 "en": "Destroy a Turret",
-                "de": "Zerstöre einen Geschützturm",
+                "de": "Einen Geschützturm zerstören",
                 "fr": "Détruisez une tourelle",
                 "es": "Destruye una Torreta",
                 "pt": "Destrua uma torreta",
@@ -7070,9 +7088,9 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "The Trifecta",
-            "de": "Die Trifecta",
+            "de": "Die Triade",
             "fr": "Trio gagnant",
-            "es": "La Trifecta",
+            "es": "Triplete",
             "pt": "A Trifecta",
             "pl": "Trifecta",
             "no": "Trifecta",
@@ -7091,7 +7109,7 @@
         "trader": "Shani",
         "description": {
             "en": "Intel's all well and good, but it only gets us so far. If ARC's truly closing in, I need every Raider to prove they can handle their drones in a fight.",
-            "de": "Informationen sind ja schön und gut, aber sie bringen uns nur bis zu einem gewissen Punkt. Wenn ARC wirklich näher kommt, muss jeder Raider beweisen, dass er ihre Drohnen im Kampf bewältigen kann.",
+            "de": "Aufklärung ist gut und schön, aber damit kommen wir nicht weit. Wenn die ARC wirklich näher rücken, muss jeder Raider beweisen, dass er im Kampf mit seinen Drohnen umgehen kann.",
             "fr": "Les renseignements c'est bien beau, mais ça ne nous mène que jusqu'à un certain point. Si ARC se rapproche vraiment, j'ai besoin que chaque Raider prouve qu'il peut gérer leurs drones au combat.",
             "es": "La información está muy bien, pero solo nos lleva hasta cierto punto. Si ARC realmente se está acercando, necesito que cada Raider demuestre que puede manejar sus drones en combate.",
             "pt": "Inteligência é bom e tudo mais, mas só nos leva até certo ponto. Se a ARC está realmente se aproximando, preciso que cada Raider prove que pode lidar com seus drones numa luta.",
@@ -7112,7 +7130,7 @@
         "objectives": [
             {
                 "en": "Destroy 2 Wasps",
-                "de": "Zerstöre 2 Wasps",
+                "de": "Eine Wespe zerstören",
                 "fr": "Détruisez 2 Guêpes",
                 "es": "Destruye 2 Wasps",
                 "pt": "Destrua 2 Wasps",
@@ -7132,7 +7150,7 @@
             },
             {
                 "en": "Destroy 2 Hornets",
-                "de": "Zerstöre 2 Hornets",
+                "de": "Eine Hornisse zerstören",
                 "fr": "Détruisez 2 Frelons",
                 "es": "Destruye 2 Hornets",
                 "pt": "Destrua 2 Hornets",
@@ -7152,7 +7170,7 @@
             },
             {
                 "en": "Destroy 2 Snitches",
-                "de": "Zerstöre 2 Snitches",
+                "de": "Einen Spitzel zerstören",
                 "fr": "Détruisez 2 Mouchards",
                 "es": "Destruye 2 Snitches",
                 "pt": "Destrua 2 Snitches",
@@ -7172,7 +7190,7 @@
             },
             {
                 "en": "Get 2 Snitch Scanner for Shani",
-                "de": "Besorge 2 Snitch-Scanner für Shani",
+                "de": "Einen Spitzel-Scanner für Shani besorgen",
                 "fr": "Obtenez 2 scanner de Mouchard pour Shani",
                 "es": "Consigue 2 Snitch Scanner para Shani",
                 "pt": "Consiga 2 Snitch Scanner para Shani",
@@ -7192,7 +7210,7 @@
             },
             {
                 "en": "Get 2 Wasp Driver for Shani",
-                "de": "Besorge 2 Wasp-Treiber für Shani",
+                "de": "Einen Wespentreiber für Shani besorgen",
                 "fr": "Obtenez 2 pilote de Guêpe pour Shani",
                 "es": "Consigue 2 controladores de Avispa para Shani",
                 "pt": "Consiga 2 Wasp Driver para Shani",
@@ -7212,7 +7230,7 @@
             },
             {
                 "en": "Get 2 Hornet Driver for Shani",
-                "de": "Besorge 2 Hornet-Treiber für Shani",
+                "de": "Einen Hornissentreiber für Shani besorgen",
                 "fr": "Obtenez 2 pilote de Frelon pour Shani",
                 "es": "Consigue 2 controladores de Avispón para Shani",
                 "pt": "Consiga 2 Hornet Driver para Shani",
@@ -7234,15 +7252,15 @@
         "requiredItemIds": [
             {
                 "itemId": "snitch_scanner",
-                "quantity": 2
+                "quantity": 1
             },
             {
                 "itemId": "wasp_driver",
-                "quantity": 2
+                "quantity": 1
             },
             {
                 "itemId": "hornet_driver",
-                "quantity": 2
+                "quantity": 1
             }
         ],
         "grantedItemIds": [
@@ -7278,9 +7296,9 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "Trash Into Treasure",
-            "de": "Müll zu Schätzen",
+            "de": "Des einen Müll ist des anderen Schatz",
             "fr": "Des déchets aux trésors",
-            "es": "Basura en tesoro",
+            "es": "Basura valiosa",
             "pt": "Lixo em tesouro",
             "pl": "Ze śmieci w skarb",
             "no": "Søppel til skatt",
@@ -7297,10 +7315,13 @@
             "hr": "Od Smeća do Blaga"
         },
         "trader": "Shani",
+        "description": {
+            "de": "Für einen Raider gibt es keinen Schrott, das sind alles Wertstoffe, die recycelt werden wollen. Wenn du hier etwas erreichen willst, kannst du nicht darauf warten, dass dir alles auf dem Silbertablett serviert wird."
+        },
         "objectives": [
             {
                 "en": "Obtain 6 Wires",
-                "de": "Besorge 6 Drähte",
+                "de": "6 Kabel besorgen",
                 "fr": "Obtenez 6 fils",
                 "es": "Consigue 6 cables",
                 "pt": "Obtenha 6 fios",
@@ -7320,7 +7341,7 @@
             },
             {
                 "en": "Obtain 1 Battery",
-                "de": "Besorge 1 Batterie",
+                "de": "1 Akku besorgen",
                 "fr": "Obtenez 1 batterie",
                 "es": "Consigue 1 batería",
                 "pt": "Obtenha 1 bateria",
@@ -8029,9 +8050,9 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "What Goes Around",
-            "de": "Was herumgeht",
+            "de": "Alles rächt sich",
             "fr": "Tout finit par revenir",
-            "es": "Lo que va, vuelve",
+            "es": "Todo lo que va",
             "pt": "O que vai, volta",
             "pl": "Co się odwlecze",
             "no": "Det som går rundt",
@@ -8050,7 +8071,7 @@
         "trader": "Apollo",
         "description": {
             "en": "We can't build ARC tech from scratch, but there's plenty I can tinker from the pieces you salvage. I'm currently trying to repurpose different ARC parts. Would you mind running some experiments for me?",
-            "de": "Wir können ARC-Technologie nicht von Grund auf bauen, aber es gibt vieles, das ich aus den Teilen basteln kann, die du bergst. Ich versuche gerade, verschiedene ARC-Teile umzufunktionieren. Würdest du ein paar Experimente für mich durchführen?",
+            "de": "Wir können ARC-Technologie nicht von Grund auf bauen, aber mit den Teilen, die du für uns beschaffst, lässt sich eine Menge Anstellen. Aktuell versuche ich, verschiedene ARC-Teile umzufunktionieren. Wärst du zu ein paar Experimenten bereit?",
             "fr": "Nous ne pouvons pas construire de technologie ARC à partir de zéro, mais il y a beaucoup de choses que je peux bricoler à partir des pièces que tu récupères. J'essaie actuellement de réutiliser différentes pièces ARC. Ça te dérangerait de faire quelques expériences pour moi ?",
             "es": "No podemos construir tecnología ARC desde cero, pero hay mucho que puedo arreglar con las piezas que recuperas. Actualmente estoy intentando reutilizar diferentes partes ARC. ¿Te importaría hacer algunos experimentos para mí?",
             "pt": "Não podemos construir tecnologia ARC do zero, mas há muito que posso mexer com as peças que você recupera. Atualmente estou tentando reaproveitar diferentes partes ARC. Você se importaria de fazer alguns experimentos para mim?",
@@ -8071,7 +8092,7 @@
         "objectives": [
             {
                 "en": "Destroy any ARC enemy using a Fireball Burner",
-                "de": "Zerstöre einen beliebigen ARC-Gegner mit einem Feuerball-Brenner",
+                "de": "Einen ARC-Gegner mit einem Feuerballbrenner zerstören",
                 "fr": "Détruisez n'importe quel ennemi ARC avec un lance-flammes Fireball",
                 "es": "Destruye cualquier enemigo ARC usando un lanzallamas Fireball",
                 "pt": "Destrua qualquer inimigo ARC usando um lança-chamas Fireball",
@@ -8123,7 +8144,7 @@
         "updatedAt": "11/06/2025",
         "name": {
             "en": "What We Left Behind",
-            "de": "Was wir zurückgelassen haben",
+            "de": "Was wir zurückließen",
             "fr": "Ce que nous avons laissé derrière",
             "es": "Lo que dejamos atrás",
             "pt": "O que deixamos para trás",
@@ -8144,7 +8165,7 @@
         "trader": "Tian Wen",
         "description": {
             "en": "Celeste told me you're the one who helped her hound me about pitching in more. I'll say this once: I don't appreciate the meddling, and I have my own reasons for refusing. I do, however, appreciate the scrap. Since you're apparently good at tracking it down, I may have a task for you.",
-            "de": "Celeste hat mir erzählt, dass du derjenige bist, der ihr geholfen hat, mich wegen mehr Mithilfe zu bedrängen. Ich sage das nur einmal: Ich schätze die Einmischung nicht, und ich habe meine eigenen Gründe für die Ablehnung. Ich schätze jedoch den Schrott. Da du anscheinend gut darin bist, ihn aufzuspüren, habe ich vielleicht eine Aufgabe für dich.",
+            "de": "Celeste sagte mir, du hättest ihr dabei geholfen, mich anzubetteln. Ich sag's nur einmal: Ich mag keine Einmischungen, und ich habe meine Gründe für meine Ablehnung. Den Schrott weiß ich allerdings zu schätzen. Da du offensichtlich gut darin bist, das Zeuf zu finden, hätte ich vielleicht eine Aufgabe für dich.",
             "fr": "Celeste m'a dit que c'est vous qui l'avez aidée à me harceler pour que je contribue davantage. Je ne le dirai qu'une fois : je n'apprécie pas cette ingérence, et j'ai mes propres raisons de refuser. J'apprécie cependant la ferraille. Puisque vous êtes apparemment doué pour la dénicher, j'ai peut-être une tâche pour vous.",
             "es": "Celeste me dijo que tú eres quien la ayudó a presionarme para que contribuyera más. Lo diré una vez: no aprecio la intromisión, y tengo mis propias razones para negarme. Sin embargo, aprecio la chatarra. Ya que aparentemente eres bueno rastreándola, puede que tenga una tarea para ti.",
             "pt": "Celeste me disse que você é quem a ajudou a me pressionar para contribuir mais. Vou dizer isso uma vez: não aprecio a intromissão, e tenho minhas próprias razões para recusar. No entanto, aprecio a sucata. Já que você aparentemente é bom em rastreá-la, posso ter uma tarefa para você.",
@@ -8165,7 +8186,7 @@
         "objectives": [
             {
                 "en": "On Buried City, search 2 containers in the Raider Camp beneath the Parking Garage",
-                "de": "Durchsuche in der Begrabenen Stadt 2 Container im Räuberlager unter dem Parkhaus",
+                "de": "Durchsuche 2 Container im Raider-Lager unter dem Parkhaus in der Begrabenen Stadt",
                 "fr": "Sur Buried City, fouillez 2 conteneurs dans le camp de Raiders sous le parking",
                 "es": "En Ciudad Enterrada, registra 2 contenedores en el campamento Raider bajo el estacionamiento",
                 "pt": "Em Cidade Enterrada, procure em 2 contêineres no acampamento Raider sob a garagem",
@@ -8185,7 +8206,7 @@
             },
             {
                 "en": "On Dam Battlegrounds, search for anything significant in the South Swamp Outpost",
-                "de": "Suche auf Dam Battlegrounds nach etwas Bedeutendem im Südlichen Sumpf-Außenposten",
+                "de": "Suche im Südlichen Sumpfaußenposten auf den Damm-Schlachtfeldern nach allem, was von Bedeutung sein könnte",
                 "fr": "Sur Dam Battlegrounds, cherchez quelque chose d'important dans l'avant-poste du marais sud",
                 "es": "En Campo de Batalla de la Presa, busca algo significativo en el puesto del pantano sur",
                 "pt": "Em Campo de Batalha da Represa, procure por algo significativo no posto avançado do pântano sul",
@@ -8205,7 +8226,7 @@
             },
             {
                 "en": "On Spaceport, search for anything significant in Bilguun's Hideout, next to the Container Storage",
-                "de": "Suche auf Spaceport nach etwas Bedeutendem in Bilguuns Versteck, neben dem Containerlager",
+                "de": "Suche in Bilguuns Versteck neben dem Containerlager im Raumhafen nach allem, was von Bedeutung sein könnte",
                 "fr": "Sur Spaceport, cherchez quelque chose d'important dans la cachette de Bilguun, à côté de l'entrepôt de conteneurs",
                 "es": "En Puerto Espacial, busca algo significativo en el escondite de Bilguun, junto al almacén de contenedores",
                 "pt": "Em Porto Espacial, procure por algo significativo no esconderijo de Bilguun, ao lado do armazenamento de contêineres",
@@ -8272,7 +8293,7 @@
         "trader": "Shani",
         "description": {
             "en": "That downed machine... We weren't the ones who did that. We know that there are stray survivors out there, but this? This goes far beyond a single person.",
-            "de": "Diese abgestürzte Maschine... Wir waren das nicht. Wir wissen, dass es da draußen vereinzelte Überlebende gibt, aber das? Das geht weit über eine einzelne Person hinaus.",
+            "de": "Diese tunergeholte Maschine... Wir waren das nicht. Wir wissen, dass es da draußen den einen oder anderen Überlebenden gibt, aber das? Da steckt mehr als einer dahinter.",
             "fr": "Cette machine abattue... Ce n'est pas nous qui avons fait ça. Nous savons qu'il y a des survivants isolés là-bas, mais ça ? Ça va bien au-delà d'une seule personne.",
             "es": "Esa máquina derribada... No fuimos nosotros quienes hicimos eso. Sabemos que hay supervivientes dispersos por ahí, pero ¿esto? Esto va mucho más allá de una sola persona.",
             "pt": "Aquela máquina abatida... Não fomos nós que fizemos isso. Sabemos que há sobreviventes dispersos por aí, mas isso? Isso vai muito além de uma única pessoa.",
@@ -8293,7 +8314,7 @@
         "objectives": [
             {
                 "en": "Reach the Barren Clearing",
-                "de": "Erreiche die kahle Lichtung",
+                "de": "Erreiche die unbewachsene Lichtung",
                 "fr": "Atteindre la clairière stérile",
                 "es": "Alcanza el claro árido",
                 "pt": "Alcance a clareira árida",
@@ -8313,7 +8334,7 @@
             },
             {
                 "en": "Find signs of who brought down the ARC machines",
-                "de": "Finde Hinweise darauf, wer die ARC-Maschinen zu Fall gebracht hat",
+                "de": "Suche nach Hinweisen, wer die ARC-Maschinen zerstört hat",
                 "fr": "Trouver des indices sur qui a abattu les machines ARC",
                 "es": "Encuentra señales de quién derribó las máquinas ARC",
                 "pt": "Encontre sinais de quem derrubou as máquinas ARC",
