@@ -606,7 +606,7 @@
         "trader": "Shani",
         "description": {
             "en": "We've only just finished expanding the Tube network towards the Blue Gate, and we're still laboring away at the rest. My crew's been building new infrastructure around the valley to safeguard our Raiders, but the constant ARC threat has made it difficult to get anything done.",
-            "de": "Wir haben gerade erst die U-Bahn-Linie bsi zum Blauen Tor verlängert und arbeiten immer noch am Rest. Meine Leute haben rund um das Tal neue Infrastruktur gebaut, um unsere Raider zu schützen, aber die ständige Bedrohung durch die ARC macht es echt schwer, was zu erledigen.",
+            "de": "Wir haben gerade erst die Erweiterung des Röhrennetzwerks zum Blauen Tor abgeschlossen, und wir arbeiten noch am Rest. Meine Crew hat neue Infrastruktur rund um das Tal gebaut, um unsere Raiders zu schützen, aber die ständige ARC-Bedrohung hat es schwierig gemacht, etwas zu erledigen.",
             "fr": "On vient de terminer l'extension du réseau de Tunnels jusqu'au Portail bleu, et on travaille encore sur le reste. Mon équipe construit de nouvelles infrastructures autour de la vallée pour protéger nos Raiders, mais la menace constante de l'ARC rend tout travail difficile.",
             "es": "Acabamos de terminar de expandir la red de tubos hacia la Puerta Azul, y todavía estamos trabajando en el resto. Mi equipo ha estado construyendo nueva infraestructura alrededor del valle para proteger a nuestros Raiders, pero la constante amenaza de ARC ha dificultado hacer cualquier cosa.",
             "pt": "Acabamos de terminar de expandir a rede de Tubos em direção ao Portão Azul, e ainda estamos trabalhando no resto. Minha equipe tem construído nova infraestrutura ao redor do vale para proteger nossos Raiders, mas a constante ameaça da ARC tem dificultado fazer qualquer coisa.",
@@ -2166,7 +2166,7 @@
             "en": "Clearer Skies",
             "de": "Klarer Himmel",
             "fr": "Cieux plus clairs",
-            "es": "Cielos despejados",
+            "es": "Cielos más despejados",
             "pt": "Céus mais claros",
             "pl": "Jaśniejsze niebo",
             "no": "Klarere himmel",
@@ -2176,33 +2176,13 @@
             "kr": "맑아진 하늘",
             "ru": "Ясное небо",
             "zh-CN": "晴朗天空",
-            "ja": "晴れた空",
+            "ja": "晴れ渡る空",
             "tr": "Daha Açık Gökyüzü",
             "zh-TW": "晴朗天空",
             "sr": "Vedro Nebo",
             "hr": "Vedro Nebo"
         },
         "trader": "Shani",
-        "description": {
-            "en": "A swarm of disoriented Wasps has crashed near one of our skylights. You need to thin out the ARC ranks before any more accidents happen. And while you’re at it, can you gather some especially sturdy materials so we can repair the damage?",
-            "de": "Ein Schwarm orientierungsloser Wespen ist in der Nähe eines unserer Oberlichter abgestürzt. Du musst die Reihen der ARC lichten, bevor noch mehr Unfälle passieren. Und kannst du ein paar besonders robuste Materialien sammeln, um den Schaden zu beheben?",
-            "fr": "Un essaim de Guêpes désorientées s’est écrasé près de l’un de nos puits de lumière. Tu dois éclaircir les rangs de l’ARC avant qu’il ne se produise d’autres accidents. Et tant que tu y es, peux-tu rassembler quelques matériaux particulièrement résistants pour réparer les dégâts ?",
-            "es": "Un enjambre de Avispas desorientadas se ha estrellado cerca de una de nuestras claraboyas. Debes reducir las filas del ARC antes de que ocurran más accidentes. Y ya que estás, ¿puedes reunir algunos materiales especialmente resistentes para reparar los daños?",
-            "pt": "Um enxame de Vespas desorientadas caiu perto de uma das nossas claraboias. Você precisa diminuir as fileiras do ARC antes que aconteçam mais acidentes. E, já que está nisso, pode juntar alguns materiais bem resistentes para consertar os estragos?",
-            "pl": "Rój zdezorientowanych Szerszeni rozbił się w pobliżu jednego z naszych świetlików. Musisz przerzedzić szeregi ARC, zanim dojdzie do kolejnych wypadków. A przy okazji, czy możesz zebrać kilka wyjątkowo wytrzymałych materiałów, żeby naprawić szkody?",
-            "no": "En sverm desorienterte Wasps har krasjet ved et av takvinduene våre. Du må tynne ut ARC-styrkene før flere ulykker skjer. Og når du først er der ute, kan du samle inn noen ekstra robuste materialer så vi kan reparere skadene?",
-            "da": "En sværm desorienterede Wasps er styrtet ned ved et af vores ovenlys. Du skal tynde ud i ARC-styrkerne, før der sker flere ulykker. Og nu du alligevel er derude, kan du samle nogle særligt robuste materialer, så vi kan udbedre skaderne?",
-            "it": "Uno sciame di Wasps disorientate si è schiantato vicino a uno dei nostri lucernari. Devi assottigliare le fila dell’ARC prima che si verifichino altri incidenti. E già che ci sei, puoi raccogliere alcuni materiali particolarmente resistenti per riparare i danni?",
-            "uk": "Рій дезорієнтованих Оси впав неподалік одного з наших світлових ліхтарів. Тобі потрібно прорідити ряди ARC, перш ніж стануться нові інциденти. І заодно, зможеш зібрати кілька особливо міцних матеріалів, щоб ми могли усунути пошкодження?",
-            "kr": "길을 잃은 와스프 무리가 우리 채광창 근처에 추락했어. 더 많은 사고가 나기 전에 ARC 놈들의 수를 줄여야 해. 그리고 나가는 김에, 피해를 수습할 수 있게 특히 튼튼한 자재도 좀 모아와 줄 수 있겠어?",
-            "ru": "Рой потерявших ориентир Осов рухнул рядом с одним из наших световых люков. Тебе нужно проредить ряды ARC, прежде чем случится ещё больше несчастных случаев. И заодно собери особенно прочные материалы, чтобы мы могли устранить повреждения.",
-            "zh-CN": "一群迷失方向的黄蜂在我们的一处天窗附近坠落了。你得先削减一批 ARC 敌人，免得再发生意外。顺便帮我们收集一些特别坚固的材料，好修复受损的结构。",
-            "ja": "方向感を失ったワスプの群れが、基地の天窓の近くに墜落した。これ以上事故が起こる前に、ARC の数を減らしておく必要がある。それとついでで悪いが、被害を修理するために、特に頑丈な資材も少し集めてきてくれないか？",
-            "tr": "Yönünü kaybetmiş bir Eşekarısı sürüsü, ışıklıklarımızdan birinin yakınına çakıldı. Daha fazla kaza yaşanmadan ARC saflarını seyrekleştirmen gerekiyor. Madem dışarı çıkıyorsun, hasarı onarabilmemiz için birkaç ekstra dayanıklı malzeme de toplayabilir misin?",
-            "zh-TW": "一群迷失方向的黃蜂在我們的一處天窗附近墜落了。你得先削減一批 ARC 敵人，免得再發生更多意外。順便幫我們收集一些特別堅固的材料，好修復受損的結構。",
-            "sr": "Roj dezorijentisanih Osa srušio se u blizini jednog od naših krovnih prozora. Moraš da prorediš redove ARC-a pre nego što se dogodi još nesreća. I usput, možeš li da sakupiš nekoliko naročito čvrstih materijala da saniramo štetu?",
-            "hr": "Roj dezorijentiranih Osa srušio se u blizini jednog od naših krovnih prozora. Moraš prorijediti redove ARC-a prije nego što se dogodi još nesreća. I usput, možeš li prikupiti nekoliko posebno čvrstih materijala kako bismo popravili štetu?"
-        },
         "objectives": [
             {
                 "en": "Destroy 3 ARC enemies",
@@ -2218,7 +2198,7 @@
                 "kr": "ARC 적 3명을 처치하세요",
                 "ru": "Уничтожьте 3 врагов ARC",
                 "zh-CN": "消灭3个ARC敌人",
-                "ja": "ARCエネミーを3体破壊する",
+                "ja": "ARCの敵を3体倒す",
                 "tr": "3 ARC düşmanını yok et",
                 "zh-TW": "消滅3個ARC敵人",
                 "sr": "Uništite 3 ARC neprijatelja",
@@ -2226,7 +2206,7 @@
             },
             {
                 "en": "Get 3 ARC Alloy for Shani",
-                "de": "3 ARC-Legierungen für Shani besorgen",
+                "de": "3 ARC-Legierung für Shani besorgen",
                 "fr": "Obtenez 3 alliages ARC pour Shani",
                 "es": "Consigue 3 aleaciones ARC para Shani",
                 "pt": "Consiga 3 ligas ARC para Shani",
@@ -2238,7 +2218,7 @@
                 "kr": "샤니를 위해 ARC 합금 3개를 구하세요",
                 "ru": "Добудьте 3 сплава ARC для Шани",
                 "zh-CN": "为莎妮获取3个ARC合金",
-                "ja": "シャニに渡すARC合金を3個入手する",
+                "ja": "シャニのためにARC合金を3つ入手する",
                 "tr": "Shani için 3 ARC Alaşımı al",
                 "zh-TW": "為莎妮獲取3個ARC合金",
                 "sr": "Nabavite 3 ARC legure za Shani",
@@ -2275,7 +2255,7 @@
     },
     {
         "id": "12_cold_storage",
-        "updatedAt": "11/14/2025",
+        "updatedAt": "11/20/2025",
         "name": {
             "en": "Cold Storage",
             "de": "Tiefkühllagerung",
@@ -2300,7 +2280,7 @@
         "videoUrl": "https://youtu.be/tc7nK7AmixQ",
         "description": {
             "en": "Reports about Stella Montis keep coming in, and it's unlike anything we've seen before. There may be records or relics from the past in there, and if so, I want them.",
-            "de": "Berichte über Stella Montis reißen nicht ab, und es ist anders als alles, was wir zuvor gesehen haben. Dort könnten Aufzeichnungen oder Relikte aus der Vergangenheit liegen, und wenn ja, will ich sie.",
+            "de": "Wir kriegen Berichte über Stella Montis rein und was ich da erfahre, ist völlig neu. Da drinnen könnten Aufzeichnungen oder Relikte aus der Vergangenheit warten - und wenn das so ist, dann will ich sie haben.",
             "fr": "Les rapports sur Stella Montis continuent d'affluer, et c'est comme rien de ce que nous avons vu auparavant. Il pourrait y avoir des archives ou des reliques du passé là-bas, et si c'est le cas, je les veux.",
             "es": "Los informes sobre Stella Montis no dejan de llegar, y no se parece a nada que hayamos visto antes. Puede que haya registros o reliquias del pasado ahí dentro y, si es así, las quiero.",
             "pt": "Os relatórios sobre Stella Montis não param de chegar, e não se parece com nada que já vimos. Pode haver registros ou relíquias do passado lá dentro e, se houver, eu as quero.",
@@ -2321,7 +2301,7 @@
         "objectives": [
             {
                 "en": "In one round, search any J Kozma Ventures container",
-                "de": "Durchsuche in einer Runde einen beliebigen J-Kozma-Ventures-Container",
+                "de": "Durchsuche einen beliebigen Contianer von J Kozma Ventures",
                 "fr": "En une manche, fouiller n'importe quel conteneur J Kozma Ventures",
                 "es": "En una ronda, registra cualquier contenedor de J Kozma Ventures",
                 "pt": "Em uma rodada, revide qualquer contêiner da J Kozma Ventures",
@@ -2341,7 +2321,7 @@
             },
             {
                 "en": "In one round, deliver the Rare Books to Shani",
-                "de": "Liefere in einer Runde die seltenen Bücher bei Shani ab",
+                "de": "Liefere die seltenen Bücher an Shani",
                 "fr": "En une manche, livrer les livres rares à Shani",
                 "es": "En una ronda, entrega los libros raros a Shani",
                 "pt": "Em uma rodada, entregue os Livros Raros para Shani",
@@ -3671,7 +3651,7 @@
         "trader": "Celeste",
         "description": {
             "en": "Recently, I've been trying and failing to get Tian Wen to join our community projects. I may have to sweeten the deal. She's been complaining about the quality of salvage found on the market; think we could do her a solid?",
-            "de": "Ich hab in letzter Zeit erfolglos versucht, Tian Wen für unsere Gemeinschaftsprojekte zu erwärmen. Vielleicht muss ich ihr das Gane schmackhafter machen. Sie hat sich über die Qualitẗ des Schrotts beschwert, a den sie kommt - können wir ihr da wohl eine kleine Freude bereiten?",
+            "de": "Ich hab in letzter Zeit erfolglos versucht, Tian Wen für unsere Gemeinschaftsprojekte zu erwärmen. Vielleicht muss ich iihr das Ganze schmackhafter machen. Sie hat sich über die Qualität des Schrotts beschwert, an den sie kommt - können wir ihr da wohl eine kleine Freude bereiten?",
             "fr": "Dernièrement, j'ai essayé, sans succès, de convaincre Tian Wen de rejoindre nos projets communautaires. Peut-être que si l'offre était plus attrayante... Elle se plaint de la qualité des pièces de récupération disponibles sur le marché. On devrait bien pouvoir lui rendre un service, non ?",
             "es": "Recientemente, he estado intentando sin éxito que Tian Wen se una a nuestros proyectos comunitarios. Puede que tenga que endulzar el trato. Ha estado quejándose de la calidad del salvamento que se encuentra en el mercado; ¿crees que podríamos hacerle un favor?",
             "pt": "Recentemente, tenho tentado e falhado em fazer a Tian Wen se juntar aos nossos projetos comunitários. Talvez eu tenha que adoçar o negócio. Ela tem reclamado sobre a qualidade da sucata encontrada no mercado; acha que poderíamos fazer um favor a ela?",
@@ -3692,7 +3672,7 @@
         "objectives": [
             {
                 "en": "On Dam Battlegrounds, visit the Locked Room in the Water Treatment Control building",
-                "de": "Besuche auf den Damm-Schalftfeldern den verschlossenen Raum im Kontrollgebäude der Wasseraufbereitung",
+                "de": "Besuche auf den Damm-Schlachtfeldern den verschlossenen Raum im Kontrollgebäude der Wasseraufbereitung.",
                 "fr": "Au champ de bataille du Barrage, visiter la salle verrouillée du bâtiment du Contrôle du traitement de l'eau",
                 "es": "En Dam Battlegrounds, visita la sala cerrada en el edificio de control de tratamiento de agua",
                 "pt": "Em Dam Battlegrounds, visite a sala trancada no prédio de controle de tratamento de água",
@@ -3712,7 +3692,7 @@
             },
             {
                 "en": "On Spaceport, scope out the rocket thrusters outside the Rocket Assembly",
-                "de": "Schau dir im Raumhafen die Schubdüsen außerhalb der Raktenmontage an",
+                "de": "Schau dir im Raumhafen die Schubdüsen außerhalb der Raketenmontage an.",
                 "fr": "Au Port spatial, inspecter les propulseurs de la fusée à l'extérieur du Site d'assemblage des fusées",
                 "es": "En Spaceport, inspecciona los propulsores de cohetero fuera del ensamblaje de cohetes",
                 "pt": "Em Spaceport, examine os propulsores de foguete fora da montagem de foguetes",
@@ -3806,7 +3786,7 @@
         "trader": "Shani",
         "description": {
             "en": "Our scouts have reported several Raider Hatches with leaking hydraulic pipes. They still work, but not for long. Mind patching one up, next time you're out there?",
-            "de": "Unsere Späher haben mehrere Raider-Luken gemeldet, bei denen die Hydraulikrohre Lecks haben. Sie funktionieren noch, aber es ist nur eine Frage der Zeit. Würdest du eines reparieren, wenn du das nächste Mal da draußen bist?",
+            "de": "Unsere Späher haben mehrere Raider-Luken mit undichten Hydraulikleitungen gemeldet. Sie funktionieren noch, aber nicht mehr lange. Würdest du eine reparieren, wenn du das nächste Mal dort draußen bist?",
             "fr": "Nos éclaireurs ont signalé plusieurs trappes de Raiders avec des tuyaux hydrauliques qui fuient. Elles fonctionnent encore, mais plus pour longtemps. Ça te dérangerait d'en réparer une la prochaine fois que tu seras là-bas ?",
             "es": "Nuestros exploradores han reportado varias escotillas de Saqueadores con tuberías hidráulicas con fugas. Todavía funcionan, pero no por mucho tiempo. ¿Te importaría reparar una la próxima vez que estés por allí?",
             "pt": "Nossos batedores relataram várias escotilhas de Saqueadores com tubos hidráulicos vazando. Elas ainda funcionam, mas não por muito tempo. Você se importaria de consertar uma na próxima vez que estiver lá fora?",
@@ -4178,7 +4158,7 @@
             },
             {
                 "en": "Find and search 3 Androids",
-                "de": "Finde und durchsuche 3 Androiden",
+                "de": "Finde und durchsuche 3 Andoiden",
                 "fr": "Trouver et fouiller 3 androïdes",
                 "es": "Encuentra y registra 3 androides",
                 "pt": "Encontre e revide 3 androides",
@@ -5833,7 +5813,7 @@
     },
     {
         "id": "ss11a",
-        "updatedAt": "11/06/2025",
+        "updatedAt": "11/20/2025",
         "name": {
             "en": "Reduced to Rubble",
             "de": "Schutt und Asche",
@@ -5857,7 +5837,7 @@
         "trader": "Shani",
         "description": {
             "en": "That collapsed highway worries me; it looks to be recent. Much of Topside may be in ruins, but most of it is from ages ago.",
-            "de": "Die eingestürzte Schnellstraße macht mir Sorgen; das schein erst kürzlich passiert zu sein. An der Oberfläche ist ja fast alles kaputt, aber das meiste schon seit Ewigkeiten.",
+            "de": "Diese eingestürzte Autobahn beunruhigt mich; sie scheint kürzlich eingestürzt zu sein. Ein Großteil von Topside mag in Trümmern liegen, aber das meiste davon ist uralt.",
             "fr": "Cette autoroute effondrée m'inquiète ; elle semble récente. Une grande partie de Topside est peut-être en ruines, mais la plupart datent d'il y a longtemps.",
             "es": "Esa autopista colapsada me preocupa; parece ser reciente. Gran parte de Topside puede estar en ruinas, pero la mayoría es de hace mucho tiempo.",
             "pt": "Aquela rodovia colapsada me preocupa; parece ser recente. Muito de Topside pode estar em ruínas, mas a maior parte é de muito tempo atrás.",
@@ -5898,7 +5878,7 @@
             },
             {
                 "en": "Go to the Broken Earth",
-                "de": "Gehe zur aufgebrochenen Erde",
+                "de": "Gehe zur zerbrochenen Erde",
                 "fr": "Aller à la Terre brisée",
                 "es": "Ve a la Tierra rota",
                 "pt": "Vá para a Terra quebrada",
@@ -6071,7 +6051,7 @@
         "updatedAt": "11/14/2025",
         "name": {
             "en": "Snap and Salvage",
-            "de": "Schnappschuss und Bergung",
+            "de": "Schnappen und Ausschlachten",
             "fr": "Clic et récupération",
             "es": "Disparo y rescate",
             "pt": "Clique e Sucata",
@@ -6092,7 +6072,7 @@
         "trader": "Tian Wen",
         "description": {
             "en": "All of Speranza is buzzing about Stella Montis right now, and I admit it's caught my attention. Let the others sort out the whats and hows; I'm interested in the tech inside.",
-            "de": "Ganz Speranza spricht derzeit über Stella Montis, und ich gebe zu, dass es meine Aufmerksamkeit geweckt hat. Sollen sich die anderen um das Was und Wie kümmern; mich interessiert die Technik darin.",
+            "de": "In Speranza wird nur noch über Stella Montis gesprochen und ich muss zugeben, mein Interesse ist auch geweckt. Sollen die anderen sich mit dem Was und Wie befassen - mich interessiert die Technik, die da drinnen versteckt ist.",
             "fr": "Tout Speranza ne parle que de Stella Montis en ce moment, et j'avoue que cela a piqué ma curiosité. Laissez les autres gérer le quoi et le comment ; moi, c'est la technologie à l'intérieur qui m'intéresse.",
             "es": "Toda Speranza habla de Stella Montis ahora mismo, y admito que ha despertado mi interés. Que los demás se ocupen del qué y el cómo; a mí me interesa la tecnología que hay dentro.",
             "pt": "Toda Speranza só fala de Stella Montis neste momento, e admito que chamou minha atenção. Deixe que os outros descubram o quê e o como; eu estou de olho é na tecnologia lá dentro.",
@@ -6113,7 +6093,7 @@
         "objectives": [
             {
                 "en": "Take a photo of any of the Rovers in the Sandbox",
-                "de": "Mache ein Foto von einem der Rover im Sandbox-Gebiet",
+                "de": "Fotografiere einen beliebigen Rover im Sandkasten",
                 "fr": "Prends une photo de l'un des rovers dans le bac à sable",
                 "es": "Haz una foto de cualquiera de los rovers en el Sandbox",
                 "pt": "Tire uma foto de qualquer um dos Rovers no Sandbox",
@@ -6133,7 +6113,7 @@
             },
             {
                 "en": "Search the papers in the Security Checkpoint room by the Lobby",
-                "de": "Durchsuche die Unterlagen im Sicherheitskontrollraum neben predvorjem",
+                "de": "Durchsuche die Unterlagen im Sicherheitskontrollraum bei der Lobby",
                 "fr": "Fouille les documents dans la salle du poste de sécurité près du hall",
                 "es": "Registra los documentos en la sala del control de seguridad junto al vestíbulo",
                 "pt": "Revide os papéis na sala do Posto de Segurança ao lado do Lobby",
@@ -6153,7 +6133,7 @@
             },
             {
                 "en": "Deliver a Magnetron to Tian Wen",
-                "de": "Liefere einen Magnetron bei Tian Wen ab",
+                "de": "Liefere einen Magnetron an Tian Wen",
                 "fr": "Livre un magnétron à Tian Wen",
                 "es": "Entrega un magnetrón a Tian Wen",
                 "pt": "Entregue um Magnetron para Tian Wen",
@@ -6173,7 +6153,7 @@
             },
             {
                 "en": "Deliver a Flow Controller to Tian Wen",
-                "de": "Liefere einen Durchflussregler bei Tian Wen ab",
+                "de": "Liefere einen Durchflussregler an Tian Wen",
                 "fr": "Livre un régulateur de débit à Tian Wen",
                 "es": "Entrega un regulador de flujo a Tian Wen",
                 "pt": "Entregue um Controlador de Fluxo para Tian Wen",
@@ -6381,7 +6361,7 @@
         "trader": "Apollo",
         "description": {
             "en": "Those Hornet stings can really mess you up, if you're unlucky. And even if you destroy one, you're still wasting a ton of ammo. I've been working on a more elegant way to bring them down. Care to make some sparks fly?",
-            "de": "Stiche von diesen Hornissen können einem echt übel mitspielen, wenn man Pech hat. Und selbst wenn man eine erledigt, bergeudet man dabei eine Menge Munition. Ich arbeite an einer eleganteren Lösung, um sie vom Himmel zu holen. Willst du Funken fliegen lassen?",
+            "de": "Diese Hornet-Stiche können dich wirklich übel zurichten, wenn du Pech hast. Und selbst wenn du eine zerstörst, verschwendest du immer noch eine Menge Munition. Ich habe an einer eleganteren Methode gearbeitet, sie herunterzuholen. Lust, ein paar Funken fliegen zu lassen?",
             "fr": "Ces piqûres de Frelons peuvent vraiment vous gâcher la vie. Et même si vous en détruisez un, vous gaspillerez une tonne de munitions. J'ai réfléchi à une façon plus élégante de les éliminer. Ça vous dit de faire des étincelles ?",
             "es": "Esos aguijones de Avispón pueden hacerte mucho daño si no tienes suerte. E incluso si destruyes uno, sigues desperdiciando un montón de munición. He estado trabajando en una forma más elegante de derribarlos. ¿Te apetece hacer saltar algunas chispas?",
             "pt": "Essas picadas de Hornet podem te estragar muito, se você tiver azar. E mesmo se você destruir um, ainda está desperdiçando um monte de munição. Tenho trabalhado numa forma mais elegante de derrubá-los. Quer fazer algumas faíscas voarem?",
@@ -6882,7 +6862,24 @@
         },
         "trader": "Tian Wen",
         "description": {
-            "de": "Du gehörst zu den Neuankömmlingen, oder? Ich brauche einen Freiwilligen, der dieses verbesserte Ferro ausprobiert - es sollte ARC-Panzerungen durchschneiden wie Butter. Baller Löcher in ein paar Maschinen und erstatte mir dann Bericht."
+            "en": "You are one of the newcomers, right? I need a volunteer to test this upgraded Ferro  it should cut through ARC armor like butter. Put some holes in a few machines and then report back to me.",
+            "de": "Du gehörst zu den Neuankömmlingen, oder? Ich brauche einen Freiwilligen, der dieses verbesserte Ferro ausprobiert  es sollte ARC-Panzerungen durchschneiden wie Butter. Baller Löcher in ein paar Maschinen und erstatte mir dann Bericht.",
+            "fr": "Tu fais partie des nouveaux, n'est-ce pas ? J'ai besoin d'un volontaire pour tester ce Ferro amélioré  il devrait découper les armures ARC comme du beurre. Perce quelques machines et reviens me faire ton rapport.",
+            "es": "Eres de los recién llegados, ¿verdad? Necesito un voluntario para probar este Ferro mejorado; debería atravesar la armadura ARC como mantequilla. Haz algunos agujeros en unas cuantas máquinas y luego infórmame.",
+            "pt": "Você é um dos recém-chegados, certo? Preciso de um voluntário para testar este Ferro aprimorado  ele deve cortar armaduras ARC como manteiga. Encha algumas máquinas de balas e depois volte para me contar.",
+            "pl": "Jesteś jednym z nowoprzybyłych, prawda? Potrzebuję ochotnika, który przetestuje to ulepszone Ferro  powinno ciąć pancerz ARC jak masło. Zrób kilka dziur w maszynach, a potem zamelduj się u mnie.",
+            "no": "Du er en av de nyankomne, ikke sant? Jeg trenger en frivillig til å teste denne oppgraderte Ferroen  den burde skjære gjennom ARC-panser som smør. Fyll noen maskiner med hull og rapporter tilbake.",
+            "da": "Du er en af de nyankomne, ikke? Jeg har brug for en frivillig til at teste denne forbedrede Ferro  den burde skære gennem ARC-panser som smør. Skyd nogle huller i et par maskiner og rapporter så tilbage.",
+            "it": "Sei uno dei nuovi arrivati, giusto? Mi serve un volontario per provare questo Ferro potenziato  dovrebbe tagliare le armature ARC come il burro. Fai qualche buco in un paio di macchine e poi torna a riferire.",
+            "uk": "Ти з новоприбулих, так? Мені потрібен доброволець, щоб випробувати це покращене Ferro  воно має різати броню ARC, як масло. Зроби кілька дірок у машинах і потім доповідь мені.",
+            "kr": "신참 중 한 명이지? 이 개량된 페로를 시험할 자원봉사가 필요하다. ARC 장갑을 버터처럼 잘라낼 수 있을 거다. 몇 대의 기계에 구멍을 내고 나서 보고하러 와라.",
+            "ru": "Ты из новеньких, верно? Мне нужен доброволец, чтобы испытать этот улучшенный Ferro  он должен резать броню ARC как масло. Продырявь пару машин и потом доложи мне.",
+            "zh-CN": "你是新来的人，对吧？我需要一个志愿者来测试这把升级版的Ferro——它应该能像切黄油一样切开ARC装甲。把几台机器打成筛子，然后回来向我汇报。",
+            "ja": "新人の一人だな？ この改良型フェロを試してくれる志願者が必要だ。ARC装甲をバターのように切り裂けるはずだ。いくつかの機械に穴を開けて、後で報告に来い。",
+            "tr": "Yeni gelenlerden birisin, değil mi? Bu geliştirilmiş Ferro'yu deneyecek bir gönüllüye ihtiyacım var  ARC zırhını tereyağı gibi kesmeli. Birkaç makineyi delik deşik et ve sonra bana rapor ver.",
+            "zh-TW": "你是新來的吧？我需要一名志願者來測試這把強化過的 Ferro──理論上應該能像切奶油一樣切開 ARC 裝甲。把幾台機器打成蜂窩後再回來向我報告。",
+            "sr": "Ti si jedan od novajlija, zar ne? Treba mi dobrovoljac da isproba ovaj unapređeni Ferro  trebalo bi da seče ARC oklop kao puter. Izbuši par mašina i onda mi podnesi izveštaj.",
+            "hr": "Ti si jedan od novopridošlih, zar ne? Treba mi dobrovoljac koji će isprobati ovaj unaprijeđeni Ferro  trebao bi rezati ARC oklop kao maslac. Izbuši par strojeva i onda mi se javi s izvješćem."
         },
         "objectives": [
             {
@@ -8081,7 +8078,7 @@
     },
     {
         "id": "ss8a",
-        "updatedAt": "11/06/2025",
+        "updatedAt": "11/20/2025",
         "name": {
             "en": "What Goes Around",
             "de": "Alles rächt sich",
@@ -8105,7 +8102,7 @@
         "trader": "Apollo",
         "description": {
             "en": "We can't build ARC tech from scratch, but there's plenty I can tinker from the pieces you salvage. I'm currently trying to repurpose different ARC parts. Would you mind running some experiments for me?",
-            "de": "Wir können ARC-Technologie nicht von Grund auf bauen, aber mit den Teilen, die du für uns beschaffst, lässt sich eine Menge Anstellen. Aktuell versuche ich, verschiedene ARC-Teile umzufunktionieren. Wärst du zu ein paar Experimenten bereit?",
+            "de": "Wir können ARC-Technologie nicht von Grund auf bauen, aber es gibt vieles, das ich aus den Teilen basteln kann, die du bergst. Ich versuche gerade, verschiedene ARC-Teile umzufunktionieren. Würdest du ein paar Experimente für mich durchführen?",
             "fr": "Nous ne pouvons pas construire de technologie ARC à partir de zéro, mais il y a beaucoup de choses que je peux bricoler à partir des pièces que tu récupères. J'essaie actuellement de réutiliser différentes pièces ARC. Ça te dérangerait de faire quelques expériences pour moi ?",
             "es": "No podemos construir tecnología ARC desde cero, pero hay mucho que puedo arreglar con las piezas que recuperas. Actualmente estoy intentando reutilizar diferentes partes ARC. ¿Te importaría hacer algunos experimentos para mí?",
             "pt": "Não podemos construir tecnologia ARC do zero, mas há muito que posso mexer com as peças que você recupera. Atualmente estou tentando reaproveitar diferentes partes ARC. Você se importaria de fazer alguns experimentos para mim?",
@@ -8318,7 +8315,7 @@
             "kr": "흔적과 함께",
             "ru": "Со следом",
             "zh-CN": "追寻踪迹",
-            "ja": "かすかな痕跡",
+            "ja": "痕跡と共に",
             "tr": "Bir İzle",
             "zh-TW": "追尋蹤跡",
             "sr": "Sa tragom",
@@ -8327,7 +8324,7 @@
         "trader": "Shani",
         "description": {
             "en": "That downed machine... We weren't the ones who did that. We know that there are stray survivors out there, but this? This goes far beyond a single person.",
-            "de": "Diese tunergeholte Maschine... Wir waren das nicht. Wir wissen, dass es da draußen den einen oder anderen Überlebenden gibt, aber das? Da steckt mehr als einer dahinter.",
+            "de": "Diese runtergeholte Maschine... Wir waren das nicht. Wir wissen, dass es da draußen den ein oder anderen Überlebenden gibt, aber das? Da steckt mehr als einer dahinter.",
             "fr": "Cette machine abattue... Ce n'est pas nous qui avons fait ça. Nous savons qu'il y a des survivants isolés là-bas, mais ça ? Ça va bien au-delà d'une seule personne.",
             "es": "Esa máquina derribada... No fuimos nosotros quienes hicimos eso. Sabemos que hay supervivientes dispersos por ahí, pero ¿esto? Esto va mucho más allá de una sola persona.",
             "pt": "Aquela máquina abatida... Não fomos nós que fizemos isso. Sabemos que há sobreviventes dispersos por aí, mas isso? Isso vai muito além de uma única pessoa.",
@@ -8360,7 +8357,7 @@
                 "kr": "황량한 공터에 도달하기",
                 "ru": "Добраться до Пустынной Поляны",
                 "zh-CN": "到达荒芜空地",
-                "ja": "不毛の空地に向かう",
+                "ja": "荒涼とした空き地に到達する",
                 "tr": "Çorak Açıklığa Ulaş",
                 "zh-TW": "到達荒蕪空地",
                 "sr": "Stigni do Puste čistine",
@@ -8380,7 +8377,7 @@
                 "kr": "ARC 기계를 격추시킨 자의 흔적 찾기",
                 "ru": "Найти следы тех, кто сбил машины ARC",
                 "zh-CN": "寻找击落ARC机器的人的线索",
-                "ja": "ARCマシンを倒した者の痕跡を見つける",
+                "ja": "ARCマシンを撃墜した者の痕跡を見つける",
                 "tr": "ARC makinelerini düşürenlerin izlerini bul",
                 "zh-TW": "尋找擊落ARC機器的人的線索",
                 "sr": "Pronađi znakove ko je oborio ARC mašine",
@@ -8400,7 +8397,7 @@
                 "kr": "장식된 잔해 조사하기",
                 "ru": "Осмотреть Украшенные Обломки",
                 "zh-CN": "检查装饰过的残骸",
-                "ja": "飾られた残骸を調べる",
+                "ja": "装飾された残骸を調べる",
                 "tr": "Süslenmiş Enkazı İncele",
                 "zh-TW": "檢查裝飾過的殘骸",
                 "sr": "Preglédaj ukrašene olupine",
@@ -8420,7 +8417,7 @@
                 "kr": "통신 장치 조사하기",
                 "ru": "Осмотреть устройство связи",
                 "zh-CN": "检查通讯设备",
-                "ja": "通信機を調べる",
+                "ja": "通信装置を調べる",
                 "tr": "İletişim cihazını incele",
                 "zh-TW": "檢查通訊設備",
                 "sr": "Preglédaj komunikacijski uređaj",
@@ -8441,8 +8438,6 @@
         "previousQuestIds": [
             "ss11a"
         ],
-        "nextQuestIds": [
-            "ss10x20"
-        ]
+        "nextQuestIds": []
     }
 ]
